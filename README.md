@@ -1,5 +1,5 @@
 # SDBannerView
-powerful banner view, support for data cache
+Powerful banner view, support for data cache
 
 ##CocoaPods
 ```
@@ -23,6 +23,16 @@ After pod install,add below code when you use it.
 ```
 
 ###Demo
+You can set the source image array with local or remote source;
+
+```
+- (instancetype)initWithFrame:(CGRect)frame imageNames:(NSArray<UIImage *> *)names;
+```
+
+```
+- (instancetype)initWithFrame:(CGRect)frame urls:(NSArray<NSString *> *)imageUrls;
+```
+Here is a example:
 ```
 NSString *urlStr1 = @"http://img10.3lian.com/sc6/show02/67/27/02.jpg";
 NSString *urlStr2 = @"http://img161.poco.cn/mypoco/myphoto/20100424/19/53310080201004241856521800459127582_005.jpg";
@@ -36,3 +46,14 @@ NSLog(@"index = %ld",index);
 }];
 [self.view addSubview:banner];; 
 ```
+###Suggestions?
+If you have any suggestions, Please contac me.
+
+###Contact Me
+You can reach me anytime at the address below. If you use libarary and you like it, give me a star please.
+
+Github: [momo13014](https://github.com/momo13014)
+Email : momo13014@163.com
+###License
+
+MIT License
