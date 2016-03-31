@@ -17,8 +17,10 @@ pod 'SDBannerView'
 
 ###How to use
 
-After pod install, #import <SDBannerView.h>, when you use it.
-
+After pod install,add below code when you use it.
+```
+ #import <SDBannerView.h>
+```
 
 ###Demo
 ```
