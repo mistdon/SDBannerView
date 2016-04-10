@@ -1,5 +1,5 @@
 # SDBannerView
-Powerful banner view, support for data cache
+Powerful banner view, support for local and remote image,data cache.
 
 ##CocoaPods
 ```
@@ -14,13 +14,15 @@ pod 'SDBannerView'
 * Xcode 5 or higher
 * iOS 7.0 or higher
 * ARC
+
 ###Fetures
 [ x ] Local or remote image
 [ x ] Data cache
 [ x ] lot of styles
+
 ###How to use
 
-After pod install,add below code when you use it.
+After pod install,add below code where you use it.
 ```
  #import <SDBannerView.h>
 ```
@@ -45,11 +47,11 @@ banner.datasource = arr;
 banner.ScrollStyleAnimation = SDScrollStyleAnimationPagCurl;
 [banner setPageType:PageControlPositionDownCenter];
 [banner setCurrentIndexDidTap:^(NSInteger index) {
-NSLog(@"index = %ld",index);
+    NSLog(@"index = %ld",index);
 }];
 [self.view addSubview:banner];;
 ```
-If you want to remove if, just use below code, all memory will be released, no memory leaps.
+If you want to remove it, just use below code, all memory will be released.
 
 ```
 - (void)removeFromSuperview;
