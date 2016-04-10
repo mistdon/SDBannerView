@@ -18,7 +18,7 @@ pod 'SDBannerView'
 ###Fetures
 [ x ] Local or remote image
 [ x ] Data cache
-[ x ] lot of styles
+[ x ] lots of animatioon styles
 
 ###How to use
 
