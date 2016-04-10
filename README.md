@@ -16,9 +16,9 @@ pod 'SDBannerView'
 * ARC
 
 ###Fetures
-[ x ] Local or remote image
-[ x ] Data cache
-[ x ] lots of animatioon styles
+[x] Local or remote image
+[x] Data cache
+[x] lots of animatioon styles
 
 ###How to use
 
