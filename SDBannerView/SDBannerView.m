@@ -8,128 +8,150 @@
 
 #import "SDBannerView.h"
 #import "SDHelper.h"
+#import "SDBannerContentView.h"
 
-@interface SDBannerView()<UIScrollViewDelegate>{
-    CGFloat _kWidth;
-    CGFloat _KHeight;
-    NSInteger _ImageSourcesType;  //图片源类型:当为本地图片时=100,网络加载图片时为101;
-    __weak UIScrollView *_scrollView;
-    __weak UIImageView *_leftImageView, *_middleImageView, *_rightImageView;
-    __weak UIPageControl *_pageControl;
-}
-@property (nonatomic, copy) NSMutableArray *datasources;
+@interface SDBannerView()<UIScrollViewDelegate>
+@property (nonatomic, strong) NSMutableArray<UIImage *> *imagesources;
 @property (nonatomic, strong) NSMutableArray *urlStringSources;
+@property (nonatomic, strong) UIScrollView *scrollView;
+@property (nonatomic, strong) UIPageControl *pageControl;
+@property (nonatomic, strong) SDBannerContentView *leftImageView, *middleImageView, *rightImageView;
+@property (nonatomic, strong) NSTimer *timer;
 @end
 
 @implementation SDBannerView{
+    CGFloat _kWidth;
+    CGFloat _KHeight;
     NSInteger _numbersOfImages;
     NSInteger _currentIndex;
-    NSTimer *_timer;
 }
-- (instancetype)initWithFrame:(CGRect)frame imageNames:(NSArray<UIImage *> *)names {
-    self = [super initWithFrame:frame];
-    NSAssert(names.count!=0, @"Exception: BannerView init method: sources cannot be nil");
-    if (self) {
-        [self setupDefaultValues:names.count];
-        _ImageSourcesType = 100;
-        [self confirgueScrollView];
-        [self setImageData:names];
-        [self setNumbersOfImage:names.count];
-        
+#pragma mark - lifecycle
+- (instancetype)init{
+    return [self initWithFrame:CGRectZero];
+}
+
+- (instancetype)initWithFrame:(CGRect)frame{
+    if (self = [super initWithFrame:frame]) {
+        //todo
+        _kWidth = frame.size.width;
+        _KHeight = frame.size.height;
+        [self configureDefaultValues];
     }
     return self;
 }
-- (instancetype)initWithFrame:(CGRect)frame urls:(NSArray<NSString *> *)imageUrls{
-    self = [super initWithFrame:frame];
-    NSAssert(imageUrls.count!=0, @"Exception: BannerView init method: sources cannot be nil");
-    if (self) {
-        [self setupDefaultValues:imageUrls.count];
-        _ImageSourcesType = 101;
-        [self.urlStringSources addObjectsFromArray:imageUrls];
-        [self confirgueScrollView];
-        [self setImageData:nil];
-        [self setNumbersOfImage:imageUrls.count];
-    }
-    return self;
-}
+#pragma mark - lazy loading
 - (NSMutableArray *)urlStringSources {
     if (!_urlStringSources) {
         _urlStringSources = [NSMutableArray array];
     }
     return _urlStringSources;
 }
+- (NSMutableArray *)imagesources{
+    if (!_imagesources) {
+        _imagesources = [NSMutableArray array];
+    }
+    return _imagesources;
+}
 #pragma mark - Init with subviews
-- (void)setupDefaultValues:(NSInteger )count{
-    _kWidth           = self.frame.size.width;
-    _KHeight          = self.frame.size.height;
-    _numbersOfImages  = count;
-    _autoBanner       = YES;
-    _placeholderImage = [UIImage imageNamed:@"1.jpg"];
-    _datasources      = [NSMutableArray arrayWithCapacity:count];
+- (void)configureDefaultValues{
+    NSString *path= [[NSBundle mainBundle].resourcePath stringByAppendingPathComponent:@"SDBannerView.bundle/SDBannerViewPlacholder.jpg"];
+    _placeholderImage     = [UIImage imageWithContentsOfFile:path];
+    _autoBanner           = YES;
+    _ScrollStyleAnimation = SDScrollStyleAnimationNone;
+    _numbersOfImages      = 1;
+    [self confirgueScrollView];
+    [self confirgueImageView];
+    [self confirguePageControl];    
+    _leftImageView.image = _placeholderImage;
 }
 - (void)confirgueScrollView{
-    UIScrollView *scroll = [[UIScrollView alloc] initWithFrame:self.bounds];
-    [self addSubview:scroll];
-    
-    _scrollView                                = scroll;
-    _scrollView.pagingEnabled                  = YES;
-    _scrollView.backgroundColor                = [UIColor lightGrayColor];
-    _scrollView.delegate                       = self;
-    _scrollView.showsHorizontalScrollIndicator = NO;
-    _scrollView.showsVerticalScrollIndicator   = NO;
-    _scrollView.contentSize                    = _numbersOfImages==1?CGSizeMake(0, 0): CGSizeMake(_kWidth * 3, 0);
-    
-    _currentIndex = 0;
+    if (!_scrollView) {
+        UIScrollView *scroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, _kWidth, _KHeight)];
+        [self addSubview:scroll];
+        _scrollView                                = scroll;
+        _scrollView.pagingEnabled                  = YES;
+        _scrollView.backgroundColor                = [UIColor redColor];
+        _scrollView.delegate                       = self;
+        _scrollView.showsHorizontalScrollIndicator = NO;
+        _scrollView.showsVerticalScrollIndicator   = NO;
+        _currentIndex = 0;
+    }
 }
 - (void)confirgueImageView{
-    UIImageView *leftTemp   = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, _kWidth, _KHeight)];
-    UIImageView *middleTemp = [[UIImageView alloc] initWithFrame:CGRectMake(_kWidth, 0, _kWidth, _KHeight)];
-    UIImageView *rightTemp  = [[UIImageView alloc] initWithFrame:CGRectMake(_kWidth * 2, 0, _kWidth, _KHeight)];
-    middleTemp.userInteractionEnabled = YES;
-    [middleTemp addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageViewDidTap)]];
-    [_scrollView addSubview:leftTemp];
-    [_scrollView addSubview:middleTemp];
-    [_scrollView addSubview:rightTemp];
-    _leftImageView   = leftTemp;
-    _middleImageView = middleTemp;
-    _rightImageView  = rightTemp;
-    
+    if (!_leftImageView) {
+        SDBannerContentView *leftTemp     = [[SDBannerContentView alloc] initWithFrame:CGRectMake(0, 0, _kWidth, _KHeight)];
+        SDBannerContentView *middleTemp   = [[SDBannerContentView alloc] initWithFrame:CGRectMake(_kWidth, 0, _kWidth, _KHeight)];
+        SDBannerContentView *rightTemp    = [[SDBannerContentView alloc] initWithFrame:CGRectMake(_kWidth * 2, 0, _kWidth, _KHeight)];
+        middleTemp.userInteractionEnabled = YES;
+        [middleTemp addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageViewDidTap)]];
+        [_scrollView addSubview:leftTemp];
+        [_scrollView addSubview:middleTemp];
+        [_scrollView addSubview:rightTemp];
+        _leftImageView   = leftTemp;
+        _middleImageView = middleTemp;
+        _rightImageView  = rightTemp;
+    }
 }
 - (void)confirguePageControl{
-    UIPageControl *page                = [[UIPageControl alloc] initWithFrame:CGRectMake(0,_KHeight - 20,_kWidth, 7)];
-    page.pageIndicatorTintColor        = [UIColor whiteColor];
-    page.currentPageIndicatorTintColor = [UIColor redColor];
-    page.hidesForSinglePage            = YES;
-    page.numberOfPages                 = _numbersOfImages;
-    page.currentPage                   = 0;
-    
-    [self addSubview:page];
-    _pageControl = page;
+    if (!_pageControl) {
+        UIPageControl *page                = [[UIPageControl alloc] initWithFrame:CGRectMake(0, _KHeight - 20, _kWidth, 0)];
+        page.pageIndicatorTintColor        = [UIColor whiteColor];
+        page.currentPageIndicatorTintColor = [UIColor redColor];
+        page.hidesForSinglePage            = YES;
+        page.currentPage                   = 0;
+        page.hidesForSinglePage            = YES;
+        page.numberOfPages                 = _numbersOfImages;
+        [self addSubview:page];
+        _pageControl                    = page;
+    }
 }
 #pragma mark -  配置属性
 - (void)setNumbersOfImage:(NSInteger)numbersofimage{
-    [self confirgueImageView];
-    [self confirguePageControl];
     _autoScrollTimeInterval = 3.f;
     if (_numbersOfImages > 1) {
         [self setupTimer];
     }
     [self changeImageLeft:_numbersOfImages-1 middle:0 right:1];
 }
-- (void)setImageData:(NSArray<UIImage *>*)names{
-    if (_ImageSourcesType == 101) { //网络加载图片
-        for (NSInteger index =0; index < _numbersOfImages; index++) {
-            [_datasources addObject:_placeholderImage];
+- (void)setDatasource:(NSArray *)datasource{
+    if (datasource.count == 0) return;
+    _numbersOfImages = datasource.count;
+    _pageControl.numberOfPages = _numbersOfImages;
+    if (self.imagesources.count > 0){
+        [self.imagesources removeAllObjects];
+    };
+    if (self.urlStringSources.count > 0) {
+        [self.urlStringSources removeAllObjects];
+    }
+    if (_numbersOfImages > 0) {
+        _scrollView.contentSize = _numbersOfImages==1?CGSizeMake(0, 0): CGSizeMake(_kWidth * 3, 0);
+    }
+    if ([[datasource firstObject] isKindOfClass:[UIImage class]]) {
+        //local image
+        [self setImageData:datasource local:YES];
+    }else{ //remote image
+        [self setImageData:datasource local:NO];
+    }
+    [self setNumbersOfImage:_numbersOfImages];
+}
+- (void)setPlaceholderImage:(UIImage *)placeholderImage{
+    _placeholderImage = placeholderImage;
+    _leftImageView.image = _placeholderImage;
+}
+- (void)setImageData:(NSArray *)names local:(BOOL)local{
+    if (local) {
+        [self.imagesources addObjectsFromArray:names];
+        for (id object in names) {
+            if (![object isKindOfClass:[UIImage class]]) {
+                NSAssert([object isKindOfClass:[UIImage class]], @"Exception: bannerview datasource must be UIImage class");
+            }
+        }
+    }else{
+        [self.urlStringSources addObjectsFromArray:names];
+        for (NSInteger index =0; index < names.count; index++) {
+            [self.imagesources addObject:self.placeholderImage];
             [self loadImagesAtIndex:index];
         }
-    }
-    for (id object in names) {
-        if (![object isKindOfClass:[UIImage class]]) {
-            NSAssert([object isKindOfClass:[UIImage class]], @"Exception: bannerview datasource must be UIImage class");
-        }
-    }
-    if (_ImageSourcesType == 100) {
-        _datasources = [names copy];
     }
 }
 - (void)setPageIndicatorTintColor:(UIColor *)pageIndicatorTintColor {
@@ -139,18 +161,17 @@
     _pageControl.currentPageIndicatorTintColor = currentPageIndicatorTintColor;
 }
 - (void)setAutoBanner:(BOOL)autoBanner{
-    if (autoBanner == NO) {
-        _autoBanner = NO;
-        [self removeTimer];
-    }
+    if (autoBanner == YES) return;
+    _autoBanner = NO;
+    [self removeTimer];
 }
 - (void)changeImageLeft:(NSInteger)leftIndex middle:(NSInteger)middleIndex right:(NSInteger)rightIndex{
     if (_numbersOfImages == 1) {
         leftIndex = middleIndex = rightIndex = 0;
     }
-    _leftImageView.image   = _datasources[leftIndex];
-    _middleImageView.image = _datasources[middleIndex];
-    _rightImageView.image  = _datasources[rightIndex];
+    _leftImageView.image   = self.imagesources[leftIndex];
+    _middleImageView.image = self.imagesources[middleIndex];
+    _rightImageView.image  = self.imagesources[rightIndex];
     [_scrollView setContentOffset:CGPointMake(_kWidth, 0)];
 }
 - (void)imageViewDidTap{
@@ -188,17 +209,36 @@
             break;
     }
 }
+- (void)setScrollStyleAnimation:(SDScrollStyleAnimation)ScrollStyleAnimation{
+    _ScrollStyleAnimation = ScrollStyleAnimation;
+}
 #pragma mark UIScrollView delegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     [self changeImageWithOffset:scrollView.contentOffset.x];
-}
-- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
-    if (_autoBanner) {
-        [self setupTimer];
+    if (self.ScrollStyleAnimation) {
+        for (SDBannerContentView *subView in scrollView.subviews) {
+            if ([subView respondsToSelector:@selector(imageOffsetValue:)] ) {
+                if (self.ScrollStyleAnimation == SDScrollStyleAnimationNone ) {
+                    [subView imageOffsetValue:0];
+                }else if (self.ScrollStyleAnimation == SDScrollStyleAnimationScale) {
+                    [subView imageOffsetValue:1];
+                }else if(self.ScrollStyleAnimation == SDScrollStyleAnimationPagCurl) {
+                    [subView imageOffsetValue:0.7];
+                }
+            }
+        }
     }
 }
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
+    if (!_autoBanner)
+    [self performSelector:@selector(fireTimer) withObject:nil afterDelay:0];
+}
+- (void)fireTimer{
+    [_timer setFireDate:[NSDate date]];
+}
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-    [self removeTimer];
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
+    [_timer setFireDate:[NSDate distantFuture]];
 }
 - (void)changeImageWithOffset:(CGFloat)offsetX {
     if (offsetX >= _kWidth * 2) {
@@ -227,9 +267,10 @@
 }
 #pragma mark -定时器
 - (void)setupTimer {
-    if (_autoScrollTimeInterval < 0.5 || !_autoBanner)return;
-    _timer = [NSTimer timerWithTimeInterval:_autoScrollTimeInterval target:self selector:@selector(autoScroll) userInfo:nil repeats:YES];
-    [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSDefaultRunLoopMode];
+    if (_autoScrollTimeInterval < 0.5 || !_autoBanner || _numbersOfImages == 1)return;
+    _timer = [NSTimer scheduledTimerWithTimeInterval:_autoScrollTimeInterval target:self selector:@selector(autoScroll) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:_timer forMode:UITrackingRunLoopMode];
+    [_timer fire];
 }
 - (void)removeTimer{
     if (!_timer)return;
@@ -252,13 +293,16 @@
     NSURL *url = [NSURL URLWithString:urlString];
     NSData *data = [SDHelper getBannerCacheDataWithIdentifier:urlString];
     if (data) {
-        [self.datasources setObject:[UIImage imageWithData:data] atIndexedSubscript:index];
+        [self.imagesources setObject:[UIImage imageWithData:data] atIndexedSubscript:index];
     }else{
         [NSURLConnection  sendAsynchronousRequest:[NSURLRequest requestWithURL:url] queue:[NSOperationQueue new] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
             if (!connectionError) {
                 UIImage *image = [UIImage imageWithData:data];
-                if (!image) return ;
-                [self.datasources setObject:image atIndexedSubscript:index];
+                if (!image) {
+                    NSLog(@"无法获取图片,index = %lu",index);
+                    return ;
+                }
+                [self.imagesources setObject:image atIndexedSubscript:index];
                 dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
                     if([SDHelper saveBannerCache:data WithIdentifier:url.absoluteString]){
                     };
@@ -266,5 +310,9 @@
             }
         }];
     }
+}
+#pragma mark -Public
+- (void)clearImageDataCache{
+    [SDHelper clearBannerCache];
 }
 @end

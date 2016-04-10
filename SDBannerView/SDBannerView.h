@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
 typedef NS_ENUM(NSInteger, PageControlPosition){
     PageControlPositionUpleft = 1,
     PageControlPositionUpCenter,
@@ -15,29 +18,15 @@ typedef NS_ENUM(NSInteger, PageControlPosition){
     PageControlPositionDownCenter,
     PageControlPositionDownRight
 };
+typedef NS_ENUM(NSInteger, SDScrollStyleAnimation) {
+    SDScrollStyleAnimationNone,
+    SDScrollStyleAnimationScale,
+    SDScrollStyleAnimationPagCurl
+};
+
 @interface SDBannerView : UIView
 
-/**
- *  通过本地图片资源加载轮播图
- *
- *  @param frame <#frame description#>
- *  @param names <#names description#>
- *
- *  @return <#return value description#>
- */
-- (instancetype)initWithFrame:(CGRect)frame imageNames:(NSArray<UIImage *> *)names;
-
-/**
- *  获取网络图片并进行显示
- *
- *  @param frame     轮播图范围
- *  @param imageUrls 网络图片链接数组
- *
- *  @return <#return value description#>
- */
-- (instancetype)initWithFrame:(CGRect)frame urls:(NSArray<NSString *> *)imageUrls;
-
-
+@property (nonatomic, strong) NSArray *datasource;
 /**
  *  占位图片
  */
@@ -57,6 +46,10 @@ typedef NS_ENUM(NSInteger, PageControlPosition){
  *  PageControl的位置
  */
 @property (nonatomic, assign) PageControlPosition pageType;
+
+
+@property (nonatomic, assign) SDScrollStyleAnimation ScrollStyleAnimation;
+
 /**
  *  PageContril默认指示颜色
  */
@@ -71,6 +64,11 @@ typedef NS_ENUM(NSInteger, PageControlPosition){
  */
 @property (nonatomic, copy) void(^currentIndexDidTap)(NSInteger index);
 
+/**
+ *  Delete image data cache(删除图片数据缓存)
+ */
+- (void)clearImageDataCache;
 
 @end
 
+NS_ASSUME_NONNULL_END
