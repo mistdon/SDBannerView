@@ -54,7 +54,7 @@
 }
 #pragma mark - Init with subviews
 - (void)configureDefaultValues{
-    UIImage *image        = [[UIImage alloc] init]
+    UIImage *image        = [[UIImage alloc] init];
     _placeholderImage     = image;
     _autoBanner           = YES;
     _ScrollStyleAnimation = SDScrollStyleAnimationNone;
