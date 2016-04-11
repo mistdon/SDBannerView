@@ -1,6 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "SDBannerView"
-  s.version      = "0.0.2"
+  s.version      = "0.0.4"
+  s.framework    = "UIKit"
   s.summary      = "The package of banner view, support image cache"
   s.homepage     = "http://www.jianshu.com/users/09dd259f9e1c"
   s.license      = "MIT"

@@ -54,8 +54,8 @@
 }
 #pragma mark - Init with subviews
 - (void)configureDefaultValues{
-    NSString *path= [[NSBundle mainBundle].resourcePath stringByAppendingPathComponent:@"SDBannerView.bundle/SDBannerViewPlacholder.jpg"];
-    _placeholderImage     = [UIImage imageWithContentsOfFile:path];
+    UIImage *image        = [[UIImage alloc] init]
+    _placeholderImage     = image;
     _autoBanner           = YES;
     _ScrollStyleAnimation = SDScrollStyleAnimationNone;
     _numbersOfImages      = 1;
@@ -298,10 +298,7 @@
         [NSURLConnection  sendAsynchronousRequest:[NSURLRequest requestWithURL:url] queue:[NSOperationQueue new] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
             if (!connectionError) {
                 UIImage *image = [UIImage imageWithData:data];
-                if (!image) {
-                    NSLog(@"无法获取图片,index = %lu",index);
-                    return ;
-                }
+                if (!image) return;
                 [self.imagesources setObject:image atIndexedSubscript:index];
                 dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
                     if([SDHelper saveBannerCache:data WithIdentifier:url.absoluteString]){
