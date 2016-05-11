@@ -13,18 +13,23 @@
 
 @end
 
-@implementation ViewController
+@implementation ViewController{
+//    SDBannerView *banner;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+     [SDHelper clearBannerCache];
     NSLog(@"path = %@",NSHomeDirectory());
     
     [self localImageLoaded];
-    [self remoteImageLoaded];
+//    [self remoteImageLoaded];
     
 
+}
+- (IBAction)clearCache:(UIBarButtonItem *)sender {
+    [SDHelper clearBannerCache];
 }
 /**
  *  本地加载图片
@@ -34,14 +39,16 @@
     for (int i = 1; i < 8; i++) {
         [array addObject:[UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg",i]]];
     };
-    SDBannerView *banner = [[SDBannerView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height-250, self.view.bounds.size.width, 250) imageNames:array];
-    [banner setPageType:PageControlPositionDownRight];
-    [banner setCurrentPageIndicatorTintColor:[UIColor blackColor]];
-    [banner setCurrentIndexDidTap:^(NSInteger index) {
+//    SDBannerView *localBanner = [[SDBannerView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height-250, self.view.bounds.size.width, 250) imageNames:array];
+    SDBannerView *localBanner = [[SDBannerView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height-250-44, self.view.bounds.size.width, 250)];
+    localBanner.dataSource = array;
+    [localBanner setPageType:PageControlPositionDownRight];
+    [localBanner setCurrentPageIndicatorTintColor:[UIColor blackColor]];
+    [localBanner setCurrentIndexDidTap:^(NSInteger index) {
         NSLog(@"index = %ld",index);
     }];
-    [banner setAutoBanner:NO];
-    [self.view addSubview:banner];
+//    [localBanner setAutoBanner:NO];
+    [self.view addSubview:localBanner];
 }
 /**
  *  网络获取图片
@@ -51,8 +58,9 @@
     NSString *urlStr2 = @"http://img161.poco.cn/mypoco/myphoto/20100424/19/53310080201004241856521800459127582_005.jpg";
     NSString *urlStr3 = @"http://img4.duitang.com/uploads/item/201408/30/20140830185433_FnJLA.jpeg";
     NSString *urlStr4 = @"http://tupian.enterdesk.com/2013/xll/012/26/3/1.jpg";
-       
-    SDBannerView *banner = [[SDBannerView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 250) urls:@[urlStr1,urlStr2,urlStr3,urlStr4]];
+    NSArray *arr = @[urlStr1,urlStr2,urlStr3,urlStr4];
+    SDBannerView *banner = [[SDBannerView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 250)];
+    banner.dataSource = banner;
     [banner setPageType:PageControlPositionDownCenter];
     [banner setCurrentIndexDidTap:^(NSInteger index) {
         NSLog(@"index = %ld",index);

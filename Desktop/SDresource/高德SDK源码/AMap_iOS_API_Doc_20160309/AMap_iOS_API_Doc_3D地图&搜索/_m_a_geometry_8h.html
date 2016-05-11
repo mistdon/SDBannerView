@@ -1,0 +1,1094 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>高德地图iOS SDK 2D地图&amp;搜索服务参考手册 V3.2.0: MAGeometry.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">高德地图iOS SDK 2D地图&amp;搜索服务参考手册 V3.2.0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_m_a_geometry_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">MAGeometry.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>用于定义数据类型。  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#import &lt;CoreGraphics/CoreGraphics.h&gt;</code><br/>
+<code>#import &lt;CoreLocation/CoreLocation.h&gt;</code><br/>
+<code>#import &lt;UIKit/UIKit.h&gt;</code><br/>
+</div>
+<p><a href="_m_a_geometry_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_a_coordinate_bounds.html">MACoordinateBounds</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">经纬度范围。  <a href="struct_m_a_coordinate_bounds.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_a_coordinate_span.html">MACoordinateSpan</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">表示一个经纬度范围。  <a href="struct_m_a_coordinate_span.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_a_coordinate_region.html">MACoordinateRegion</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">经纬度区域。  <a href="struct_m_a_coordinate_region.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_a_map_point.html">MAMapPoint</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">地图投影点，用平面直角坐标表示。  <a href="struct_m_a_map_point.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_a_map_size.html">MAMapSize</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">地图投影矩形大小。  <a href="struct_m_a_map_size.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_a_map_rect.html">MAMapRect</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">地图投影矩形区域。  <a href="struct_m_a_map_rect.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">category &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="category_n_s_value_07_n_s_value_m_a_geometry_extensions_08.html">NSValue(NSValueMAGeometryExtensions)</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a184d8a7119d3994922f2959976b699b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a184d8a7119d3994922f2959976b699b5"></a>
+typedef double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#a184d8a7119d3994922f2959976b699b5">MAZoomScale</a></td></tr>
+<tr class="memdesc:a184d8a7119d3994922f2959976b699b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">缩放比例，比例关系：MAZoomScale = Screen Point / MAMapPoint，当MAZoomScale = 1时， 1 screen point = 1 MAMapPoint， 当MAZoomScale = 0.5时， 1 screen point = 2 MAMapPoints。 <br/></td></tr>
+<tr class="separator:a184d8a7119d3994922f2959976b699b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4734ea4aa90b5b5ea755b0a5ae16ff0b"><td class="memItemLeft" align="right" valign="top">typedef void(^&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#a4734ea4aa90b5b5ea755b0a5ae16ff0b">AMapTileProjectionBlock</a> )(int offsetX, int offsetY, int minX, int maxX, int minY, int maxY)</td></tr>
+<tr class="memdesc:a4734ea4aa90b5b5ea755b0a5ae16ff0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取墨卡托投影切块回调block。  <a href="#a4734ea4aa90b5b5ea755b0a5ae16ff0b">更多...</a><br/></td></tr>
+<tr class="separator:a4734ea4aa90b5b5ea755b0a5ae16ff0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ac1212d2426db71e783d7e171c96eea22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_a_coordinate_region.html">MACoordinateRegion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#ac1212d2426db71e783d7e171c96eea22">MACoordinateRegionMakeWithDistance</a> (CLLocationCoordinate2D centerCoordinate, CLLocationDistance latitudinalMeters, CLLocationDistance longitudinalMeters)</td></tr>
+<tr class="memdesc:ac1212d2426db71e783d7e171c96eea22"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据给定的参数构造一个新的 <a class="el" href="struct_m_a_coordinate_region.html" title="经纬度区域。 ">MACoordinateRegion</a> 对象。  <a href="#ac1212d2426db71e783d7e171c96eea22">更多...</a><br/></td></tr>
+<tr class="separator:ac1212d2426db71e783d7e171c96eea22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b47238aa6ca5ff00dde5741e9c77891"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_a_map_point.html">MAMapPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#a1b47238aa6ca5ff00dde5741e9c77891">MAMapPointForCoordinate</a> (CLLocationCoordinate2D coordinate)</td></tr>
+<tr class="memdesc:a1b47238aa6ca5ff00dde5741e9c77891"><td class="mdescLeft">&#160;</td><td class="mdescRight">将经纬度坐标点转换成投影点。  <a href="#a1b47238aa6ca5ff00dde5741e9c77891">更多...</a><br/></td></tr>
+<tr class="separator:a1b47238aa6ca5ff00dde5741e9c77891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a849e7a4ab4b62647e497d6b93a1307cc"><td class="memItemLeft" align="right" valign="top">CLLocationCoordinate2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#a849e7a4ab4b62647e497d6b93a1307cc">MACoordinateForMapPoint</a> (<a class="el" href="struct_m_a_map_point.html">MAMapPoint</a> mapPoint)</td></tr>
+<tr class="memdesc:a849e7a4ab4b62647e497d6b93a1307cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">将投影点转换为地理坐标点。  <a href="#a849e7a4ab4b62647e497d6b93a1307cc">更多...</a><br/></td></tr>
+<tr class="separator:a849e7a4ab4b62647e497d6b93a1307cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4ff7fbdcc67acc04bafd60d6baf50c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_a_coordinate_region.html">MACoordinateRegion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#ad4ff7fbdcc67acc04bafd60d6baf50c4">MACoordinateRegionForMapRect</a> (<a class="el" href="struct_m_a_map_rect.html">MAMapRect</a> rect)</td></tr>
+<tr class="memdesc:ad4ff7fbdcc67acc04bafd60d6baf50c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">将投影矩形转换成经纬度区域。  <a href="#ad4ff7fbdcc67acc04bafd60d6baf50c4">更多...</a><br/></td></tr>
+<tr class="separator:ad4ff7fbdcc67acc04bafd60d6baf50c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb5dd92a9726e41d76de69cabf6a819"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#a7eb5dd92a9726e41d76de69cabf6a819">MAMapRectForCoordinateRegion</a> (<a class="el" href="struct_m_a_coordinate_region.html">MACoordinateRegion</a> region)</td></tr>
+<tr class="memdesc:a7eb5dd92a9726e41d76de69cabf6a819"><td class="mdescLeft">&#160;</td><td class="mdescRight">将经纬度区域转换成投影矩形。  <a href="#a7eb5dd92a9726e41d76de69cabf6a819">更多...</a><br/></td></tr>
+<tr class="separator:a7eb5dd92a9726e41d76de69cabf6a819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad520de29e9027d7962e86cf6b2de0dad"><td class="memItemLeft" align="right" valign="top">CLLocationDistance&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#ad520de29e9027d7962e86cf6b2de0dad">MAMetersPerMapPointAtLatitude</a> (CLLocationDegrees latitude)</td></tr>
+<tr class="memdesc:ad520de29e9027d7962e86cf6b2de0dad"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取单位投影的距离。  <a href="#ad520de29e9027d7962e86cf6b2de0dad">更多...</a><br/></td></tr>
+<tr class="separator:ad520de29e9027d7962e86cf6b2de0dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0586b7854eee2f4bd58df121dd8d1be4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#a0586b7854eee2f4bd58df121dd8d1be4">MAMapPointsPerMeterAtLatitude</a> (CLLocationDegrees latitude)</td></tr>
+<tr class="memdesc:a0586b7854eee2f4bd58df121dd8d1be4"><td class="mdescLeft">&#160;</td><td class="mdescRight">一米对应的投影距离。  <a href="#a0586b7854eee2f4bd58df121dd8d1be4">更多...</a><br/></td></tr>
+<tr class="separator:a0586b7854eee2f4bd58df121dd8d1be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef3f0a0c126c40f1ddd208c959845a58"><td class="memItemLeft" align="right" valign="top">CLLocationDistance&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#aef3f0a0c126c40f1ddd208c959845a58">MAMetersBetweenMapPoints</a> (<a class="el" href="struct_m_a_map_point.html">MAMapPoint</a> a, <a class="el" href="struct_m_a_map_point.html">MAMapPoint</a> b)</td></tr>
+<tr class="memdesc:aef3f0a0c126c40f1ddd208c959845a58"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取两个投影点之间的距离。  <a href="#aef3f0a0c126c40f1ddd208c959845a58">更多...</a><br/></td></tr>
+<tr class="separator:aef3f0a0c126c40f1ddd208c959845a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ceeee82492d1a9d04eb78a53c132596"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#a9ceeee82492d1a9d04eb78a53c132596">MAAreaBetweenCoordinates</a> (CLLocationCoordinate2D northEast, CLLocationCoordinate2D southWest)</td></tr>
+<tr class="memdesc:a9ceeee82492d1a9d04eb78a53c132596"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算两个地理坐标点组成的矩形面积，单位：平方米。  <a href="#a9ceeee82492d1a9d04eb78a53c132596">更多...</a><br/></td></tr>
+<tr class="separator:a9ceeee82492d1a9d04eb78a53c132596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dce9b3f1d2591bc843020d4e59bcd0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#a0dce9b3f1d2591bc843020d4e59bcd0b">MAMapRectInset</a> (<a class="el" href="struct_m_a_map_rect.html">MAMapRect</a> rect, double dx, double dy)</td></tr>
+<tr class="memdesc:a0dce9b3f1d2591bc843020d4e59bcd0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取 Inset 后的 MAMapRect。  <a href="#a0dce9b3f1d2591bc843020d4e59bcd0b">更多...</a><br/></td></tr>
+<tr class="separator:a0dce9b3f1d2591bc843020d4e59bcd0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79967501bad5d1954321687c030530b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#a79967501bad5d1954321687c030530b7">MAMapRectUnion</a> (<a class="el" href="struct_m_a_map_rect.html">MAMapRect</a> rect1, <a class="el" href="struct_m_a_map_rect.html">MAMapRect</a> rect2)</td></tr>
+<tr class="memdesc:a79967501bad5d1954321687c030530b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">合并两个投影矩形区域。  <a href="#a79967501bad5d1954321687c030530b7">更多...</a><br/></td></tr>
+<tr class="separator:a79967501bad5d1954321687c030530b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b1f1090ea3faed4d7165da88d90a1ad"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#a9b1f1090ea3faed4d7165da88d90a1ad">MAMapSizeContainsSize</a> (<a class="el" href="struct_m_a_map_size.html">MAMapSize</a> size1, <a class="el" href="struct_m_a_map_size.html">MAMapSize</a> size2)</td></tr>
+<tr class="memdesc:a9b1f1090ea3faed4d7165da88d90a1ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断 size1 是否包含 size2。  <a href="#a9b1f1090ea3faed4d7165da88d90a1ad">更多...</a><br/></td></tr>
+<tr class="separator:a9b1f1090ea3faed4d7165da88d90a1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae289891d0176984336bf564979d71c37"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#ae289891d0176984336bf564979d71c37">MAMapRectContainsPoint</a> (<a class="el" href="struct_m_a_map_rect.html">MAMapRect</a> rect, <a class="el" href="struct_m_a_map_point.html">MAMapPoint</a> point)</td></tr>
+<tr class="memdesc:ae289891d0176984336bf564979d71c37"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断投影点是否在投影矩形区域内。  <a href="#ae289891d0176984336bf564979d71c37">更多...</a><br/></td></tr>
+<tr class="separator:ae289891d0176984336bf564979d71c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac79d5dc8e0d8b8b4f15f7a1a9075cfac"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#ac79d5dc8e0d8b8b4f15f7a1a9075cfac">MAMapRectIntersectsRect</a> (<a class="el" href="struct_m_a_map_rect.html">MAMapRect</a> rect1, <a class="el" href="struct_m_a_map_rect.html">MAMapRect</a> rect2)</td></tr>
+<tr class="memdesc:ac79d5dc8e0d8b8b4f15f7a1a9075cfac"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断两个投影矩形区域是否相交。  <a href="#ac79d5dc8e0d8b8b4f15f7a1a9075cfac">更多...</a><br/></td></tr>
+<tr class="separator:ac79d5dc8e0d8b8b4f15f7a1a9075cfac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad246c8a7efbdbe43a40d481e1843019b"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#ad246c8a7efbdbe43a40d481e1843019b">MAMapRectContainsRect</a> (<a class="el" href="struct_m_a_map_rect.html">MAMapRect</a> rect1, <a class="el" href="struct_m_a_map_rect.html">MAMapRect</a> rect2)</td></tr>
+<tr class="memdesc:ad246c8a7efbdbe43a40d481e1843019b"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断一个投影矩形区域是否包含另一个投影矩形区域。  <a href="#ad246c8a7efbdbe43a40d481e1843019b">更多...</a><br/></td></tr>
+<tr class="separator:ad246c8a7efbdbe43a40d481e1843019b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a714472ac9b3b14f2fc3bdd99b639df25"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#a714472ac9b3b14f2fc3bdd99b639df25">MACircleContainsPoint</a> (<a class="el" href="struct_m_a_map_point.html">MAMapPoint</a> point, <a class="el" href="struct_m_a_map_point.html">MAMapPoint</a> center, double radius)</td></tr>
+<tr class="memdesc:a714472ac9b3b14f2fc3bdd99b639df25"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断投影点是否在投影圆内。  <a href="#a714472ac9b3b14f2fc3bdd99b639df25">更多...</a><br/></td></tr>
+<tr class="separator:a714472ac9b3b14f2fc3bdd99b639df25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a542de0fe3fc6f3e74c338fbbeb092291"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#a542de0fe3fc6f3e74c338fbbeb092291">MACircleContainsCoordinate</a> (CLLocationCoordinate2D point, CLLocationCoordinate2D center, double radius)</td></tr>
+<tr class="memdesc:a542de0fe3fc6f3e74c338fbbeb092291"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断地理坐标点点是否在圆内。  <a href="#a542de0fe3fc6f3e74c338fbbeb092291">更多...</a><br/></td></tr>
+<tr class="separator:a542de0fe3fc6f3e74c338fbbeb092291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9314ec53a667527be962c1a2c3ae0372"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#a9314ec53a667527be962c1a2c3ae0372">MAPolygonContainsPoint</a> (<a class="el" href="struct_m_a_map_point.html">MAMapPoint</a> point, <a class="el" href="struct_m_a_map_point.html">MAMapPoint</a> *polygon, NSUInteger count)</td></tr>
+<tr class="memdesc:a9314ec53a667527be962c1a2c3ae0372"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断投影点是否在多边形内。  <a href="#a9314ec53a667527be962c1a2c3ae0372">更多...</a><br/></td></tr>
+<tr class="separator:a9314ec53a667527be962c1a2c3ae0372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd9ba74eb431e3e74d05ebe9ede8fdd"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#aebd9ba74eb431e3e74d05ebe9ede8fdd">MAPolygonContainsCoordinate</a> (CLLocationCoordinate2D point, CLLocationCoordinate2D *polygon, NSUInteger count)</td></tr>
+<tr class="memdesc:aebd9ba74eb431e3e74d05ebe9ede8fdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断地理坐标点是否在多边形内。  <a href="#aebd9ba74eb431e3e74d05ebe9ede8fdd">更多...</a><br/></td></tr>
+<tr class="separator:aebd9ba74eb431e3e74d05ebe9ede8fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77780c1088cf3235893ed3f631292205"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_a_map_point.html">MAMapPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#a77780c1088cf3235893ed3f631292205">MAGetNearestMapPointFromLine</a> (<a class="el" href="struct_m_a_map_point.html">MAMapPoint</a> lineStart, <a class="el" href="struct_m_a_map_point.html">MAMapPoint</a> lineEnd, <a class="el" href="struct_m_a_map_point.html">MAMapPoint</a> point)</td></tr>
+<tr class="memdesc:a77780c1088cf3235893ed3f631292205"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取在lineStart和lineEnd组成的线段上距离point距离最近的点。  <a href="#a77780c1088cf3235893ed3f631292205">更多...</a><br/></td></tr>
+<tr class="separator:a77780c1088cf3235893ed3f631292205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8acfbb4c22b3a335e65d346d4c4b42ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#a8acfbb4c22b3a335e65d346d4c4b42ac">MAGetTileProjectionFromBounds</a> (<a class="el" href="struct_m_a_coordinate_bounds.html">MACoordinateBounds</a> bounds, int levelOfDetails, <a class="el" href="_m_a_geometry_8h.html#a4734ea4aa90b5b5ea755b0a5ae16ff0b">AMapTileProjectionBlock</a> tileProjection)</td></tr>
+<tr class="memdesc:a8acfbb4c22b3a335e65d346d4c4b42ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据所给经纬度区域获取墨卡托投影切块信息.  <a href="#a8acfbb4c22b3a335e65d346d4c4b42ac">更多...</a><br/></td></tr>
+<tr class="separator:a8acfbb4c22b3a335e65d346d4c4b42ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a454ede0479be3d7fd935a3c025d684"><td class="memItemLeft" align="right" valign="top">typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#a1a454ede0479be3d7fd935a3c025d684">NS_ENUM</a> (NSUInteger, MACoordinateType)</td></tr>
+<tr class="memdesc:a1a454ede0479be3d7fd935a3c025d684"><td class="mdescLeft">&#160;</td><td class="mdescRight">坐标类型枚举。  <a href="#a1a454ede0479be3d7fd935a3c025d684">更多...</a><br/></td></tr>
+<tr class="separator:a1a454ede0479be3d7fd935a3c025d684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b19872ea8494d4b7107e2eb98a6090d"><td class="memItemLeft" align="right" valign="top">CLLocationCoordinate2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#a0b19872ea8494d4b7107e2eb98a6090d">MACoordinateConvert</a> (CLLocationCoordinate2D coordinate, MACoordinateType type)</td></tr>
+<tr class="memdesc:a0b19872ea8494d4b7107e2eb98a6090d"><td class="mdescLeft">&#160;</td><td class="mdescRight">转换目标经纬度为高德坐标系  <a href="#a0b19872ea8494d4b7107e2eb98a6090d">更多...</a><br/></td></tr>
+<tr class="separator:a0b19872ea8494d4b7107e2eb98a6090d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a18e3bcb17b4bd98b001cef3977fd3ca5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_m_a_map_size.html">MAMapSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_geometry_8h.html#a18e3bcb17b4bd98b001cef3977fd3ca5">MAMapSizeWorld</a></td></tr>
+<tr class="separator:a18e3bcb17b4bd98b001cef3977fd3ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a517236bb640ddd1ff9fd1174d689e029"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a517236bb640ddd1ff9fd1174d689e029"></a>
+const <a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MAMapRectWorld</b></td></tr>
+<tr class="separator:a517236bb640ddd1ff9fd1174d689e029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafac03cb2ebec909c9a5e38e4a021816"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aafac03cb2ebec909c9a5e38e4a021816"></a>
+const <a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MAMapRectNull</b></td></tr>
+<tr class="separator:aafac03cb2ebec909c9a5e38e4a021816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e4030969f071147123d795397c71880"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e4030969f071147123d795397c71880"></a>
+const <a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MAMapRectZero</b></td></tr>
+<tr class="separator:a9e4030969f071147123d795397c71880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>用于定义数据类型。 </p>
+</div><h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="a4734ea4aa90b5b5ea755b0a5ae16ff0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(^ AMapTileProjectionBlock)(int offsetX, int offsetY, int minX, int maxX, int minY, int maxY)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取墨卡托投影切块回调block。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offsetX</td><td>左上点距离所属tile的位移X，单位像素。 </td></tr>
+    <tr><td class="paramname">offsetY</td><td>左上点距离所属tile的位移Y，单位像素。 </td></tr>
+    <tr><td class="paramname">minX</td><td>覆盖tile的最小x。 </td></tr>
+    <tr><td class="paramname">maxX</td><td>覆盖tile的最大x。 </td></tr>
+    <tr><td class="paramname">minY</td><td>覆盖tile的最小y。 </td></tr>
+    <tr><td class="paramname">maxY</td><td>覆盖tile的最大y。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a9ceeee82492d1a9d04eb78a53c132596"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double MAAreaBetweenCoordinates </td>
+          <td>(</td>
+          <td class="paramtype">CLLocationCoordinate2D&#160;</td>
+          <td class="paramname"><em>northEast</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CLLocationCoordinate2D&#160;</td>
+          <td class="paramname"><em>southWest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>计算两个地理坐标点组成的矩形面积，单位：平方米。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">northEast</td><td>矩形东北角点经纬度坐标。 </td></tr>
+    <tr><td class="paramname">southWest</td><td>矩形西南角经纬度坐标。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>矩形面积。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a542de0fe3fc6f3e74c338fbbeb092291"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL MACircleContainsCoordinate </td>
+          <td>(</td>
+          <td class="paramtype">CLLocationCoordinate2D&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CLLocationCoordinate2D&#160;</td>
+          <td class="paramname"><em>center</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>radius</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>判断地理坐标点点是否在圆内。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>地理坐标点的坐标。 </td></tr>
+    <tr><td class="paramname">center</td><td>圆心的坐标。 </td></tr>
+    <tr><td class="paramname">radius</td><td>圆的半径。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>在圆内返回 true，否则返回 false。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a714472ac9b3b14f2fc3bdd99b639df25"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL MACircleContainsPoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_m_a_map_point.html">MAMapPoint</a>&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_m_a_map_point.html">MAMapPoint</a>&#160;</td>
+          <td class="paramname"><em>center</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>radius</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>判断投影点是否在投影圆内。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>投影点。 </td></tr>
+    <tr><td class="paramname">center</td><td>投影圆的中心点。 </td></tr>
+    <tr><td class="paramname">radius</td><td>投影圆的半径。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>在投影圆内返回 true，否则返回 false。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0b19872ea8494d4b7107e2eb98a6090d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CLLocationCoordinate2D MACoordinateConvert </td>
+          <td>(</td>
+          <td class="paramtype">CLLocationCoordinate2D&#160;</td>
+          <td class="paramname"><em>coordinate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MACoordinateType&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>转换目标经纬度为高德坐标系 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coordinate</td><td>待转换的经纬度。 </td></tr>
+    <tr><td class="paramname">type</td><td>坐标系类型。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>高德坐标系经纬度。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a849e7a4ab4b62647e497d6b93a1307cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CLLocationCoordinate2D MACoordinateForMapPoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_m_a_map_point.html">MAMapPoint</a>&#160;</td>
+          <td class="paramname"><em>mapPoint</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将投影点转换为地理坐标点。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mapPoint</td><td>投影点。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>转换成功返回对应的 CLLocationCoordinate2D 对象，失败返回 nil。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad4ff7fbdcc67acc04bafd60d6baf50c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_m_a_coordinate_region.html">MACoordinateRegion</a> MACoordinateRegionForMapRect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>&#160;</td>
+          <td class="paramname"><em>rect</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将投影矩形转换成经纬度区域。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>投影矩形区域。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>转换成功返回对应的 <a class="el" href="struct_m_a_coordinate_region.html" title="经纬度区域。 ">MACoordinateRegion</a> 对象，失败返回 nil。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac1212d2426db71e783d7e171c96eea22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_m_a_coordinate_region.html">MACoordinateRegion</a> MACoordinateRegionMakeWithDistance </td>
+          <td>(</td>
+          <td class="paramtype">CLLocationCoordinate2D&#160;</td>
+          <td class="paramname"><em>centerCoordinate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CLLocationDistance&#160;</td>
+          <td class="paramname"><em>latitudinalMeters</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CLLocationDistance&#160;</td>
+          <td class="paramname"><em>longitudinalMeters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>根据给定的参数构造一个新的 <a class="el" href="struct_m_a_coordinate_region.html" title="经纬度区域。 ">MACoordinateRegion</a> 对象。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">centerCoordinate</td><td>中心点的经纬度坐标。 </td></tr>
+    <tr><td class="paramname">latitudinalMeters</td><td>垂直跨度(单位：米) </td></tr>
+    <tr><td class="paramname">longitudinalMeters</td><td>水平跨度(单位：米)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>创建成功则返回 <a class="el" href="struct_m_a_coordinate_region.html" title="经纬度区域。 ">MACoordinateRegion</a> 对象，否则返回 nil。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a77780c1088cf3235893ed3f631292205"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_m_a_map_point.html">MAMapPoint</a> MAGetNearestMapPointFromLine </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_m_a_map_point.html">MAMapPoint</a>&#160;</td>
+          <td class="paramname"><em>lineStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_m_a_map_point.html">MAMapPoint</a>&#160;</td>
+          <td class="paramname"><em>lineEnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_m_a_map_point.html">MAMapPoint</a>&#160;</td>
+          <td class="paramname"><em>point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取在lineStart和lineEnd组成的线段上距离point距离最近的点。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lineStart</td><td>线段起点。 </td></tr>
+    <tr><td class="paramname">lineEnd</td><td>线段终点。 </td></tr>
+    <tr><td class="paramname">point</td><td>测试点。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>距离point最近的点坐标。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8acfbb4c22b3a335e65d346d4c4b42ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MAGetTileProjectionFromBounds </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_m_a_coordinate_bounds.html">MACoordinateBounds</a>&#160;</td>
+          <td class="paramname"><em>bounds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>levelOfDetails</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_m_a_geometry_8h.html#a4734ea4aa90b5b5ea755b0a5ae16ff0b">AMapTileProjectionBlock</a>&#160;</td>
+          <td class="paramname"><em>tileProjection</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>根据所给经纬度区域获取墨卡托投影切块信息. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bounds</td><td>经纬度区域。 </td></tr>
+    <tr><td class="paramname">levelOfDetails</td><td>对应缩放级别，取值0-20。 </td></tr>
+    <tr><td class="paramname">tileProjection</td><td>返回的切块信息block。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1b47238aa6ca5ff00dde5741e9c77891"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_m_a_map_point.html">MAMapPoint</a> MAMapPointForCoordinate </td>
+          <td>(</td>
+          <td class="paramtype">CLLocationCoordinate2D&#160;</td>
+          <td class="paramname"><em>coordinate</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将经纬度坐标点转换成投影点。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coordinate</td><td>地理坐标点。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>转换成功返回对应的 <a class="el" href="struct_m_a_map_point.html" title="地图投影点，用平面直角坐标表示。 ">MAMapPoint</a> 对象，失败返回 nil。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0586b7854eee2f4bd58df121dd8d1be4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double MAMapPointsPerMeterAtLatitude </td>
+          <td>(</td>
+          <td class="paramtype">CLLocationDegrees&#160;</td>
+          <td class="paramname"><em>latitude</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>一米对应的投影距离。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">latitude</td><td>经度。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>投影距离。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae289891d0176984336bf564979d71c37"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL MAMapRectContainsPoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_m_a_map_point.html">MAMapPoint</a>&#160;</td>
+          <td class="paramname"><em>point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>判断投影点是否在投影矩形区域内。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>投影矩形区域。 </td></tr>
+    <tr><td class="paramname">point</td><td>投影点。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>在投影矩形区域内返回 true，否则返回 false。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad246c8a7efbdbe43a40d481e1843019b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL MAMapRectContainsRect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>&#160;</td>
+          <td class="paramname"><em>rect1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>&#160;</td>
+          <td class="paramname"><em>rect2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>判断一个投影矩形区域是否包含另一个投影矩形区域。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect1</td><td>第一个投影矩形区域。 </td></tr>
+    <tr><td class="paramname">rect2</td><td>第二个投影矩形区域。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>包含返回 true，否则返回 false。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7eb5dd92a9726e41d76de69cabf6a819"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_m_a_map_rect.html">MAMapRect</a> MAMapRectForCoordinateRegion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_m_a_coordinate_region.html">MACoordinateRegion</a>&#160;</td>
+          <td class="paramname"><em>region</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将经纬度区域转换成投影矩形。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">region</td><td>经纬度矩形。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>转换成功返回对应的 <a class="el" href="struct_m_a_map_rect.html" title="地图投影矩形区域。 ">MAMapRect</a> 对象，失败返回 nil。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0dce9b3f1d2591bc843020d4e59bcd0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_m_a_map_rect.html">MAMapRect</a> MAMapRectInset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取 Inset 后的 MAMapRect。 </p>
+<dl class="section return"><dt>返回</dt><dd>Inset 后的 MAMapRect。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac79d5dc8e0d8b8b4f15f7a1a9075cfac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL MAMapRectIntersectsRect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>&#160;</td>
+          <td class="paramname"><em>rect1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>&#160;</td>
+          <td class="paramname"><em>rect2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>判断两个投影矩形区域是否相交。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect1</td><td>第一个投影矩形区域。 </td></tr>
+    <tr><td class="paramname">rect2</td><td>第二个投影矩形区域。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>相交返回 true，不相交返回 false。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a79967501bad5d1954321687c030530b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_m_a_map_rect.html">MAMapRect</a> MAMapRectUnion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>&#160;</td>
+          <td class="paramname"><em>rect1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>&#160;</td>
+          <td class="paramname"><em>rect2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>合并两个投影矩形区域。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect1</td><td>第一个投影矩形区域。 </td></tr>
+    <tr><td class="paramname">rect2</td><td>第二个投影矩形区域。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>合并后的投影区域。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9b1f1090ea3faed4d7165da88d90a1ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL MAMapSizeContainsSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_m_a_map_size.html">MAMapSize</a>&#160;</td>
+          <td class="paramname"><em>size1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_m_a_map_size.html">MAMapSize</a>&#160;</td>
+          <td class="paramname"><em>size2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>判断 size1 是否包含 size2。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size1</td><td>第一个投影矩形大小对象。 </td></tr>
+    <tr><td class="paramname">size2</td><td>第二个投影矩形大小对象。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>size1 包含 size2 返回 true，否则返回 false。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aef3f0a0c126c40f1ddd208c959845a58"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CLLocationDistance MAMetersBetweenMapPoints </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_m_a_map_point.html">MAMapPoint</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_m_a_map_point.html">MAMapPoint</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取两个投影点之间的距离。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>第一个投影点。 </td></tr>
+    <tr><td class="paramname">b</td><td>第二个投影点。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>距离。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad520de29e9027d7962e86cf6b2de0dad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CLLocationDistance MAMetersPerMapPointAtLatitude </td>
+          <td>(</td>
+          <td class="paramtype">CLLocationDegrees&#160;</td>
+          <td class="paramname"><em>latitude</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取单位投影的距离。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">latitude</td><td>经度。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>单位投影距离。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aebd9ba74eb431e3e74d05ebe9ede8fdd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL MAPolygonContainsCoordinate </td>
+          <td>(</td>
+          <td class="paramtype">CLLocationCoordinate2D&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CLLocationCoordinate2D *&#160;</td>
+          <td class="paramname"><em>polygon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NSUInteger&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>判断地理坐标点是否在多边形内。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>地理坐标点的坐标。 </td></tr>
+    <tr><td class="paramname">polygon</td><td>经纬度坐标数组。 </td></tr>
+    <tr><td class="paramname">count</td><td>坐标点的个数。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>在多边形内返回 true，否则返回 false。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9314ec53a667527be962c1a2c3ae0372"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL MAPolygonContainsPoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_m_a_map_point.html">MAMapPoint</a>&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_m_a_map_point.html">MAMapPoint</a> *&#160;</td>
+          <td class="paramname"><em>polygon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NSUInteger&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>判断投影点是否在多边形内。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>投影点。 </td></tr>
+    <tr><td class="paramname">polygon</td><td>投影点组成的数组。 </td></tr>
+    <tr><td class="paramname">count</td><td>投影点的个数。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>在投影多边形内返回 true，否则返回 false。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1a454ede0479be3d7fd935a3c025d684"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef NS_ENUM </td>
+          <td>(</td>
+          <td class="paramtype">NSUInteger&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MACoordinateType&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>坐标类型枚举。 </p>
+<p>Baidu。</p>
+<p>MapBar。</p>
+<p>MapABC。</p>
+<p>SoSoMap。</p>
+<p>AliYun。</p>
+<p>Google。</p>
+<p>GPS。</p>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="a18e3bcb17b4bd98b001cef3977fd3ca5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_m_a_map_size.html">MAMapSize</a> MAMapSizeWorld</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>const常量定义 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+﻿&#169; 2016 高德软件有限公司 版权所有，保留所有权利。 

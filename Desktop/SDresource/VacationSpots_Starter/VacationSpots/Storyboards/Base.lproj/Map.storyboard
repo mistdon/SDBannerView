@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="D0O-0T-CPl">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="JZF-aa-q2I">
+            <objects>
+                <viewController id="DiH-Za-hfG" customClass="MapViewController" customModule="VacationSpots" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cgc-2J-RP8"/>
+                        <viewControllerLayoutGuide type="bottom" id="IRh-Kd-R4t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7f1-MH-wzd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gMn-zd-0qU">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gMn-zd-0qU" firstAttribute="top" secondItem="cgc-2J-RP8" secondAttribute="bottom" id="Gkf-0j-TGs"/>
+                            <constraint firstItem="gMn-zd-0qU" firstAttribute="leading" secondItem="7f1-MH-wzd" secondAttribute="leading" id="NTi-ov-0nl"/>
+                            <constraint firstItem="IRh-Kd-R4t" firstAttribute="top" secondItem="gMn-zd-0qU" secondAttribute="bottom" id="TCz-tu-cFg"/>
+                            <constraint firstAttribute="trailing" secondItem="gMn-zd-0qU" secondAttribute="trailing" id="hGD-wx-eii"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DRN-bd-oZm">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="ZI8-Y8-R20">
+                            <connections>
+                                <action selector="doneButtonTapped:" destination="DiH-Za-hfG" id="4Lf-yb-Eo9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="gMn-zd-0qU" id="gzl-Pr-B1u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hab-yE-QHJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="452" y="-80"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ucs-al-b82">
+            <objects>
+                <navigationController id="D0O-0T-CPl" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Gbp-Zo-9X0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.30980392159999998" green="0.71764705880000002" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DiH-Za-hfG" kind="relationship" relationship="rootViewController" id="LYZ-p8-3Qd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FvT-5V-0pD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="-80"/>
+        </scene>
+    </scenes>
+</document>

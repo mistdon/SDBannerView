@@ -1,0 +1,650 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>高德地图iOS SDK 3D地图&amp;搜索服务参考手册 V3.3.1: MAMapView(OverlaysAPI)分类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">高德地图iOS SDK 3D地图&amp;搜索服务参考手册 V3.3.1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('category_m_a_map_view_07_overlays_a_p_i_08.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Instance Methods</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="category_m_a_map_view_07_overlays_a_p_i_08-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">MAMapView(OverlaysAPI)分类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>地图视图类（Overlay相关的操作）。  
+ <a href="category_m_a_map_view_07_overlays_a_p_i_08.html#details">更多...</a></p>
+
+<p><code>#import &lt;<a class="el" href="_m_a_map_view_8h_source.html">MAMapView.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Instance Methods</h2></td></tr>
+<tr class="memitem:a21e7154b3a2f291f60c720b69632bd63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21e7154b3a2f291f60c720b69632bd63"></a>
+(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_m_a_map_view_07_overlays_a_p_i_08.html#a21e7154b3a2f291f60c720b69632bd63">overlaysInLevel:</a></td></tr>
+<tr class="memdesc:a21e7154b3a2f291f60c720b69632bd63"><td class="mdescLeft">&#160;</td><td class="mdescRight">取位于level下的overlays <br/></td></tr>
+<tr class="separator:a21e7154b3a2f291f60c720b69632bd63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afac9cafa7716ead3d7e1d564f07d71a9"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_m_a_map_view_07_overlays_a_p_i_08.html#afac9cafa7716ead3d7e1d564f07d71a9">addOverlay:</a></td></tr>
+<tr class="memdesc:afac9cafa7716ead3d7e1d564f07d71a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">向地图窗口添加 Overlay。  <a href="#afac9cafa7716ead3d7e1d564f07d71a9">更多...</a><br/></td></tr>
+<tr class="separator:afac9cafa7716ead3d7e1d564f07d71a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af33a9fe9bd2118a08f23147b606e98c1"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_m_a_map_view_07_overlays_a_p_i_08.html#af33a9fe9bd2118a08f23147b606e98c1">addOverlays:</a></td></tr>
+<tr class="memdesc:af33a9fe9bd2118a08f23147b606e98c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">向地图窗口添加一组 Overlay。  <a href="#af33a9fe9bd2118a08f23147b606e98c1">更多...</a><br/></td></tr>
+<tr class="separator:af33a9fe9bd2118a08f23147b606e98c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06e4a18385a037ae6852524f21d8f06d"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_m_a_map_view_07_overlays_a_p_i_08.html#a06e4a18385a037ae6852524f21d8f06d">addOverlay:level:</a></td></tr>
+<tr class="memdesc:a06e4a18385a037ae6852524f21d8f06d"><td class="mdescLeft">&#160;</td><td class="mdescRight">向地图窗口添加Overlay，需要实现 MAMapViewDelegate::mapView:viewForOverlay: 函数来生成标注对应的view。  <a href="#a06e4a18385a037ae6852524f21d8f06d">更多...</a><br/></td></tr>
+<tr class="separator:a06e4a18385a037ae6852524f21d8f06d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac282fd87adb5ee723b6963c5ce84b3cf"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_m_a_map_view_07_overlays_a_p_i_08.html#ac282fd87adb5ee723b6963c5ce84b3cf">addOverlays:level:</a></td></tr>
+<tr class="memdesc:ac282fd87adb5ee723b6963c5ce84b3cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">向地图窗口添加一组Overlay，需要实现 MAMapViewDelegate::mapView:viewForOverlay: 函数来生成标注对应的view。  <a href="#ac282fd87adb5ee723b6963c5ce84b3cf">更多...</a><br/></td></tr>
+<tr class="separator:ac282fd87adb5ee723b6963c5ce84b3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1413e9830dc1ebcf86571d3bc723cf64"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_m_a_map_view_07_overlays_a_p_i_08.html#a1413e9830dc1ebcf86571d3bc723cf64">removeOverlay:</a></td></tr>
+<tr class="memdesc:a1413e9830dc1ebcf86571d3bc723cf64"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除 Overlay。  <a href="#a1413e9830dc1ebcf86571d3bc723cf64">更多...</a><br/></td></tr>
+<tr class="separator:a1413e9830dc1ebcf86571d3bc723cf64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bbe39937f1607bfa7dca00d8ffff80e"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_m_a_map_view_07_overlays_a_p_i_08.html#a7bbe39937f1607bfa7dca00d8ffff80e">removeOverlays:</a></td></tr>
+<tr class="memdesc:a7bbe39937f1607bfa7dca00d8ffff80e"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除一组 Overlay。  <a href="#a7bbe39937f1607bfa7dca00d8ffff80e">更多...</a><br/></td></tr>
+<tr class="separator:a7bbe39937f1607bfa7dca00d8ffff80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5571c52ce8d129f90e2a830dab3bee06"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_m_a_map_view_07_overlays_a_p_i_08.html#a5571c52ce8d129f90e2a830dab3bee06">insertOverlay:atIndex:level:</a></td></tr>
+<tr class="memdesc:a5571c52ce8d129f90e2a830dab3bee06"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定层级的指定的索引处添加一个Overlay。  <a href="#a5571c52ce8d129f90e2a830dab3bee06">更多...</a><br/></td></tr>
+<tr class="separator:a5571c52ce8d129f90e2a830dab3bee06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a124b035642c3e6050146d96f8b40dd73"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_m_a_map_view_07_overlays_a_p_i_08.html#a124b035642c3e6050146d96f8b40dd73">insertOverlay:aboveOverlay:</a></td></tr>
+<tr class="memdesc:a124b035642c3e6050146d96f8b40dd73"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定的 Overlay 之上插入一个 Overlay。  <a href="#a124b035642c3e6050146d96f8b40dd73">更多...</a><br/></td></tr>
+<tr class="separator:a124b035642c3e6050146d96f8b40dd73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6340bdb7a0cfd13e09a23350b15ce349"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_m_a_map_view_07_overlays_a_p_i_08.html#a6340bdb7a0cfd13e09a23350b15ce349">insertOverlay:belowOverlay:</a></td></tr>
+<tr class="memdesc:a6340bdb7a0cfd13e09a23350b15ce349"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定的 Overlay 之下插入一个 Overlay。  <a href="#a6340bdb7a0cfd13e09a23350b15ce349">更多...</a><br/></td></tr>
+<tr class="separator:a6340bdb7a0cfd13e09a23350b15ce349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7b3e1d58e4bb731028afb0cf62530de"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_m_a_map_view_07_overlays_a_p_i_08.html#af7b3e1d58e4bb731028afb0cf62530de">insertOverlay:atIndex:</a></td></tr>
+<tr class="memdesc:af7b3e1d58e4bb731028afb0cf62530de"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定的索引处添加一个Overlay  <a href="#af7b3e1d58e4bb731028afb0cf62530de">更多...</a><br/></td></tr>
+<tr class="separator:af7b3e1d58e4bb731028afb0cf62530de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fbd8860670c2c685055478c0ef89828"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_m_a_map_view_07_overlays_a_p_i_08.html#a4fbd8860670c2c685055478c0ef89828">exchangeOverlayAtIndex:withOverlayAtIndex:</a></td></tr>
+<tr class="memdesc:a4fbd8860670c2c685055478c0ef89828"><td class="mdescLeft">&#160;</td><td class="mdescRight">交换指定索引处的Overlay。  <a href="#a4fbd8860670c2c685055478c0ef89828">更多...</a><br/></td></tr>
+<tr class="separator:a4fbd8860670c2c685055478c0ef89828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1f8ae1afbae909c5b3e6153ef4144f0"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_m_a_map_view_07_overlays_a_p_i_08.html#ad1f8ae1afbae909c5b3e6153ef4144f0">exchangeOverlay:withOverlay:</a></td></tr>
+<tr class="memdesc:ad1f8ae1afbae909c5b3e6153ef4144f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">交换两个overlay。  <a href="#ad1f8ae1afbae909c5b3e6153ef4144f0">更多...</a><br/></td></tr>
+<tr class="separator:ad1f8ae1afbae909c5b3e6153ef4144f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69550a9059cfc4c4b1171af42427143b"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_m_a_overlay_renderer.html">MAOverlayRenderer</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_m_a_map_view_07_overlays_a_p_i_08.html#a69550a9059cfc4c4b1171af42427143b">rendererForOverlay:</a></td></tr>
+<tr class="memdesc:a69550a9059cfc4c4b1171af42427143b"><td class="mdescLeft">&#160;</td><td class="mdescRight">查找指定overlay对应的Renderer，如果该View尚未创建，返回nil  <a href="#a69550a9059cfc4c4b1171af42427143b">更多...</a><br/></td></tr>
+<tr class="separator:a69550a9059cfc4c4b1171af42427143b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04edc6faa8bb8dd2b84189458ef694f5"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_m_a_overlay_view.html">MAOverlayView</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_m_a_map_view_07_overlays_a_p_i_08.html#a04edc6faa8bb8dd2b84189458ef694f5">viewForOverlay:mapView:rendererForOverlay:</a></td></tr>
+<tr class="memdesc:a04edc6faa8bb8dd2b84189458ef694f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">查找指定overlay对应的View，如果该View尚未创建，返回nil  <a href="#a04edc6faa8bb8dd2b84189458ef694f5">更多...</a><br/></td></tr>
+<tr class="separator:a04edc6faa8bb8dd2b84189458ef694f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:aebc005da134ed5e0c87176eb892ba6ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aebc005da134ed5e0c87176eb892ba6ce"></a>
+NSArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="category_m_a_map_view_07_overlays_a_p_i_08.html#aebc005da134ed5e0c87176eb892ba6ce">overlays</a></td></tr>
+<tr class="memdesc:aebc005da134ed5e0c87176eb892ba6ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overlay数组 <br/></td></tr>
+<tr class="separator:aebc005da134ed5e0c87176eb892ba6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>地图视图类（Overlay相关的操作）。 </p>
+<dl class="section note"><dt>注解</dt><dd>Overlay 为覆盖物，提供：圆、折线、图片等类型的覆盖物。 </dd></dl>
+</div><h2 class="groupheader">Method Documentation</h2>
+<a class="anchor" id="afac9cafa7716ead3d7e1d564f07d71a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) addOverlay: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_overlay-p.html">MAOverlay</a> &gt;)&#160;</td>
+          <td class="paramname"><em>overlay</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向地图窗口添加 Overlay。 </p>
+<dl class="section note"><dt>注解</dt><dd>需要实现 MAMapViewDelegate::mapView:viewForOverlay: 函数来生成标注对应的 view。<br/>
+</dd></dl>
+<p>默认添加层级：MAGroundOverlay默认层级为MAOverlayLevelAboveRoads，其余overlay类型默认层级为MAOverlayLevelAboveLabels </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">overlay</td><td>要添加的 Overlay。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Extends class <a class="el" href="interface_m_a_map_view.html#afac9cafa7716ead3d7e1d564f07d71a9">MAMapView</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a06e4a18385a037ae6852524f21d8f06d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) addOverlay: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_overlay-p.html">MAOverlay</a> &gt;)&#160;</td>
+          <td class="paramname"><em>overlay</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">level:</td>
+          <td></td>
+          <td class="paramtype">(MAOverlayLevel)&#160;</td>
+          <td class="paramname"><em>level</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向地图窗口添加Overlay，需要实现 MAMapViewDelegate::mapView:viewForOverlay: 函数来生成标注对应的view。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">overlay</td><td>要添加的overlay。 </td></tr>
+    <tr><td class="paramname">level</td><td>添加的overlay所在层级。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Extends class <a class="el" href="interface_m_a_map_view.html#a06e4a18385a037ae6852524f21d8f06d">MAMapView</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af33a9fe9bd2118a08f23147b606e98c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) addOverlays: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>overlays</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向地图窗口添加一组 Overlay。 </p>
+<dl class="section note"><dt>注解</dt><dd>需要实现 MAMapViewDelegate::mapView:viewForOverlay: 函数来生成标注对应的view。</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">overlays</td><td>要添加的 Overlay 数组。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Extends class <a class="el" href="interface_m_a_map_view.html#af33a9fe9bd2118a08f23147b606e98c1">MAMapView</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac282fd87adb5ee723b6963c5ce84b3cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) addOverlays: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>overlays</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">level:</td>
+          <td></td>
+          <td class="paramtype">(MAOverlayLevel)&#160;</td>
+          <td class="paramname"><em>level</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向地图窗口添加一组Overlay，需要实现 MAMapViewDelegate::mapView:viewForOverlay: 函数来生成标注对应的view。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">overlays</td><td>要添加的overlay数组。 </td></tr>
+    <tr><td class="paramname">level</td><td>添加的overlay所在层级。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Extends class <a class="el" href="interface_m_a_map_view.html#ac282fd87adb5ee723b6963c5ce84b3cf">MAMapView</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad1f8ae1afbae909c5b3e6153ef4144f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) exchangeOverlay: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_overlay-p.html">MAOverlay</a> &gt;)&#160;</td>
+          <td class="paramname"><em>overlay1</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">withOverlay:</td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_overlay-p.html">MAOverlay</a> &gt;)&#160;</td>
+          <td class="paramname"><em>overlay2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>交换两个overlay。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">overlay1</td><td>Overlay1。 </td></tr>
+    <tr><td class="paramname">overlay2</td><td>Overlay2。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Extends class <a class="el" href="interface_m_a_map_view.html#ad1f8ae1afbae909c5b3e6153ef4144f0">MAMapView</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4fbd8860670c2c685055478c0ef89828"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) exchangeOverlayAtIndex: </td>
+          <td></td>
+          <td class="paramtype">(NSUInteger)&#160;</td>
+          <td class="paramname"><em>index1</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">withOverlayAtIndex:</td>
+          <td></td>
+          <td class="paramtype">(NSUInteger)&#160;</td>
+          <td class="paramname"><em>index2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>交换指定索引处的Overlay。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index1</td><td>索引1。 </td></tr>
+    <tr><td class="paramname">index2</td><td>索引2。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Extends class <a class="el" href="interface_m_a_map_view.html#a4fbd8860670c2c685055478c0ef89828">MAMapView</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a124b035642c3e6050146d96f8b40dd73"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) insertOverlay: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_overlay-p.html">MAOverlay</a> &gt;)&#160;</td>
+          <td class="paramname"><em>overlay</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">aboveOverlay:</td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_overlay-p.html">MAOverlay</a> &gt;)&#160;</td>
+          <td class="paramname"><em>sibling</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在指定的 Overlay 之上插入一个 Overlay。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">overlay</td><td>带添加的 Overlay。 </td></tr>
+    <tr><td class="paramname">sibling</td><td>用于指定相对位置的 Overlay。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Extends class <a class="el" href="interface_m_a_map_view.html#a124b035642c3e6050146d96f8b40dd73">MAMapView</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af7b3e1d58e4bb731028afb0cf62530de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) insertOverlay: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_overlay-p.html">MAOverlay</a> &gt;)&#160;</td>
+          <td class="paramname"><em>overlay</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">atIndex:</td>
+          <td></td>
+          <td class="paramtype">(NSUInteger)&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在指定的索引处添加一个Overlay </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">overlay</td><td>要添加的Overlay。 </td></tr>
+    <tr><td class="paramname">index</td><td>指定的索引。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Extends class <a class="el" href="interface_m_a_map_view.html#af7b3e1d58e4bb731028afb0cf62530de">MAMapView</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5571c52ce8d129f90e2a830dab3bee06"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) insertOverlay: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_overlay-p.html">MAOverlay</a> &gt;)&#160;</td>
+          <td class="paramname"><em>overlay</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">atIndex:</td>
+          <td></td>
+          <td class="paramtype">(NSUInteger)&#160;</td>
+          <td class="paramname"><em>index</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">level:</td>
+          <td></td>
+          <td class="paramtype">(MAOverlayLevel)&#160;</td>
+          <td class="paramname"><em>level</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在指定层级的指定的索引处添加一个Overlay。 </p>
+<dl class="section note"><dt>注解</dt><dd>各个层级的索引分开计数；若index大于level层级的最大索引，则添加至level层级的最大索引之后。</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">overlay</td><td>要添加的Overlay。 </td></tr>
+    <tr><td class="paramname">index</td><td>指定的索引。 </td></tr>
+    <tr><td class="paramname">level</td><td>指定的层级。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Extends class <a class="el" href="interface_m_a_map_view.html#a5571c52ce8d129f90e2a830dab3bee06">MAMapView</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6340bdb7a0cfd13e09a23350b15ce349"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) insertOverlay: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_overlay-p.html">MAOverlay</a> &gt;)&#160;</td>
+          <td class="paramname"><em>overlay</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">belowOverlay:</td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_overlay-p.html">MAOverlay</a> &gt;)&#160;</td>
+          <td class="paramname"><em>sibling</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在指定的 Overlay 之下插入一个 Overlay。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">overlay</td><td>带添加的 Overlay。 </td></tr>
+    <tr><td class="paramname">sibling</td><td>用于指定相对位置的 Overlay。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Extends class <a class="el" href="interface_m_a_map_view.html#a6340bdb7a0cfd13e09a23350b15ce349">MAMapView</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1413e9830dc1ebcf86571d3bc723cf64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) removeOverlay: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_overlay-p.html">MAOverlay</a> &gt;)&#160;</td>
+          <td class="paramname"><em>overlay</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移除 Overlay。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">overlay</td><td>要移除的 Overlay。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Extends class <a class="el" href="interface_m_a_map_view.html#a1413e9830dc1ebcf86571d3bc723cf64">MAMapView</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7bbe39937f1607bfa7dca00d8ffff80e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) removeOverlays: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>overlays</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移除一组 Overlay。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">overlays</td><td>要移除的 overlay 数组。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Extends class <a class="el" href="interface_m_a_map_view.html#a7bbe39937f1607bfa7dca00d8ffff80e">MAMapView</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a69550a9059cfc4c4b1171af42427143b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_m_a_overlay_renderer.html">MAOverlayRenderer</a> *) rendererForOverlay: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_overlay-p.html">MAOverlay</a> &gt;)&#160;</td>
+          <td class="paramname"><em>overlay</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查找指定overlay对应的Renderer，如果该View尚未创建，返回nil </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">overlay</td><td>指定的overlay </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>指定overlay对应的Renderer </dd></dl>
+
+<p>Extends class <a class="el" href="interface_m_a_map_view.html#a69550a9059cfc4c4b1171af42427143b">MAMapView</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a04edc6faa8bb8dd2b84189458ef694f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_m_a_overlay_view.html">MAOverlayView</a> *) viewForOverlay: </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查找指定overlay对应的View，如果该View尚未创建，返回nil </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">overlay</td><td>指定的overlay </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>指定overlay对应的View </dd></dl>
+
+<p>Extends class <a class="el" href="interface_m_a_map_view.html#a04edc6faa8bb8dd2b84189458ef694f5">MAMapView</a>.</p>
+
+</div>
+</div>
+<hr/>该分类的文档由以下文件生成:<ul>
+<li><a class="el" href="_m_a_map_view_8h_source.html">MAMapView.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+﻿&#169; 2016 高德软件有限公司 版权所有，保留所有权利。 

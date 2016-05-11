@@ -1,0 +1,1695 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>高德地图iOS SDK 2D地图&amp;搜索服务参考手册 V3.2.0: MAMapView类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">高德地图iOS SDK 2D地图&amp;搜索服务参考手册 V3.2.0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('interface_m_a_map_view.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Instance Methods</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="class_m_a_map_view-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">MAMapView类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>地图视图类（用于地图窗口显示和对地图进行相关的操作）。  
+ <a href="interface_m_a_map_view.html#details">更多...</a></p>
+
+<p><code>#import &lt;<a class="el" href="_m_a_map_view_8h_source.html">MAMapView.h</a>&gt;</code></p>
+<div class="dynheader">
+类 MAMapView 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_m_a_map_view.png" usemap="#MAMapView_map" alt=""/>
+  <map id="MAMapView_map" name="MAMapView_map">
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Instance Methods</h2></td></tr>
+<tr class="memitem:ab669fce4dd1e8c0415064859306ec1e2"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#ab669fce4dd1e8c0415064859306ec1e2">setCompassImage:</a></td></tr>
+<tr class="memdesc:ab669fce4dd1e8c0415064859306ec1e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置罗盘的图像。  <a href="#ab669fce4dd1e8c0415064859306ec1e2">更多...</a><br/></td></tr>
+<tr class="separator:ab669fce4dd1e8c0415064859306ec1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b2c0a74c90e65fc4f798a262114cae8"><td class="memItemLeft" align="right" valign="top">(CGFloat)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#a8b2c0a74c90e65fc4f798a262114cae8">metersPerPointForZoomLevel:</a></td></tr>
+<tr class="memdesc:a8b2c0a74c90e65fc4f798a262114cae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定的缩放级别下，基于地图中心点，1 screen point 对应的距离（单位是米）。  <a href="#a8b2c0a74c90e65fc4f798a262114cae8">更多...</a><br/></td></tr>
+<tr class="separator:a8b2c0a74c90e65fc4f798a262114cae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3264e1935daa81c2d2bffdf18ffaa1cb"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#a3264e1935daa81c2d2bffdf18ffaa1cb">setCenterCoordinate:animated:</a></td></tr>
+<tr class="memdesc:a3264e1935daa81c2d2bffdf18ffaa1cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据给定的参数设置当前地图的中心点。  <a href="#a3264e1935daa81c2d2bffdf18ffaa1cb">更多...</a><br/></td></tr>
+<tr class="separator:a3264e1935daa81c2d2bffdf18ffaa1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14e976ddd8083261a0f6dbbb969b1290"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#a14e976ddd8083261a0f6dbbb969b1290">setRegion:animated:</a></td></tr>
+<tr class="memdesc:a14e976ddd8083261a0f6dbbb969b1290"><td class="mdescLeft">&#160;</td><td class="mdescRight">设定当前地图的 region。  <a href="#a14e976ddd8083261a0f6dbbb969b1290">更多...</a><br/></td></tr>
+<tr class="separator:a14e976ddd8083261a0f6dbbb969b1290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad341e45f0a9f22982aea40d7b3380584"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="struct_m_a_coordinate_region.html">MACoordinateRegion</a>)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#ad341e45f0a9f22982aea40d7b3380584">regionThatFits:</a></td></tr>
+<tr class="memdesc:ad341e45f0a9f22982aea40d7b3380584"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据当前地图视图 frame 的大小调整 region 范围。  <a href="#ad341e45f0a9f22982aea40d7b3380584">更多...</a><br/></td></tr>
+<tr class="separator:ad341e45f0a9f22982aea40d7b3380584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a013b1e14711fd118b6ad48b5221e5f1a"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#a013b1e14711fd118b6ad48b5221e5f1a">setVisibleMapRect:animated:</a></td></tr>
+<tr class="memdesc:a013b1e14711fd118b6ad48b5221e5f1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置当前地图可见范围的 map rect。  <a href="#a013b1e14711fd118b6ad48b5221e5f1a">更多...</a><br/></td></tr>
+<tr class="separator:a013b1e14711fd118b6ad48b5221e5f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a382e6ca8b0d0cf9db5dc0110f0d4012b"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#a382e6ca8b0d0cf9db5dc0110f0d4012b">setVisibleMapRect:edgePadding:animated:</a></td></tr>
+<tr class="memdesc:a382e6ca8b0d0cf9db5dc0110f0d4012b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置当前地图可见范围的map rect  <a href="#a382e6ca8b0d0cf9db5dc0110f0d4012b">更多...</a><br/></td></tr>
+<tr class="separator:a382e6ca8b0d0cf9db5dc0110f0d4012b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bf9e1dbc8a764dcedaf6aafc185bd98"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#a5bf9e1dbc8a764dcedaf6aafc185bd98">mapRectThatFits:</a></td></tr>
+<tr class="memdesc:a5bf9e1dbc8a764dcedaf6aafc185bd98"><td class="mdescLeft">&#160;</td><td class="mdescRight">调整 map rect 使其适合地图窗口显示的范围  <a href="#a5bf9e1dbc8a764dcedaf6aafc185bd98">更多...</a><br/></td></tr>
+<tr class="separator:a5bf9e1dbc8a764dcedaf6aafc185bd98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9bc3271b69186d98718950fb91bdb21"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#ae9bc3271b69186d98718950fb91bdb21">mapRectThatFits:edgePadding:</a></td></tr>
+<tr class="memdesc:ae9bc3271b69186d98718950fb91bdb21"><td class="mdescLeft">&#160;</td><td class="mdescRight">调整 map rect 使其适合地图窗口显示的范围  <a href="#ae9bc3271b69186d98718950fb91bdb21">更多...</a><br/></td></tr>
+<tr class="separator:ae9bc3271b69186d98718950fb91bdb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5153e99d95de763a73f1648285671610"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#a5153e99d95de763a73f1648285671610">setZoomLevel:animated:</a></td></tr>
+<tr class="memdesc:a5153e99d95de763a73f1648285671610"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置当前地图的缩放级别。  <a href="#a5153e99d95de763a73f1648285671610">更多...</a><br/></td></tr>
+<tr class="separator:a5153e99d95de763a73f1648285671610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc3dcf92f9cd72b981a65b7b7051f9ba"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#adc3dcf92f9cd72b981a65b7b7051f9ba">setZoomLevel:atPivot:animated:</a></td></tr>
+<tr class="memdesc:adc3dcf92f9cd72b981a65b7b7051f9ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置当前地图的缩放级别。  <a href="#adc3dcf92f9cd72b981a65b7b7051f9ba">更多...</a><br/></td></tr>
+<tr class="separator:adc3dcf92f9cd72b981a65b7b7051f9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13b3b5e246c2c252de0c5ec312283dac"><td class="memItemLeft" align="right" valign="top">(CGPoint)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#a13b3b5e246c2c252de0c5ec312283dac">convertCoordinate:toPointToView:</a></td></tr>
+<tr class="memdesc:a13b3b5e246c2c252de0c5ec312283dac"><td class="mdescLeft">&#160;</td><td class="mdescRight">将经纬度坐标转换为相对于指定 view 的坐标。  <a href="#a13b3b5e246c2c252de0c5ec312283dac">更多...</a><br/></td></tr>
+<tr class="separator:a13b3b5e246c2c252de0c5ec312283dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a36161387c1002e5f497efd2d986f74"><td class="memItemLeft" align="right" valign="top">(CLLocationCoordinate2D)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#a7a36161387c1002e5f497efd2d986f74">convertPoint:toCoordinateFromView:</a></td></tr>
+<tr class="memdesc:a7a36161387c1002e5f497efd2d986f74"><td class="mdescLeft">&#160;</td><td class="mdescRight">将相对于指定 view 的坐标转换为经纬度坐标。  <a href="#a7a36161387c1002e5f497efd2d986f74">更多...</a><br/></td></tr>
+<tr class="separator:a7a36161387c1002e5f497efd2d986f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4a19e39d9a42ffce83db779a26c33cd"><td class="memItemLeft" align="right" valign="top">(CGRect)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#af4a19e39d9a42ffce83db779a26c33cd">convertRegion:toRectToView:</a></td></tr>
+<tr class="memdesc:af4a19e39d9a42ffce83db779a26c33cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">将经纬度 region 转换为指定 view 坐标系的 rect。  <a href="#af4a19e39d9a42ffce83db779a26c33cd">更多...</a><br/></td></tr>
+<tr class="separator:af4a19e39d9a42ffce83db779a26c33cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a41fcc9a13c01e5f0b56d7b62043c03"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="struct_m_a_coordinate_region.html">MACoordinateRegion</a>)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#a6a41fcc9a13c01e5f0b56d7b62043c03">convertRect:toRegionFromView:</a></td></tr>
+<tr class="memdesc:a6a41fcc9a13c01e5f0b56d7b62043c03"><td class="mdescLeft">&#160;</td><td class="mdescRight">将指定 view 坐标系的rect 转换为经纬度 region。  <a href="#a6a41fcc9a13c01e5f0b56d7b62043c03">更多...</a><br/></td></tr>
+<tr class="separator:a6a41fcc9a13c01e5f0b56d7b62043c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6edff740076a188faa5c6b59e32227be"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#a6edff740076a188faa5c6b59e32227be">setUserTrackingMode:animated:</a></td></tr>
+<tr class="memdesc:a6edff740076a188faa5c6b59e32227be"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据给定的参数设置定位用户位置的模式。  <a href="#a6edff740076a188faa5c6b59e32227be">更多...</a><br/></td></tr>
+<tr class="separator:a6edff740076a188faa5c6b59e32227be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94d150e96a592798b0558d4423422cce"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#a94d150e96a592798b0558d4423422cce">updateUserLocationRepresentation:</a></td></tr>
+<tr class="memdesc:a94d150e96a592798b0558d4423422cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">设定 UserLocationView 样式。  <a href="#a94d150e96a592798b0558d4423422cce">更多...</a><br/></td></tr>
+<tr class="separator:a94d150e96a592798b0558d4423422cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dea1644b1c85f872a8f5c9c2af19c37"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#a6dea1644b1c85f872a8f5c9c2af19c37">addAnnotation:</a></td></tr>
+<tr class="memdesc:a6dea1644b1c85f872a8f5c9c2af19c37"><td class="mdescLeft">&#160;</td><td class="mdescRight">向地图窗口添加标注。  <a href="#a6dea1644b1c85f872a8f5c9c2af19c37">更多...</a><br/></td></tr>
+<tr class="separator:a6dea1644b1c85f872a8f5c9c2af19c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7c8812893dc13b4539d7ad17c5bbd58"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#ad7c8812893dc13b4539d7ad17c5bbd58">addAnnotations:</a></td></tr>
+<tr class="memdesc:ad7c8812893dc13b4539d7ad17c5bbd58"><td class="mdescLeft">&#160;</td><td class="mdescRight">向地图窗口添加一组标注。  <a href="#ad7c8812893dc13b4539d7ad17c5bbd58">更多...</a><br/></td></tr>
+<tr class="separator:ad7c8812893dc13b4539d7ad17c5bbd58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5256e2a0404a95d7e623b166f5c50bfa"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#a5256e2a0404a95d7e623b166f5c50bfa">removeAnnotation:</a></td></tr>
+<tr class="memdesc:a5256e2a0404a95d7e623b166f5c50bfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除标注。  <a href="#a5256e2a0404a95d7e623b166f5c50bfa">更多...</a><br/></td></tr>
+<tr class="separator:a5256e2a0404a95d7e623b166f5c50bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4848573321201d75f277c14a94285620"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#a4848573321201d75f277c14a94285620">removeAnnotations:</a></td></tr>
+<tr class="memdesc:a4848573321201d75f277c14a94285620"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除一组标注。  <a href="#a4848573321201d75f277c14a94285620">更多...</a><br/></td></tr>
+<tr class="separator:a4848573321201d75f277c14a94285620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41bec551e4c47e40443092ed9a25d7fd"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_m_a_annotation_view.html">MAAnnotationView</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#a41bec551e4c47e40443092ed9a25d7fd">viewForAnnotation:</a></td></tr>
+<tr class="memdesc:a41bec551e4c47e40443092ed9a25d7fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据 annotation 查询其所对应的 view。  <a href="#a41bec551e4c47e40443092ed9a25d7fd">更多...</a><br/></td></tr>
+<tr class="separator:a41bec551e4c47e40443092ed9a25d7fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae0acadc21cfa7dca6e3a51f9345acb3"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_m_a_annotation_view.html">MAAnnotationView</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#aae0acadc21cfa7dca6e3a51f9345acb3">dequeueReusableAnnotationViewWithIdentifier:</a></td></tr>
+<tr class="memdesc:aae0acadc21cfa7dca6e3a51f9345acb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">从复用内存池中获取制定复用标识的 annotation view。  <a href="#aae0acadc21cfa7dca6e3a51f9345acb3">更多...</a><br/></td></tr>
+<tr class="separator:aae0acadc21cfa7dca6e3a51f9345acb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaa6b68b746088240ba60a638035f93d"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#afaa6b68b746088240ba60a638035f93d">selectAnnotation:animated:</a></td></tr>
+<tr class="memdesc:afaa6b68b746088240ba60a638035f93d"><td class="mdescLeft">&#160;</td><td class="mdescRight">选中标注对象对应的 view。  <a href="#afaa6b68b746088240ba60a638035f93d">更多...</a><br/></td></tr>
+<tr class="separator:afaa6b68b746088240ba60a638035f93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea554520e5842f3fdd20bd96243cadac"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#aea554520e5842f3fdd20bd96243cadac">deselectAnnotation:animated:</a></td></tr>
+<tr class="memdesc:aea554520e5842f3fdd20bd96243cadac"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消选中标注对象对应的 view。  <a href="#aea554520e5842f3fdd20bd96243cadac">更多...</a><br/></td></tr>
+<tr class="separator:aea554520e5842f3fdd20bd96243cadac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accc4a7afedb34daa4fed568c6be00f99"><td class="memItemLeft" align="right" valign="top">(NSSet *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#accc4a7afedb34daa4fed568c6be00f99">annotationsInMapRect:</a></td></tr>
+<tr class="memdesc:accc4a7afedb34daa4fed568c6be00f99"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取指定投影矩形范围内的标注。  <a href="#accc4a7afedb34daa4fed568c6be00f99">更多...</a><br/></td></tr>
+<tr class="separator:accc4a7afedb34daa4fed568c6be00f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab41e3c45dd90488fe2ac4191153bc685"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#ab41e3c45dd90488fe2ac4191153bc685">showAnnotations:animated:</a></td></tr>
+<tr class="memdesc:ab41e3c45dd90488fe2ac4191153bc685"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置地图使其可以显示数组中所有的标注。  <a href="#ab41e3c45dd90488fe2ac4191153bc685">更多...</a><br/></td></tr>
+<tr class="separator:ab41e3c45dd90488fe2ac4191153bc685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad660af22c6e6d932b3e68f2059b0cfb8"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#ad660af22c6e6d932b3e68f2059b0cfb8">showAnnotations:edgePadding:animated:</a></td></tr>
+<tr class="memdesc:ad660af22c6e6d932b3e68f2059b0cfb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置地图使其可以显示数组中所有的annotation, 如果数组中只有一个则直接设置地图中心为annotation的位置。  <a href="#ad660af22c6e6d932b3e68f2059b0cfb8">更多...</a><br/></td></tr>
+<tr class="separator:ad660af22c6e6d932b3e68f2059b0cfb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36dffd1967c8c4dd1f8841c64dacb136"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_m_a_overlay_renderer.html">MAOverlayRenderer</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#a36dffd1967c8c4dd1f8841c64dacb136">rendererForOverlay:</a></td></tr>
+<tr class="memdesc:a36dffd1967c8c4dd1f8841c64dacb136"><td class="mdescLeft">&#160;</td><td class="mdescRight">查找指定 Overlay对应的 Renderer，如果该 Renderer 尚未创建，返回 nil  <a href="#a36dffd1967c8c4dd1f8841c64dacb136">更多...</a><br/></td></tr>
+<tr class="separator:a36dffd1967c8c4dd1f8841c64dacb136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5be3becb5b85d7212c822a53f4658d1"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_m_a_overlay_view.html">MAOverlayView</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#ac5be3becb5b85d7212c822a53f4658d1">viewForOverlay:rendererForOverlay:</a></td></tr>
+<tr class="memdesc:ac5be3becb5b85d7212c822a53f4658d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">已弃用，使用 <a class="el" href="interface_m_a_map_view.html#a36dffd1967c8c4dd1f8841c64dacb136" title="查找指定 Overlay对应的 Renderer，如果该 Renderer 尚未创建，返回 nil ">rendererForOverlay:</a> 来代替。查找指定 Overlay 对应的 view，如果该 view 尚未创建，返回 nil。  <a href="#ac5be3becb5b85d7212c822a53f4658d1">更多...</a><br/></td></tr>
+<tr class="separator:ac5be3becb5b85d7212c822a53f4658d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa62294d1af2b8dd098205c24e4f56285"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#aa62294d1af2b8dd098205c24e4f56285">addOverlay:</a></td></tr>
+<tr class="memdesc:aa62294d1af2b8dd098205c24e4f56285"><td class="mdescLeft">&#160;</td><td class="mdescRight">向地图窗口添加 Overlay。  <a href="#aa62294d1af2b8dd098205c24e4f56285">更多...</a><br/></td></tr>
+<tr class="separator:aa62294d1af2b8dd098205c24e4f56285"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac697ac7c6e2765ebc9fc190e71d5ad7e"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#ac697ac7c6e2765ebc9fc190e71d5ad7e">addOverlays:</a></td></tr>
+<tr class="memdesc:ac697ac7c6e2765ebc9fc190e71d5ad7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">向地图窗口添加一组 Overlay。  <a href="#ac697ac7c6e2765ebc9fc190e71d5ad7e">更多...</a><br/></td></tr>
+<tr class="separator:ac697ac7c6e2765ebc9fc190e71d5ad7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a702100d6e068b63c831ec5c292446ec8"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#a702100d6e068b63c831ec5c292446ec8">removeOverlay:</a></td></tr>
+<tr class="memdesc:a702100d6e068b63c831ec5c292446ec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除 Overlay。  <a href="#a702100d6e068b63c831ec5c292446ec8">更多...</a><br/></td></tr>
+<tr class="separator:a702100d6e068b63c831ec5c292446ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade964fb9586705638125b8188ef58e4c"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#ade964fb9586705638125b8188ef58e4c">removeOverlays:</a></td></tr>
+<tr class="memdesc:ade964fb9586705638125b8188ef58e4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除一组 Overlay。  <a href="#ade964fb9586705638125b8188ef58e4c">更多...</a><br/></td></tr>
+<tr class="separator:ade964fb9586705638125b8188ef58e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dcbdab927b41c4009d5267dbe22ab2c"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#a8dcbdab927b41c4009d5267dbe22ab2c">insertOverlay:atIndex:</a></td></tr>
+<tr class="memdesc:a8dcbdab927b41c4009d5267dbe22ab2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定的索引处添加一个 Overlay。  <a href="#a8dcbdab927b41c4009d5267dbe22ab2c">更多...</a><br/></td></tr>
+<tr class="separator:a8dcbdab927b41c4009d5267dbe22ab2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a858f7740c9e08c2ac86a4e743ba836fb"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#a858f7740c9e08c2ac86a4e743ba836fb">exchangeOverlayAtIndex:withOverlayAtIndex:</a></td></tr>
+<tr class="memdesc:a858f7740c9e08c2ac86a4e743ba836fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">在交换指定索引处的 Overlay。  <a href="#a858f7740c9e08c2ac86a4e743ba836fb">更多...</a><br/></td></tr>
+<tr class="separator:a858f7740c9e08c2ac86a4e743ba836fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f4ca55c1aff3f63dac87c3da469950d"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#a5f4ca55c1aff3f63dac87c3da469950d">insertOverlay:aboveOverlay:</a></td></tr>
+<tr class="memdesc:a5f4ca55c1aff3f63dac87c3da469950d"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定的 Overlay 之上插入一个 Overlay。  <a href="#a5f4ca55c1aff3f63dac87c3da469950d">更多...</a><br/></td></tr>
+<tr class="separator:a5f4ca55c1aff3f63dac87c3da469950d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fd8423ea8c70c530b9e7f02fb81ca94"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#a6fd8423ea8c70c530b9e7f02fb81ca94">insertOverlay:belowOverlay:</a></td></tr>
+<tr class="memdesc:a6fd8423ea8c70c530b9e7f02fb81ca94"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定的 Overlay 之下插入一个 Overlay。  <a href="#a6fd8423ea8c70c530b9e7f02fb81ca94">更多...</a><br/></td></tr>
+<tr class="separator:a6fd8423ea8c70c530b9e7f02fb81ca94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1469543f7f4971401db9102fc5e1767"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae1469543f7f4971401db9102fc5e1767"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#ae1469543f7f4971401db9102fc5e1767">clearDisk</a></td></tr>
+<tr class="memdesc:ae1469543f7f4971401db9102fc5e1767"><td class="mdescLeft">&#160;</td><td class="mdescRight">清除所有磁盘上缓存的地图数据。 <br/></td></tr>
+<tr class="separator:ae1469543f7f4971401db9102fc5e1767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a184e6408f2eff4a2f58ea779c63845a2"><td class="memItemLeft" align="right" valign="top">(UIImage *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#a184e6408f2eff4a2f58ea779c63845a2">takeSnapshotInRect:</a></td></tr>
+<tr class="memdesc:a184e6408f2eff4a2f58ea779c63845a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">对指定区域内的内容进行截图（默认会包含该区域内的标注 view）。  <a href="#a184e6408f2eff4a2f58ea779c63845a2">更多...</a><br/></td></tr>
+<tr class="separator:a184e6408f2eff4a2f58ea779c63845a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb80dedda65c4789f776cea9e16174f8"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_map_view.html#afb80dedda65c4789f776cea9e16174f8">takeSnapshotInRect:withCompletionBlock:</a></td></tr>
+<tr class="memdesc:afb80dedda65c4789f776cea9e16174f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得地图当前可视区域截图。  <a href="#afb80dedda65c4789f776cea9e16174f8">更多...</a><br/></td></tr>
+<tr class="separator:afb80dedda65c4789f776cea9e16174f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a0ab37fd2d32f09380b1e85e07149c4dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ab37fd2d32f09380b1e85e07149c4dd"></a>
+id&lt; <a class="el" href="protocol_m_a_map_view_delegate-p.html">MAMapViewDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a0ab37fd2d32f09380b1e85e07149c4dd">delegate</a></td></tr>
+<tr class="memdesc:a0ab37fd2d32f09380b1e85e07149c4dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">地图视图对象的委托。 <br/></td></tr>
+<tr class="separator:a0ab37fd2d32f09380b1e85e07149c4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3072688fe73387e75b45862c0ef87d0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3072688fe73387e75b45862c0ef87d0c"></a>
+MAMapType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a3072688fe73387e75b45862c0ef87d0c">mapType</a></td></tr>
+<tr class="memdesc:a3072688fe73387e75b45862c0ef87d0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">地图类型。 <br/></td></tr>
+<tr class="separator:a3072688fe73387e75b45862c0ef87d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f44fb6e4dea0dff1d4dfa1b31e9dddc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f44fb6e4dea0dff1d4dfa1b31e9dddc"></a>
+MAMapLanguage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a3f44fb6e4dea0dff1d4dfa1b31e9dddc">language</a></td></tr>
+<tr class="memdesc:a3f44fb6e4dea0dff1d4dfa1b31e9dddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">地图底图语言，默认为 MAMapLanguageZhCN。 <br/></td></tr>
+<tr class="separator:a3f44fb6e4dea0dff1d4dfa1b31e9dddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50ae9b8594ba8eb99626f73f108bbeaa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50ae9b8594ba8eb99626f73f108bbeaa"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a50ae9b8594ba8eb99626f73f108bbeaa">showTraffic</a></td></tr>
+<tr class="memdesc:a50ae9b8594ba8eb99626f73f108bbeaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否显示交通，默认为NO。 <br/></td></tr>
+<tr class="separator:a50ae9b8594ba8eb99626f73f108bbeaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af59b341a581ac916599eaebd26bbb3f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af59b341a581ac916599eaebd26bbb3f0"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#af59b341a581ac916599eaebd26bbb3f0">scrollEnabled</a></td></tr>
+<tr class="memdesc:af59b341a581ac916599eaebd26bbb3f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否支持平移，默认为 YES。 <br/></td></tr>
+<tr class="separator:af59b341a581ac916599eaebd26bbb3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b1f996f7dea8b8422ea60cc5428738d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b1f996f7dea8b8422ea60cc5428738d"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a7b1f996f7dea8b8422ea60cc5428738d">zoomEnabled</a></td></tr>
+<tr class="memdesc:a7b1f996f7dea8b8422ea60cc5428738d"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否支持缩放，默认为 YES。 <br/></td></tr>
+<tr class="separator:a7b1f996f7dea8b8422ea60cc5428738d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ec6b814553a9415f7b735f74600575e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ec6b814553a9415f7b735f74600575e"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a8ec6b814553a9415f7b735f74600575e">isAbroad</a></td></tr>
+<tr class="memdesc:a8ec6b814553a9415f7b735f74600575e"><td class="mdescLeft">&#160;</td><td class="mdescRight">标识当前地图中心位置是否在中国范围内。此属性不是精确判断，不能用于边界区域。 <br/></td></tr>
+<tr class="separator:a8ec6b814553a9415f7b735f74600575e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeda740c52a832b1b885faeb3289f432"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaeda740c52a832b1b885faeb3289f432"></a>
+CGPoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#aaeda740c52a832b1b885faeb3289f432">logoCenter</a></td></tr>
+<tr class="memdesc:aaeda740c52a832b1b885faeb3289f432"><td class="mdescLeft">&#160;</td><td class="mdescRight">logo 的位置，必须在地图视图范围（mapView.bounds）之内，否则会被忽略。 <br/></td></tr>
+<tr class="separator:aaeda740c52a832b1b885faeb3289f432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66308891fa81f40762d89faffe13e20d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66308891fa81f40762d89faffe13e20d"></a>
+CGSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a66308891fa81f40762d89faffe13e20d">logoSize</a></td></tr>
+<tr class="memdesc:a66308891fa81f40762d89faffe13e20d"><td class="mdescLeft">&#160;</td><td class="mdescRight">logo 的宽高。 <br/></td></tr>
+<tr class="separator:a66308891fa81f40762d89faffe13e20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a313884eed34745971541b66547e37403"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a313884eed34745971541b66547e37403"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a313884eed34745971541b66547e37403">showsCompass</a></td></tr>
+<tr class="memdesc:a313884eed34745971541b66547e37403"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否显示罗盘，默认为YES。 <br/></td></tr>
+<tr class="separator:a313884eed34745971541b66547e37403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f1afa974df64e38eeb0d02d679913b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f1afa974df64e38eeb0d02d679913b9"></a>
+CGPoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a4f1afa974df64e38eeb0d02d679913b9">compassOrigin</a></td></tr>
+<tr class="memdesc:a4f1afa974df64e38eeb0d02d679913b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">罗盘原点位置。 <br/></td></tr>
+<tr class="separator:a4f1afa974df64e38eeb0d02d679913b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75de400f85722096b9666133dbc36e63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75de400f85722096b9666133dbc36e63"></a>
+CGSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a75de400f85722096b9666133dbc36e63">compassSize</a></td></tr>
+<tr class="memdesc:a75de400f85722096b9666133dbc36e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">罗盘的宽高。 <br/></td></tr>
+<tr class="separator:a75de400f85722096b9666133dbc36e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ce964af9fa3faed087bd952a47806a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ce964af9fa3faed087bd952a47806a0"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a7ce964af9fa3faed087bd952a47806a0">showsScale</a></td></tr>
+<tr class="memdesc:a7ce964af9fa3faed087bd952a47806a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否显示比例尺，默认为YES。 <br/></td></tr>
+<tr class="separator:a7ce964af9fa3faed087bd952a47806a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6563783a12c4de926e9044c80fe2d5df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6563783a12c4de926e9044c80fe2d5df"></a>
+CGPoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a6563783a12c4de926e9044c80fe2d5df">scaleOrigin</a></td></tr>
+<tr class="memdesc:a6563783a12c4de926e9044c80fe2d5df"><td class="mdescLeft">&#160;</td><td class="mdescRight">比例尺原点位置。 <br/></td></tr>
+<tr class="separator:a6563783a12c4de926e9044c80fe2d5df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc980b888a1618ef165d64ed71f43dbc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc980b888a1618ef165d64ed71f43dbc"></a>
+CGSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#adc980b888a1618ef165d64ed71f43dbc">scaleSize</a></td></tr>
+<tr class="memdesc:adc980b888a1618ef165d64ed71f43dbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">比例尺的最大宽高。 <br/></td></tr>
+<tr class="separator:adc980b888a1618ef165d64ed71f43dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b868d00732bd17c4bf890e44524bebb"><td class="memItemLeft" align="right" valign="top">CGFloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a9b868d00732bd17c4bf890e44524bebb">metersPerPointForCurrentZoomLevel</a></td></tr>
+<tr class="memdesc:a9b868d00732bd17c4bf890e44524bebb"><td class="mdescLeft">&#160;</td><td class="mdescRight">在当前缩放级别下，基于地图中心点，1 screen point 对应的距离（单位是米）。  <a href="#a9b868d00732bd17c4bf890e44524bebb">更多...</a><br/></td></tr>
+<tr class="separator:a9b868d00732bd17c4bf890e44524bebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a010a84138540be7f7f49d330e4907e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a010a84138540be7f7f49d330e4907e"></a>
+CLLocationCoordinate2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a0a010a84138540be7f7f49d330e4907e">centerCoordinate</a></td></tr>
+<tr class="memdesc:a0a010a84138540be7f7f49d330e4907e"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前地图的中心点经纬度坐标，改变该值时，地图缩放级别不会发生变化。 <br/></td></tr>
+<tr class="separator:a0a010a84138540be7f7f49d330e4907e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9db51dfb9a57a9dac7ef756917b0495"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9db51dfb9a57a9dac7ef756917b0495"></a>
+<a class="el" href="struct_m_a_coordinate_region.html">MACoordinateRegion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#ab9db51dfb9a57a9dac7ef756917b0495">region</a></td></tr>
+<tr class="memdesc:ab9db51dfb9a57a9dac7ef756917b0495"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前地图的经纬度范围，设定的该范围可能会被调整为适合地图窗口显示的范围。 <br/></td></tr>
+<tr class="separator:ab9db51dfb9a57a9dac7ef756917b0495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33b238dcdea708849ed9be11cd961240"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33b238dcdea708849ed9be11cd961240"></a>
+<a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a33b238dcdea708849ed9be11cd961240">visibleMapRect</a></td></tr>
+<tr class="memdesc:a33b238dcdea708849ed9be11cd961240"><td class="mdescLeft">&#160;</td><td class="mdescRight">可见区域。 <br/></td></tr>
+<tr class="separator:a33b238dcdea708849ed9be11cd961240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad616872bf58bae92a7414a2e4358f467"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad616872bf58bae92a7414a2e4358f467"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#ad616872bf58bae92a7414a2e4358f467">zoomLevel</a></td></tr>
+<tr class="memdesc:ad616872bf58bae92a7414a2e4358f467"><td class="mdescLeft">&#160;</td><td class="mdescRight">缩放级别。 <br/></td></tr>
+<tr class="separator:ad616872bf58bae92a7414a2e4358f467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99c338273b118a52feab31e5ea982635"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99c338273b118a52feab31e5ea982635"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a99c338273b118a52feab31e5ea982635">minZoomLevel</a></td></tr>
+<tr class="memdesc:a99c338273b118a52feab31e5ea982635"><td class="mdescLeft">&#160;</td><td class="mdescRight">最小缩放级别。 <br/></td></tr>
+<tr class="separator:a99c338273b118a52feab31e5ea982635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73088c94335ab1eb393d744919dc4ddf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73088c94335ab1eb393d744919dc4ddf"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a73088c94335ab1eb393d744919dc4ddf">maxZoomLevel</a></td></tr>
+<tr class="memdesc:a73088c94335ab1eb393d744919dc4ddf"><td class="mdescLeft">&#160;</td><td class="mdescRight">最大缩放级别。 <br/></td></tr>
+<tr class="separator:a73088c94335ab1eb393d744919dc4ddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29abd209a0fa3c7c384bd49f7125de20"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29abd209a0fa3c7c384bd49f7125de20"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a29abd209a0fa3c7c384bd49f7125de20">showsUserLocation</a></td></tr>
+<tr class="memdesc:a29abd209a0fa3c7c384bd49f7125de20"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否显示用户位置 <br/></td></tr>
+<tr class="separator:a29abd209a0fa3c7c384bd49f7125de20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4b091fc74c739f0364ceb30c7f0b357"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4b091fc74c739f0364ceb30c7f0b357"></a>
+<a class="el" href="interface_m_a_user_location.html">MAUserLocation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#ad4b091fc74c739f0364ceb30c7f0b357">userLocation</a></td></tr>
+<tr class="memdesc:ad4b091fc74c739f0364ceb30c7f0b357"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前的位置数据。 <br/></td></tr>
+<tr class="separator:ad4b091fc74c739f0364ceb30c7f0b357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ec6f96c702ee35ad5199d5604d243e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ec6f96c702ee35ad5199d5604d243e8"></a>
+MAUserTrackingMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a5ec6f96c702ee35ad5199d5604d243e8">userTrackingMode</a></td></tr>
+<tr class="memdesc:a5ec6f96c702ee35ad5199d5604d243e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">定位用户位置的模式。 <br/></td></tr>
+<tr class="separator:a5ec6f96c702ee35ad5199d5604d243e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7829e4d640abdea70365974cdd36dfe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7829e4d640abdea70365974cdd36dfe"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#ab7829e4d640abdea70365974cdd36dfe">userLocationVisible</a></td></tr>
+<tr class="memdesc:ab7829e4d640abdea70365974cdd36dfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前位置在地图中是否可见。 <br/></td></tr>
+<tr class="separator:ab7829e4d640abdea70365974cdd36dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61714b48a6e24b32d445f5fd80be6485"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61714b48a6e24b32d445f5fd80be6485"></a>
+NSArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a61714b48a6e24b32d445f5fd80be6485">annotations</a></td></tr>
+<tr class="memdesc:a61714b48a6e24b32d445f5fd80be6485"><td class="mdescLeft">&#160;</td><td class="mdescRight">标注数组，数组中存放 <a class="el" href="protocol_m_a_annotation-p.html" title="该类为标注点的协议，提供了标注类的基本信息函数。 ">MAAnnotation</a> 对象。 <br/></td></tr>
+<tr class="separator:a61714b48a6e24b32d445f5fd80be6485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a631e35d5fbd9525e798b68ab958612fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a631e35d5fbd9525e798b68ab958612fb"></a>
+NSArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a631e35d5fbd9525e798b68ab958612fb">selectedAnnotations</a></td></tr>
+<tr class="memdesc:a631e35d5fbd9525e798b68ab958612fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">处于选中状态的标注对象数组，数组中对象的数量为 0 或 1。 <br/></td></tr>
+<tr class="separator:a631e35d5fbd9525e798b68ab958612fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1573bf30e08c507f9ae3c9de9819b986"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1573bf30e08c507f9ae3c9de9819b986"></a>
+CGRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a1573bf30e08c507f9ae3c9de9819b986">annotationVisibleRect</a></td></tr>
+<tr class="memdesc:a1573bf30e08c507f9ae3c9de9819b986"><td class="mdescLeft">&#160;</td><td class="mdescRight">annotation 可见区域。 <br/></td></tr>
+<tr class="separator:a1573bf30e08c507f9ae3c9de9819b986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a658b9367e0ce3a141b6566138a0cd0be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a658b9367e0ce3a141b6566138a0cd0be"></a>
+NSArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a658b9367e0ce3a141b6566138a0cd0be">overlays</a></td></tr>
+<tr class="memdesc:a658b9367e0ce3a141b6566138a0cd0be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overlay 数组。 <br/></td></tr>
+<tr class="separator:a658b9367e0ce3a141b6566138a0cd0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa82691ebaadbef2bccde63caf64cf7da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa82691ebaadbef2bccde63caf64cf7da"></a>
+CLLocationDistance&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#aa82691ebaadbef2bccde63caf64cf7da">distanceFilter</a></td></tr>
+<tr class="memdesc:aa82691ebaadbef2bccde63caf64cf7da"><td class="mdescLeft">&#160;</td><td class="mdescRight">设定定位的最小更新距离。默认是 kCLDistanceFilterNone，有任何移动会有提示。 <br/></td></tr>
+<tr class="separator:aa82691ebaadbef2bccde63caf64cf7da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1702c8271362b33dc834efca06e6742a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1702c8271362b33dc834efca06e6742a"></a>
+CLLocationAccuracy&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a1702c8271362b33dc834efca06e6742a">desiredAccuracy</a></td></tr>
+<tr class="memdesc:a1702c8271362b33dc834efca06e6742a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设定定位精度。默认为 kCLLocationAccuracyBest。 <br/></td></tr>
+<tr class="separator:a1702c8271362b33dc834efca06e6742a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2513137778b7351e569884a379ca2f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab2513137778b7351e569884a379ca2f1"></a>
+CLLocationDegrees&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#ab2513137778b7351e569884a379ca2f1">headingFilter</a></td></tr>
+<tr class="memdesc:ab2513137778b7351e569884a379ca2f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">设定最小更新角度。默认为1度，设定为 kCLHeadingFilterNone 会提示任何角度改变。 <br/></td></tr>
+<tr class="separator:ab2513137778b7351e569884a379ca2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addbbebc78596188078c6821c606eecfb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="addbbebc78596188078c6821c606eecfb"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#addbbebc78596188078c6821c606eecfb">pausesLocationUpdatesAutomatically</a></td></tr>
+<tr class="memdesc:addbbebc78596188078c6821c606eecfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定定位是否会被系统自动暂停。默认为YES。只在iOS 6.0之后起作用。 <br/></td></tr>
+<tr class="separator:addbbebc78596188078c6821c606eecfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c9a430c77774e313d3dabe8756feebc"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html#a8c9a430c77774e313d3dabe8756feebc">allowsBackgroundLocationUpdates</a></td></tr>
+<tr class="memdesc:a8c9a430c77774e313d3dabe8756feebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否允许后台定位。默认为 NO，只在iOS 9.0之后起作用。  <a href="#a8c9a430c77774e313d3dabe8756feebc">更多...</a><br/></td></tr>
+<tr class="separator:a8c9a430c77774e313d3dabe8756feebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>地图视图类（用于地图窗口显示和对地图进行相关的操作）。 </p>
+</div><h2 class="groupheader">Method Documentation</h2>
+<a class="anchor" id="a6dea1644b1c85f872a8f5c9c2af19c37"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) addAnnotation: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_annotation-p.html">MAAnnotation</a> &gt;)&#160;</td>
+          <td class="paramname"><em>annotation</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向地图窗口添加标注。 </p>
+<dl class="section note"><dt>注解</dt><dd>需要实现 <a class="el" href="protocol_m_a_map_view_delegate-p.html#a169902f9d87d0c7d1e1505afd20e5074" title="根据 anntation 生成对应的 view。 ">mapView:viewForAnnotation: (MAMapViewDelegate-p)</a> 函数来生成标注对应的 view。</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">annotation</td><td>要添加的标注。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad7c8812893dc13b4539d7ad17c5bbd58"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) addAnnotations: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>annotations</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向地图窗口添加一组标注。 </p>
+<dl class="section note"><dt>注解</dt><dd>需要实现 <a class="el" href="protocol_m_a_map_view_delegate-p.html#a169902f9d87d0c7d1e1505afd20e5074" title="根据 anntation 生成对应的 view。 ">mapView:viewForAnnotation: (MAMapViewDelegate-p)</a> 函数来生成标注对应的 view。</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">annotations</td><td>要添加的标注数组，数组中存放 <a class="el" href="protocol_m_a_annotation-p.html" title="该类为标注点的协议，提供了标注类的基本信息函数。 ">MAAnnotation</a> 对象。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa62294d1af2b8dd098205c24e4f56285"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) addOverlay: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_overlay-p.html">MAOverlay</a> &gt;)&#160;</td>
+          <td class="paramname"><em>overlay</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向地图窗口添加 Overlay。 </p>
+<dl class="section note"><dt>注解</dt><dd>需要实现 MAMapViewDelegate::mapView:viewForOverlay: 函数来生成标注对应的 view。</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">overlay</td><td>要添加的 Overlay。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac697ac7c6e2765ebc9fc190e71d5ad7e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) addOverlays: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>overlays</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向地图窗口添加一组 Overlay。 </p>
+<dl class="section note"><dt>注解</dt><dd>需要实现 MAMapViewDelegate::mapView:viewForOverlay: 函数来生成标注对应的view。</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">overlays</td><td>要添加的 Overlay 数组。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="accc4a7afedb34daa4fed568c6be00f99"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSSet *) annotationsInMapRect: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>)&#160;</td>
+          <td class="paramname"><em>mapRect</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取指定投影矩形范围内的标注。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mapRect</td><td>投影矩形范围。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>标注集合。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a13b3b5e246c2c252de0c5ec312283dac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGPoint) convertCoordinate: </td>
+          <td></td>
+          <td class="paramtype">(CLLocationCoordinate2D)&#160;</td>
+          <td class="paramname"><em>coordinate</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">toPointToView:</td>
+          <td></td>
+          <td class="paramtype">(UIView *)&#160;</td>
+          <td class="paramname"><em>view</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将经纬度坐标转换为相对于指定 view 的坐标。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coordinate</td><td>待转换的经纬度坐标。 </td></tr>
+    <tr><td class="paramname">view</td><td>指定的坐标系统的 view。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7a36161387c1002e5f497efd2d986f74"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CLLocationCoordinate2D) convertPoint: </td>
+          <td></td>
+          <td class="paramtype">(CGPoint)&#160;</td>
+          <td class="paramname"><em>point</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">toCoordinateFromView:</td>
+          <td></td>
+          <td class="paramtype">(UIView *)&#160;</td>
+          <td class="paramname"><em>view</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将相对于指定 view 的坐标转换为经纬度坐标。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>待转换的坐标。 </td></tr>
+    <tr><td class="paramname">view</td><td>point 所基于的 view。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>经纬度坐标。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6a41fcc9a13c01e5f0b56d7b62043c03"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="struct_m_a_coordinate_region.html">MACoordinateRegion</a>) convertRect: </td>
+          <td></td>
+          <td class="paramtype">(CGRect)&#160;</td>
+          <td class="paramname"><em>rect</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">toRegionFromView:</td>
+          <td></td>
+          <td class="paramtype">(UIView *)&#160;</td>
+          <td class="paramname"><em>view</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将指定 view 坐标系的rect 转换为经纬度 region。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>指定view 坐标系的rect。 </td></tr>
+    <tr><td class="paramname">view</td><td>指定的view。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>经纬度region。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af4a19e39d9a42ffce83db779a26c33cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGRect) convertRegion: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="struct_m_a_coordinate_region.html">MACoordinateRegion</a>)&#160;</td>
+          <td class="paramname"><em>region</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">toRectToView:</td>
+          <td></td>
+          <td class="paramtype">(UIView *)&#160;</td>
+          <td class="paramname"><em>view</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将经纬度 region 转换为指定 view 坐标系的 rect。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">region</td><td>经纬度 region。 </td></tr>
+    <tr><td class="paramname">view</td><td>指定的 view。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>指定 view 坐标系的 rect。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aae0acadc21cfa7dca6e3a51f9345acb3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_m_a_annotation_view.html">MAAnnotationView</a> *) dequeueReusableAnnotationViewWithIdentifier: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>identifier</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从复用内存池中获取制定复用标识的 annotation view。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">identifier</td><td>复用标识。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>对应的标注 view。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aea554520e5842f3fdd20bd96243cadac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) deselectAnnotation: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_annotation-p.html">MAAnnotation</a> &gt;)&#160;</td>
+          <td class="paramname"><em>annotation</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">animated:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>animated</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>取消选中标注对象对应的 view。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">annotation</td><td>标注对象。 </td></tr>
+    <tr><td class="paramname">animated</td><td>是否有动画效果。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a858f7740c9e08c2ac86a4e743ba836fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) exchangeOverlayAtIndex: </td>
+          <td></td>
+          <td class="paramtype">(NSUInteger)&#160;</td>
+          <td class="paramname"><em>index1</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">withOverlayAtIndex:</td>
+          <td></td>
+          <td class="paramtype">(NSUInteger)&#160;</td>
+          <td class="paramname"><em>index2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在交换指定索引处的 Overlay。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index1</td><td>索引1。 </td></tr>
+    <tr><td class="paramname">index2</td><td>索引2。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5f4ca55c1aff3f63dac87c3da469950d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) insertOverlay: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_overlay-p.html">MAOverlay</a> &gt;)&#160;</td>
+          <td class="paramname"><em>overlay</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">aboveOverlay:</td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_overlay-p.html">MAOverlay</a> &gt;)&#160;</td>
+          <td class="paramname"><em>sibling</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在指定的 Overlay 之上插入一个 Overlay。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">overlay</td><td>带添加的 Overlay。 </td></tr>
+    <tr><td class="paramname">sibling</td><td>用于指定相对位置的 Overlay。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8dcbdab927b41c4009d5267dbe22ab2c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) insertOverlay: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_overlay-p.html">MAOverlay</a> &gt;)&#160;</td>
+          <td class="paramname"><em>overlay</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">atIndex:</td>
+          <td></td>
+          <td class="paramtype">(NSUInteger)&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在指定的索引处添加一个 Overlay。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">overlay</td><td>要添加的 Overlay。 </td></tr>
+    <tr><td class="paramname">index</td><td>指定的索引。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6fd8423ea8c70c530b9e7f02fb81ca94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) insertOverlay: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_overlay-p.html">MAOverlay</a> &gt;)&#160;</td>
+          <td class="paramname"><em>overlay</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">belowOverlay:</td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_overlay-p.html">MAOverlay</a> &gt;)&#160;</td>
+          <td class="paramname"><em>sibling</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在指定的 Overlay 之下插入一个 Overlay。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">overlay</td><td>带添加的 Overlay。 </td></tr>
+    <tr><td class="paramname">sibling</td><td>用于指定相对位置的 Overlay。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5bf9e1dbc8a764dcedaf6aafc185bd98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>) mapRectThatFits: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>)&#160;</td>
+          <td class="paramname"><em>mapRect</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>调整 map rect 使其适合地图窗口显示的范围 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mapRect</td><td>要调整的 map rect。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>调整后的 map rect。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae9bc3271b69186d98718950fb91bdb21"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>) <a class="el" href="interface_m_a_map_view.html#a5bf9e1dbc8a764dcedaf6aafc185bd98">mapRectThatFits:</a> </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>)&#160;</td>
+          <td class="paramname"><em>mapRect</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">edgePadding:</td>
+          <td></td>
+          <td class="paramtype">(UIEdgeInsets)&#160;</td>
+          <td class="paramname"><em>insets</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>调整 map rect 使其适合地图窗口显示的范围 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mapRect</td><td>要调整的 map rect。 </td></tr>
+    <tr><td class="paramname">insets</td><td>嵌入边界。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>调整后的 map rect。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8b2c0a74c90e65fc4f798a262114cae8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGFloat) metersPerPointForZoomLevel: </td>
+          <td></td>
+          <td class="paramtype">(CGFloat)&#160;</td>
+          <td class="paramname"><em>zoomLevel</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在指定的缩放级别下，基于地图中心点，1 screen point 对应的距离（单位是米）。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">zoomLevel</td><td>指定的缩放级别，在[minZoomLevel, maxZoomLevel]范围内。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>对应的距离（单位是米）。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad341e45f0a9f22982aea40d7b3380584"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="struct_m_a_coordinate_region.html">MACoordinateRegion</a>) regionThatFits: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="struct_m_a_coordinate_region.html">MACoordinateRegion</a>)&#160;</td>
+          <td class="paramname"><em>region</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>根据当前地图视图 frame 的大小调整 region 范围。 </p>
+<dl class="section note"><dt>注解</dt><dd>调整过程中当前地图的中心点不会改变。</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">region</td><td>要调整的经纬度范围。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>调整后的经纬度范围。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5256e2a0404a95d7e623b166f5c50bfa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) removeAnnotation: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_annotation-p.html">MAAnnotation</a> &gt;)&#160;</td>
+          <td class="paramname"><em>annotation</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移除标注。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">annotation</td><td>要移除的标注。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4848573321201d75f277c14a94285620"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) removeAnnotations: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>annotations</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移除一组标注。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">annotations</td><td>要移除的标注数组。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a702100d6e068b63c831ec5c292446ec8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) removeOverlay: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_overlay-p.html">MAOverlay</a> &gt;)&#160;</td>
+          <td class="paramname"><em>overlay</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移除 Overlay。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">overlay</td><td>要移除的 Overlay。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ade964fb9586705638125b8188ef58e4c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) removeOverlays: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>overlays</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移除一组 Overlay。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">overlays</td><td>要移除的 overlay 数组。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a36dffd1967c8c4dd1f8841c64dacb136"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_m_a_overlay_renderer.html">MAOverlayRenderer</a> *) rendererForOverlay: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_overlay-p.html">MAOverlay</a> &gt;)&#160;</td>
+          <td class="paramname"><em>overlay</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查找指定 Overlay对应的 Renderer，如果该 Renderer 尚未创建，返回 nil </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">overlay</td><td>指定的 Overlay。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>指定 Overlay 对应的 Renderer。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afaa6b68b746088240ba60a638035f93d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) selectAnnotation: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_annotation-p.html">MAAnnotation</a> &gt;)&#160;</td>
+          <td class="paramname"><em>annotation</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">animated:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>animated</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>选中标注对象对应的 view。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">annotation</td><td>标注数据。 </td></tr>
+    <tr><td class="paramname">animated</td><td>是否有动画效果。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3264e1935daa81c2d2bffdf18ffaa1cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setCenterCoordinate: </td>
+          <td></td>
+          <td class="paramtype">(CLLocationCoordinate2D)&#160;</td>
+          <td class="paramname"><em>centerCoordinate</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">animated:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>animated</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>根据给定的参数设置当前地图的中心点。 </p>
+<dl class="section note"><dt>注解</dt><dd>改变该值时，地图的比例尺级别不会发生变化。</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coordinate</td><td>中心点经纬度坐标。 </td></tr>
+    <tr><td class="paramname">animated</td><td>是否有动画效果。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab669fce4dd1e8c0415064859306ec1e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setCompassImage: </td>
+          <td></td>
+          <td class="paramtype">(UIImage *)&#160;</td>
+          <td class="paramname"><em>image</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置罗盘的图像。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>当设置图像非空时，指南针将呈现该图像，如果为nil时，则恢复默认。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a14e976ddd8083261a0f6dbbb969b1290"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setRegion: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="struct_m_a_coordinate_region.html">MACoordinateRegion</a>)&#160;</td>
+          <td class="paramname"><em>region</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">animated:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>animated</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设定当前地图的 region。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">region</td><td>要设定的地图范围，用经纬度的方式表示。 </td></tr>
+    <tr><td class="paramname">animated</td><td>是否有动画效果。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6edff740076a188faa5c6b59e32227be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setUserTrackingMode: </td>
+          <td></td>
+          <td class="paramtype">(MAUserTrackingMode)&#160;</td>
+          <td class="paramname"><em>mode</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">animated:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>animated</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>根据给定的参数设置定位用户位置的模式。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>定位用户位置的模式。 </td></tr>
+    <tr><td class="paramname">animated</td><td>是否有动画效果。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a013b1e14711fd118b6ad48b5221e5f1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setVisibleMapRect: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>)&#160;</td>
+          <td class="paramname"><em>mapRect</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">animated:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>animated</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置当前地图可见范围的 map rect。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mapRect</td><td>要调整的 map rect。 </td></tr>
+    <tr><td class="paramname">animated</td><td>是否有动画效果。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a382e6ca8b0d0cf9db5dc0110f0d4012b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setVisibleMapRect: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>)&#160;</td>
+          <td class="paramname"><em>mapRect</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">edgePadding:</td>
+          <td></td>
+          <td class="paramtype">(UIEdgeInsets)&#160;</td>
+          <td class="paramname"><em>insets</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">animated:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>animated</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置当前地图可见范围的map rect </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mapRect</td><td>要设置的map rect </td></tr>
+    <tr><td class="paramname">insets</td><td>嵌入边界 </td></tr>
+    <tr><td class="paramname">animated</td><td>是否有动画效果。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5153e99d95de763a73f1648285671610"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setZoomLevel: </td>
+          <td></td>
+          <td class="paramtype">(double)&#160;</td>
+          <td class="paramname"><em>newZoomLevel</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">animated:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>animated</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置当前地图的缩放级别。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newZoomLevel</td><td>要设置的缩放级别。 </td></tr>
+    <tr><td class="paramname">animated</td><td>是否有动画效果。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="adc3dcf92f9cd72b981a65b7b7051f9ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setZoomLevel: </td>
+          <td></td>
+          <td class="paramtype">(double)&#160;</td>
+          <td class="paramname"><em>newZoomLevel</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">atPivot:</td>
+          <td></td>
+          <td class="paramtype">(CGPoint)&#160;</td>
+          <td class="paramname"><em>pivot</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">animated:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>animated</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置当前地图的缩放级别。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newZoomLevel</td><td>要设置的缩放级别。 </td></tr>
+    <tr><td class="paramname">pivot</td><td>指定缩放的锚点，屏幕坐标。 </td></tr>
+    <tr><td class="paramname">animated</td><td>是否有动画效果。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab41e3c45dd90488fe2ac4191153bc685"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) showAnnotations: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>annotations</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">animated:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>animated</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置地图使其可以显示数组中所有的标注。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">annotations</td><td>需要在地图中显示的标注数据。 </td></tr>
+    <tr><td class="paramname">animated</td><td>是否有动画效果。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad660af22c6e6d932b3e68f2059b0cfb8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) showAnnotations: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>annotations</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">edgePadding:</td>
+          <td></td>
+          <td class="paramtype">(UIEdgeInsets)&#160;</td>
+          <td class="paramname"><em>insets</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">animated:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>animated</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置地图使其可以显示数组中所有的annotation, 如果数组中只有一个则直接设置地图中心为annotation的位置。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">annotations</td><td>需要显示的annotation。 </td></tr>
+    <tr><td class="paramname">insets</td><td>insets 嵌入边界。 </td></tr>
+    <tr><td class="paramname">animated</td><td>是否有动画效果。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a184e6408f2eff4a2f58ea779c63845a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIImage *) takeSnapshotInRect: </td>
+          <td></td>
+          <td class="paramtype">(CGRect)&#160;</td>
+          <td class="paramname"><em>rect</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>对指定区域内的内容进行截图（默认会包含该区域内的标注 view）。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>指定的区域。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>截图 image。 </dd></dl>
+
+<p>Provided by category <a class="el" href="category_m_a_map_view_07_snapshot_08.html#a184e6408f2eff4a2f58ea779c63845a2">MAMapView(Snapshot)</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afb80dedda65c4789f776cea9e16174f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) <a class="el" href="category_m_a_map_view_07_snapshot_08.html#a184e6408f2eff4a2f58ea779c63845a2">takeSnapshotInRect:</a> </td>
+          <td></td>
+          <td class="paramtype">(CGRect)&#160;</td>
+          <td class="paramname"><em>rect</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">withCompletionBlock:</td>
+          <td></td>
+          <td class="paramtype">(UIImage *)&#160;</td>
+          <td class="paramname"><em>resultImage</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">(CGRect rect)&#160;</td>
+          <td class="paramname"><em>block</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获得地图当前可视区域截图。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>指定截图区域。 </td></tr>
+    <tr><td class="paramname">block</td><td>回调 block。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Provided by category <a class="el" href="category_m_a_map_view_07_snapshot_08.html#afb80dedda65c4789f776cea9e16174f8">MAMapView(Snapshot)</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a94d150e96a592798b0558d4423422cce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) updateUserLocationRepresentation: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_m_a_user_location_representation.html">MAUserLocationRepresentation</a> *)&#160;</td>
+          <td class="paramname"><em>representation</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设定 UserLocationView 样式。 </p>
+<dl class="section note"><dt>注解</dt><dd>如果用户自定义了 userlocation 的 annotationView，或者该 annotationView 还未添加到地图上，此方法将不起作用。</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">representation</td><td>样式信息对象。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a41bec551e4c47e40443092ed9a25d7fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_m_a_annotation_view.html">MAAnnotationView</a> *) viewForAnnotation: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_annotation-p.html">MAAnnotation</a> &gt;)&#160;</td>
+          <td class="paramname"><em>annotation</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>根据 annotation 查询其所对应的 view。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">annotation</td><td>要查询的 annotation。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>annotation 所对应的 view。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac5be3becb5b85d7212c822a53f4658d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_m_a_overlay_view.html">MAOverlayView</a> *) viewForOverlay: </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>已弃用，使用 <a class="el" href="interface_m_a_map_view.html#a36dffd1967c8c4dd1f8841c64dacb136" title="查找指定 Overlay对应的 Renderer，如果该 Renderer 尚未创建，返回 nil ">rendererForOverlay:</a> 来代替。查找指定 Overlay 对应的 view，如果该 view 尚未创建，返回 nil。 </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">弃用:</a></b></dt><dd>使用 <a class="el" href="interface_m_a_map_view.html#a36dffd1967c8c4dd1f8841c64dacb136" title="查找指定 Overlay对应的 Renderer，如果该 Renderer 尚未创建，返回 nil ">rendererForOverlay:</a> 来代替。</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">overlay</td><td>指定的 Overlay。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>指定overlay 对应的 view。 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a class="anchor" id="a8c9a430c77774e313d3dabe8756feebc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) allowsBackgroundLocationUpdates</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>是否允许后台定位。默认为 NO，只在iOS 9.0之后起作用。 </p>
+<dl class="section note"><dt>注解</dt><dd>设置成YES时必须保证 Background Modes 中的 Location updates处于选中状态，否则会抛出异常。 </dd></dl>
+
+<p>Provided by category <a class="el" href="category_m_a_map_view_07_location_option_08.html#a8c9a430c77774e313d3dabe8756feebc">MAMapView(LocationOption)</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9b868d00732bd17c4bf890e44524bebb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGFloat) metersPerPointForCurrentZoomLevel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在当前缩放级别下，基于地图中心点，1 screen point 对应的距离（单位是米）。 </p>
+<dl class="section return"><dt>返回</dt><dd>对应的距离（单位是米）。 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="_m_a_map_view_8h_source.html">MAMapView.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+﻿&#169; 2016 高德软件有限公司 版权所有，保留所有权利。 

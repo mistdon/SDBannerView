@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>高德地图iOS SDK 3D地图&amp;搜索服务参考手册 V3.3.1: MAOverlayPathRenderer类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">高德地图iOS SDK 3D地图&amp;搜索服务参考手册 V3.3.1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('interface_m_a_overlay_path_renderer.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#properties">属性</a> &#124;
+<a href="class_m_a_overlay_path_renderer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">MAOverlayPathRenderer类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>该类设置overlay绘制的属性，可以使用该类的子类MACircleRenderer, <a class="el" href="interface_m_a_polyline_renderer.html" title="此类用于绘制MAPolyline,可以通过MAOverlayPathRenderer修改其fill和stroke attributes ">MAPolylineRenderer</a>, MAPolygonRenderer或者继承该类  
+ <a href="interface_m_a_overlay_path_renderer.html#details">更多...</a></p>
+
+<p><code>#import &lt;<a class="el" href="_m_a_overlay_path_renderer_8h_source.html">MAOverlayPathRenderer.h</a>&gt;</code></p>
+<div class="dynheader">
+类 MAOverlayPathRenderer 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_m_a_overlay_path_renderer.png" usemap="#MAOverlayPathRenderer_map" alt=""/>
+  <map id="MAOverlayPathRenderer_map" name="MAOverlayPathRenderer_map">
+<area href="interface_m_a_overlay_renderer.html" title="该类是地图覆盖物Renderer的基类, 提供绘制overlay的接口但并无实际的实现 " alt="MAOverlayRenderer" shape="rect" coords="212,56,414,80"/>
+<area href="interface_m_a_circle_renderer.html" title="该类是MACircle的显示圆Renderer,可以通过MAOverlayPathRenderer修改其fill和stroke attributes。 " alt="MACircleRenderer" shape="rect" coords="0,168,202,192"/>
+<area href="interface_m_a_polygon_renderer.html" title="此类用于绘制MAPolygon,可以通过MAOverlayPathRenderer修改其fill和stroke attributes " alt="MAPolygonRenderer" shape="rect" coords="212,168,414,192"/>
+<area href="interface_m_a_polyline_renderer.html" title="此类用于绘制MAPolyline,可以通过MAOverlayPathRenderer修改其fill和stroke attributes " alt="MAPolylineRenderer" shape="rect" coords="424,168,626,192"/>
+<area href="interface_m_a_multi_colored_polyline_renderer.html" alt="MAMultiColoredPolylineRenderer" shape="rect" coords="318,224,520,248"/>
+<area href="interface_m_a_multi_texture_polyline_renderer.html" alt="MAMultiTexturePolylineRenderer" shape="rect" coords="530,224,732,248"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a9116486a286e76e0d19e07c8bfbdd44a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9116486a286e76e0d19e07c8bfbdd44a"></a>
+UIColor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_overlay_path_renderer.html#a9116486a286e76e0d19e07c8bfbdd44a">fillColor</a></td></tr>
+<tr class="memdesc:a9116486a286e76e0d19e07c8bfbdd44a"><td class="mdescLeft">&#160;</td><td class="mdescRight">填充颜色,默认是kMAOverlayRendererDefaultFillColor <br/></td></tr>
+<tr class="separator:a9116486a286e76e0d19e07c8bfbdd44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12a2e70c22a45e19fce1aca41dfc5a62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12a2e70c22a45e19fce1aca41dfc5a62"></a>
+UIColor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_overlay_path_renderer.html#a12a2e70c22a45e19fce1aca41dfc5a62">strokeColor</a></td></tr>
+<tr class="memdesc:a12a2e70c22a45e19fce1aca41dfc5a62"><td class="mdescLeft">&#160;</td><td class="mdescRight">笔触颜色,默认是kMAOverlayRendererDefaultStrokeColor <br/></td></tr>
+<tr class="separator:a12a2e70c22a45e19fce1aca41dfc5a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4c248bd46f5ceea4170f4b8c1eed7e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4c248bd46f5ceea4170f4b8c1eed7e1"></a>
+CGFloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_overlay_path_renderer.html#ad4c248bd46f5ceea4170f4b8c1eed7e1">lineWidth</a></td></tr>
+<tr class="memdesc:ad4c248bd46f5ceea4170f4b8c1eed7e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">笔触宽度,默认是0 <br/></td></tr>
+<tr class="separator:ad4c248bd46f5ceea4170f4b8c1eed7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf51d253492aa71a28d7de1148710883"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf51d253492aa71a28d7de1148710883"></a>
+<a class="el" href="_m_a_line_draw_type_8h.html#a905eedcbb3a877f9c93efa32facf10fd">MALineJoinType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_overlay_path_renderer.html#abf51d253492aa71a28d7de1148710883">lineJoinType</a></td></tr>
+<tr class="memdesc:abf51d253492aa71a28d7de1148710883"><td class="mdescLeft">&#160;</td><td class="mdescRight">LineJoin,默认是kMALineJoinBevel. <br/></td></tr>
+<tr class="separator:abf51d253492aa71a28d7de1148710883"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00be5010b63531ad5701812dbacc763c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00be5010b63531ad5701812dbacc763c"></a>
+<a class="el" href="_m_a_line_draw_type_8h.html#a6bd23e332bdc0ed6ba06af59d79377d4">MALineCapType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_overlay_path_renderer.html#a00be5010b63531ad5701812dbacc763c">lineCapType</a></td></tr>
+<tr class="memdesc:a00be5010b63531ad5701812dbacc763c"><td class="mdescLeft">&#160;</td><td class="mdescRight">LineCap,默认是kMALineCapButt. <br/></td></tr>
+<tr class="separator:a00be5010b63531ad5701812dbacc763c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a574c8c60071fb7278278f33fbf84a30b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a574c8c60071fb7278278f33fbf84a30b"></a>
+CGFloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_overlay_path_renderer.html#a574c8c60071fb7278278f33fbf84a30b">miterLimit</a></td></tr>
+<tr class="memdesc:a574c8c60071fb7278278f33fbf84a30b"><td class="mdescLeft">&#160;</td><td class="mdescRight">MiterLimit,默认是10.f. <br/></td></tr>
+<tr class="separator:a574c8c60071fb7278278f33fbf84a30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ec2c9337d64d2ae481ab4e96001d0bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ec2c9337d64d2ae481ab4e96001d0bd"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_overlay_path_renderer.html#a2ec2c9337d64d2ae481ab4e96001d0bd">lineDash</a></td></tr>
+<tr class="memdesc:a2ec2c9337d64d2ae481ab4e96001d0bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否绘制成虚线, 默认是NO <br/></td></tr>
+<tr class="separator:a2ec2c9337d64d2ae481ab4e96001d0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_interface_m_a_overlay_renderer"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_m_a_overlay_renderer')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="interface_m_a_overlay_renderer.html">MAOverlayRenderer</a></td></tr>
+<tr class="memitem:a0ca43223d15e2228c6006214e93bfe18 inherit properties_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ca43223d15e2228c6006214e93bfe18"></a>
+id&lt; <a class="el" href="protocol_m_a_overlay-p.html">MAOverlay</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_overlay_renderer.html#a0ca43223d15e2228c6006214e93bfe18">overlay</a></td></tr>
+<tr class="memdesc:a0ca43223d15e2228c6006214e93bfe18 inherit properties_interface_m_a_overlay_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">关联的overlay对象 <br/></td></tr>
+<tr class="separator:a0ca43223d15e2228c6006214e93bfe18 inherit properties_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee79d6baa8e3df5319d7f606d08eb9ab inherit properties_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee79d6baa8e3df5319d7f606d08eb9ab"></a>
+CGPoint *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_overlay_renderer.html#aee79d6baa8e3df5319d7f606d08eb9ab">glPoints</a></td></tr>
+<tr class="memdesc:aee79d6baa8e3df5319d7f606d08eb9ab inherit properties_interface_m_a_overlay_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">缓存的OpenGLES坐标 <br/></td></tr>
+<tr class="separator:aee79d6baa8e3df5319d7f606d08eb9ab inherit properties_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf69d82b2850808c89175161aff24fd inherit properties_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acbf69d82b2850808c89175161aff24fd"></a>
+NSUInteger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_overlay_renderer.html#acbf69d82b2850808c89175161aff24fd">glPointCount</a></td></tr>
+<tr class="memdesc:acbf69d82b2850808c89175161aff24fd inherit properties_interface_m_a_overlay_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">缓存的OpenGLES坐标 个数 <br/></td></tr>
+<tr class="separator:acbf69d82b2850808c89175161aff24fd inherit properties_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25068e80ad4d8f15c4fe983cf2eb94be inherit properties_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25068e80ad4d8f15c4fe983cf2eb94be"></a>
+GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_overlay_renderer.html#a25068e80ad4d8f15c4fe983cf2eb94be">strokeTextureID</a></td></tr>
+<tr class="memdesc:a25068e80ad4d8f15c4fe983cf2eb94be inherit properties_interface_m_a_overlay_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">笔触纹理id 修改纹理id参考 - (GLuint)<a class="el" href="interface_m_a_overlay_renderer.html#a6fc47b419731916910e48e00a97c0cef">loadStrokeTextureImage:</a>textureImage; <br/></td></tr>
+<tr class="separator:a25068e80ad4d8f15c4fe983cf2eb94be inherit properties_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_methods_interface_m_a_overlay_renderer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_m_a_overlay_renderer')"><img src="closed.png" alt="-"/>&#160;Instance Methods 继承自 <a class="el" href="interface_m_a_overlay_renderer.html">MAOverlayRenderer</a></td></tr>
+<tr class="memitem:a5a7a40eee9973034f52c336509c2c80f inherit pub_methods_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top">(instancetype)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_renderer.html#a5a7a40eee9973034f52c336509c2c80f">initWithOverlay:</a></td></tr>
+<tr class="memdesc:a5a7a40eee9973034f52c336509c2c80f inherit pub_methods_interface_m_a_overlay_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化并返回一个Overlay Renderer  <a href="#a5a7a40eee9973034f52c336509c2c80f">更多...</a><br/></td></tr>
+<tr class="separator:a5a7a40eee9973034f52c336509c2c80f inherit pub_methods_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22d5bc343dca1ba32c7a9d4079030cdd inherit pub_methods_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top">(CGPoint)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_renderer.html#a22d5bc343dca1ba32c7a9d4079030cdd">pointForMapPoint:</a></td></tr>
+<tr class="memdesc:a22d5bc343dca1ba32c7a9d4079030cdd inherit pub_methods_interface_m_a_overlay_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">将MAMapPoint转化为相对于receiver的本地坐标  <a href="#a22d5bc343dca1ba32c7a9d4079030cdd">更多...</a><br/></td></tr>
+<tr class="separator:a22d5bc343dca1ba32c7a9d4079030cdd inherit pub_methods_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad68729a4a56c780a0254f43abb8c577b inherit pub_methods_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="struct_m_a_map_point.html">MAMapPoint</a>)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_renderer.html#ad68729a4a56c780a0254f43abb8c577b">mapPointForPoint:</a></td></tr>
+<tr class="memdesc:ad68729a4a56c780a0254f43abb8c577b inherit pub_methods_interface_m_a_overlay_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">将相对于receiver的本地坐标转化为MAMapPoint  <a href="#ad68729a4a56c780a0254f43abb8c577b">更多...</a><br/></td></tr>
+<tr class="separator:ad68729a4a56c780a0254f43abb8c577b inherit pub_methods_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1611f4df96ca1e39bdb8ed0c75bc9bd2 inherit pub_methods_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top">(CGRect)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_renderer.html#a1611f4df96ca1e39bdb8ed0c75bc9bd2">rectForMapRect:</a></td></tr>
+<tr class="memdesc:a1611f4df96ca1e39bdb8ed0c75bc9bd2 inherit pub_methods_interface_m_a_overlay_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">将MAMapRect转化为相对于receiver的本地rect  <a href="#a1611f4df96ca1e39bdb8ed0c75bc9bd2">更多...</a><br/></td></tr>
+<tr class="separator:a1611f4df96ca1e39bdb8ed0c75bc9bd2 inherit pub_methods_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f591cb073ef5e066a721346c3c40246 inherit pub_methods_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_renderer.html#a4f591cb073ef5e066a721346c3c40246">mapRectForRect:</a></td></tr>
+<tr class="memdesc:a4f591cb073ef5e066a721346c3c40246 inherit pub_methods_interface_m_a_overlay_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">将相对于receiver的本地rect转化为MAMapRect  <a href="#a4f591cb073ef5e066a721346c3c40246">更多...</a><br/></td></tr>
+<tr class="separator:a4f591cb073ef5e066a721346c3c40246 inherit pub_methods_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d4b44782f2d65bea849753610349ec0 inherit pub_methods_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top">(CGPoint)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_renderer.html#a2d4b44782f2d65bea849753610349ec0">glPointForMapPoint:</a></td></tr>
+<tr class="memdesc:a2d4b44782f2d65bea849753610349ec0 inherit pub_methods_interface_m_a_overlay_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">将MAMapPoint转换为opengles可以直接使用的坐标  <a href="#a2d4b44782f2d65bea849753610349ec0">更多...</a><br/></td></tr>
+<tr class="separator:a2d4b44782f2d65bea849753610349ec0 inherit pub_methods_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa73f69f3c3a7d9b99414478c0f6ce245 inherit pub_methods_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top">(CGPoint *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_renderer.html#aa73f69f3c3a7d9b99414478c0f6ce245">glPointsForMapPoints:count:</a></td></tr>
+<tr class="memdesc:aa73f69f3c3a7d9b99414478c0f6ce245 inherit pub_methods_interface_m_a_overlay_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">批量将MAMapPoint转换为opengles可以直接使用的坐标  <a href="#aa73f69f3c3a7d9b99414478c0f6ce245">更多...</a><br/></td></tr>
+<tr class="separator:aa73f69f3c3a7d9b99414478c0f6ce245 inherit pub_methods_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25aa32a0921135a71324601b7f4fb07f inherit pub_methods_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top">(CGFloat)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_renderer.html#a25aa32a0921135a71324601b7f4fb07f">glWidthForWindowWidth:</a></td></tr>
+<tr class="memdesc:a25aa32a0921135a71324601b7f4fb07f inherit pub_methods_interface_m_a_overlay_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">将屏幕尺寸转换为OpenGLES尺寸  <a href="#a25aa32a0921135a71324601b7f4fb07f">更多...</a><br/></td></tr>
+<tr class="separator:a25aa32a0921135a71324601b7f4fb07f inherit pub_methods_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b311f64f6e2aed53c00cbf8f7266bdf inherit pub_methods_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b311f64f6e2aed53c00cbf8f7266bdf"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_renderer.html#a8b311f64f6e2aed53c00cbf8f7266bdf">referenceDidChange</a></td></tr>
+<tr class="memdesc:a8b311f64f6e2aed53c00cbf8f7266bdf inherit pub_methods_interface_m_a_overlay_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenGLES坐标系发生改变, 重新计算缓存的OpenGLES坐标 <br/></td></tr>
+<tr class="separator:a8b311f64f6e2aed53c00cbf8f7266bdf inherit pub_methods_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a1a6fb02f9cb4e0ef3ccd0534e80349 inherit pub_methods_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_renderer.html#a5a1a6fb02f9cb4e0ef3ccd0534e80349">renderLinesWithPoints:pointCount:strokeColor:lineWidth:looped:</a></td></tr>
+<tr class="memdesc:a5a1a6fb02f9cb4e0ef3ccd0534e80349 inherit pub_methods_interface_m_a_overlay_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用OpenGLES 绘制线  <a href="#a5a1a6fb02f9cb4e0ef3ccd0534e80349">更多...</a><br/></td></tr>
+<tr class="separator:a5a1a6fb02f9cb4e0ef3ccd0534e80349 inherit pub_methods_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63271e9523e17289aa0eb915a6cca0fe inherit pub_methods_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_renderer.html#a63271e9523e17289aa0eb915a6cca0fe">renderLinesWithPoints:pointCount:strokeColor:lineWidth:looped:LineJoinType:LineCapType:lineDash:</a></td></tr>
+<tr class="separator:a63271e9523e17289aa0eb915a6cca0fe inherit pub_methods_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58f06e92279176d2e56e218d0b67746f inherit pub_methods_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_renderer.html#a58f06e92279176d2e56e218d0b67746f">renderTexturedLinesWithPoints:pointCount:lineWidth:textureID:looped:</a></td></tr>
+<tr class="separator:a58f06e92279176d2e56e218d0b67746f inherit pub_methods_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cde9e18cab8b08a222e3bba0902147c inherit pub_methods_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_renderer.html#a8cde9e18cab8b08a222e3bba0902147c">renderTexturedLinesWithPoints:pointCount:lineWidth:textureIDs:drawStyleIndexes:looped:</a></td></tr>
+<tr class="memdesc:a8cde9e18cab8b08a222e3bba0902147c inherit pub_methods_interface_m_a_overlay_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用OpenGLES 绘制多纹理线  <a href="#a8cde9e18cab8b08a222e3bba0902147c">更多...</a><br/></td></tr>
+<tr class="separator:a8cde9e18cab8b08a222e3bba0902147c inherit pub_methods_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1944a885bb397142c4a7a5be8c5841e4 inherit pub_methods_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_renderer.html#a1944a885bb397142c4a7a5be8c5841e4">renderLinesWithPoints:pointCount:strokeColors:drawStyleIndexes:isGradient:lineWidth:looped:LineJoinType:LineCapType:lineDash:</a></td></tr>
+<tr class="memdesc:a1944a885bb397142c4a7a5be8c5841e4 inherit pub_methods_interface_m_a_overlay_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用OpenGLES 绘制多段颜色线  <a href="#a1944a885bb397142c4a7a5be8c5841e4">更多...</a><br/></td></tr>
+<tr class="separator:a1944a885bb397142c4a7a5be8c5841e4 inherit pub_methods_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d60510d09394e5675428c26e19708fb inherit pub_methods_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_renderer.html#a5d60510d09394e5675428c26e19708fb">renderRegionWithPoints:pointCount:fillColor:usingTriangleFan:</a></td></tr>
+<tr class="memdesc:a5d60510d09394e5675428c26e19708fb inherit pub_methods_interface_m_a_overlay_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用OpenGLES 绘制区域  <a href="#a5d60510d09394e5675428c26e19708fb">更多...</a><br/></td></tr>
+<tr class="separator:a5d60510d09394e5675428c26e19708fb inherit pub_methods_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a886bcbe98c33c159e39649c1ae0ccd53 inherit pub_methods_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_renderer.html#a886bcbe98c33c159e39649c1ae0ccd53">renderStrokedRegionWithPoints:pointCount:fillColor:strokeColor:strokeLineWidth:strokeLineJoinType:strokeLineDash:usingTriangleFan:</a></td></tr>
+<tr class="separator:a886bcbe98c33c159e39649c1ae0ccd53 inherit pub_methods_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab14628082ab5bb4f7c6e32bdfaeaaf60 inherit pub_methods_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_renderer.html#ab14628082ab5bb4f7c6e32bdfaeaaf60">renderTextureStrokedRegionWithPoints:pointCount:fillColor:strokeTineWidth:strokeTextureID:usingTriangleFan:</a></td></tr>
+<tr class="memdesc:ab14628082ab5bb4f7c6e32bdfaeaaf60 inherit pub_methods_interface_m_a_overlay_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用OpenGLES 绘制区域(带纹理轮廓线)  <a href="#ab14628082ab5bb4f7c6e32bdfaeaaf60">更多...</a><br/></td></tr>
+<tr class="separator:ab14628082ab5bb4f7c6e32bdfaeaaf60 inherit pub_methods_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86178c5b4395dced5504aae45d1d024b inherit pub_methods_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_renderer.html#a86178c5b4395dced5504aae45d1d024b">renderIconWithTextureID:points:</a></td></tr>
+<tr class="memdesc:a86178c5b4395dced5504aae45d1d024b inherit pub_methods_interface_m_a_overlay_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用OpenGLES 绘制图片  <a href="#a86178c5b4395dced5504aae45d1d024b">更多...</a><br/></td></tr>
+<tr class="separator:a86178c5b4395dced5504aae45d1d024b inherit pub_methods_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adea30a6b48a40754e8c41c41c069a025 inherit pub_methods_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_renderer.html#adea30a6b48a40754e8c41c41c069a025">renderIconWithTextureID:points:modulateColor:</a></td></tr>
+<tr class="memdesc:adea30a6b48a40754e8c41c41c069a025 inherit pub_methods_interface_m_a_overlay_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用OpenGLES 绘制图片  <a href="#adea30a6b48a40754e8c41c41c069a025">更多...</a><br/></td></tr>
+<tr class="separator:adea30a6b48a40754e8c41c41c069a025 inherit pub_methods_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff00e281b17192a78c807e6ebe3a2125 inherit pub_methods_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff00e281b17192a78c807e6ebe3a2125"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_renderer.html#aff00e281b17192a78c807e6ebe3a2125">glRender</a></td></tr>
+<tr class="memdesc:aff00e281b17192a78c807e6ebe3a2125 inherit pub_methods_interface_m_a_overlay_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制函数(子类需要重载来实现) <br/></td></tr>
+<tr class="separator:aff00e281b17192a78c807e6ebe3a2125 inherit pub_methods_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fc47b419731916910e48e00a97c0cef inherit pub_methods_interface_m_a_overlay_renderer"><td class="memItemLeft" align="right" valign="top">(GLuint)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_renderer.html#a6fc47b419731916910e48e00a97c0cef">loadStrokeTextureImage:</a></td></tr>
+<tr class="separator:a6fc47b419731916910e48e00a97c0cef inherit pub_methods_interface_m_a_overlay_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>该类设置overlay绘制的属性，可以使用该类的子类MACircleRenderer, <a class="el" href="interface_m_a_polyline_renderer.html" title="此类用于绘制MAPolyline,可以通过MAOverlayPathRenderer修改其fill和stroke attributes ">MAPolylineRenderer</a>, MAPolygonRenderer或者继承该类 </p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="_m_a_overlay_path_renderer_8h_source.html">MAOverlayPathRenderer.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+﻿&#169; 2016 高德软件有限公司 版权所有，保留所有权利。 

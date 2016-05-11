@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>identifier</key>
+		<integer>1</integer>
+		<key>latitude</key>
+		<real>51.5072</real>
+		<key>locationName</key>
+		<string>United Kingdom</string>
+		<key>longitude</key>
+		<real>-0.1275</real>
+		<key>name</key>
+		<string>London</string>
+		<key>placesList</key>
+		<string>Tower of London, British Museum, Portobello Road, Borough Market</string>
+		<key>thumbnailName</key>
+		<string>london-thumb</string>
+		<key>userRating</key>
+		<integer>4</integer>
+		<key>weatherInfo</key>
+		<string>Summers are warm and sometimes hot, and winters are cool and damp with the occasional snowfall.</string>
+		<key>whatToSee</key>
+		<string>Some places to visit are the Tower of London and the British Museum, or explore Portobello Road and Borough Market.</string>
+		<key>whyVisit</key>
+		<string>London is a world itself. Whether you enjoy visiting historical landmarks or more modern day attractions, there is something for everyone.</string>
+		<key>wikipediaLink</key>
+		<string>https://en.wikipedia.org/wiki/London</string>
+	</dict>
+	<dict>
+		<key>identifier</key>
+		<integer>2</integer>
+		<key>latitude</key>
+		<real>28.4186</real>
+		<key>locationName</key>
+		<string>Orlando, FL, USA</string>
+		<key>longitude</key>
+		<real>-81.58110000000001</real>
+		<key>name</key>
+		<string>Walt Disney World</string>
+		<key>placesList</key>
+		<string>Downtown Disney, Space Mountain</string>
+		<key>thumbnailName</key>
+		<string>walt-disney-world-thumb</string>
+		<key>userRating</key>
+		<integer>5</integer>
+		<key>weatherInfo</key>
+		<string>The weather is generally mild and sunny year round. There is a rainy season from May until September.</string>
+		<key>whatToSee</key>
+		<string>Be sure to visit Downtown Disney, ride Space Mountain, and schedule a special breakfast with the Disney characters!</string>
+		<key>whyVisit</key>
+		<string>At Walt Disney World, EVERYONE can be a kid! There&apos;s something for kids and adults alike, so bring the whole family!</string>
+		<key>wikipediaLink</key>
+		<string>https://en.wikipedia.org/wiki/Walt_Disney_World</string>
+	</dict>
+	<dict>
+		<key>identifier</key>
+		<integer>9</integer>
+		<key>latitude</key>
+		<real>63.3333</real>
+		<key>locationName</key>
+		<string>Alaska</string>
+		<key>longitude</key>
+		<real>150.5</real>
+		<key>name</key>
+		<string>Denali National Park &amp; Preserve</string>
+		<key>placesList</key>
+		<string>Savage River, Sled Dog Kernels, Wonder Lake Ranger Station</string>
+		<key>thumbnailName</key>
+		<string>denali-national-park-and-preserve-thumb</string>
+		<key>userRating</key>
+		<integer>3</integer>
+		<key>weatherInfo</key>
+		<string>With some of the most extreme temperature fluctuations on earth, the winters are frigid and the summers are mild and wet.</string>
+		<key>whatToSee</key>
+		<string>Places to visit include Savage River, the Sled Dog Kennels and the Wonder Lake Ranger Station. Be sure to book a wildlife bus tour on Park Road too!</string>
+		<key>whyVisit</key>
+		<string>The home of Mt. McKinley, Denali National Park &amp; Preserve is a breathtaking destination that offers even casual hikers a chance to experience raw nature.</string>
+		<key>wikipediaLink</key>
+		<string>https://en.wikipedia.org/wiki/Denali_National_Park_and_Preserve</string>
+	</dict>
+	<dict>
+		<key>identifier</key>
+		<integer>3</integer>
+		<key>latitude</key>
+		<real>41.3833</real>
+		<key>locationName</key>
+		<string>Spain</string>
+		<key>longitude</key>
+		<real>2.1833</real>
+		<key>name</key>
+		<string>Barcelona</string>
+		<key>placesList</key>
+		<string>Museu Picasso, Montjuïc mountain</string>
+		<key>thumbnailName</key>
+		<string>barcelona-thumb</string>
+		<key>userRating</key>
+		<integer>4</integer>
+		<key>weatherInfo</key>
+		<string>Spain enjoys a Mediterranean climate with damp but mild winters and hot summers, but no extreme temperature fluctuations.</string>
+		<key>whatToSee</key>
+		<string>Be sure to visit the Museu Picasso, schedule a hike up Montjuïc mountain, and explore the literary culture of the Raval.</string>
+		<key>whyVisit</key>
+		<string>Barcelona is steeped in culture and the arts. History buffs, art lovers, music aficionados and foodies alike will all find something intriguing in this beautiful city.</string>
+		<key>wikipediaLink</key>
+		<string>https://en.wikipedia.org/wiki/Barcelona</string>
+	</dict>
+	<dict>
+		<key>identifier</key>
+		<integer>10</integer>
+		<key>latitude</key>
+		<real>13.1667</real>
+		<key>locationName</key>
+		<string>Carribean Islands</string>
+		<key>longitude</key>
+		<real>-61.2333</real>
+		<key>name</key>
+		<string>Saint Vincent and the Grenadines</string>
+		<key>placesList</key>
+		<string>Union Island, Leeward Highway</string>
+		<key>thumbnailName</key>
+		<string>saint-vincent-and-grenadines-thumb</string>
+		<key>userRating</key>
+		<integer>2</integer>
+		<key>weatherInfo</key>
+		<string>Tropical and warm year-round, the dry season runs January-May with July being the rainiest month.</string>
+		<key>whatToSee</key>
+		<string>Book some serious relaxation time at Union Island, snorkel off the coast of Canouan, and tour Leeward Highway from Kingstown to Richmond Beach.</string>
+		<key>whyVisit</key>
+		<string>Saint Vincent and the Grenadines is the ultimate tropical paradise. From lush volcanic landscapes to gorgeous inlets perfect for sailing, you&apos;ll never want to leave!</string>
+		<key>wikipediaLink</key>
+		<string>https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines</string>
+	</dict>
+	<dict>
+		<key>identifier</key>
+		<integer>4</integer>
+		<key>latitude</key>
+		<real>48.8567</real>
+		<key>locationName</key>
+		<string>France</string>
+		<key>longitude</key>
+		<real>2.3508</real>
+		<key>name</key>
+		<string>Paris</string>
+		<key>placesList</key>
+		<string>Eiffel Tower, Arc de Triumphe</string>
+		<key>thumbnailName</key>
+		<string>paris-thumb</string>
+		<key>userRating</key>
+		<integer>4</integer>
+		<key>weatherInfo</key>
+		<string>The weather is temperate year-round, with the hottest month in July and the coldest in December. Spring is gorgeous!</string>
+		<key>whatToSee</key>
+		<string>While classics like the Lourve, the Eiffel Tower and the Arc de Triumphe stand out, don&apos;t miss the Paris Catacombs and Tuileries Garden.</string>
+		<key>whyVisit</key>
+		<string>Paris is a prized gem in the crown of Europe. A hub of culture, arts, food and fashion, Paris won&apos;t dissapoint even the most discerning of travelers.</string>
+		<key>wikipediaLink</key>
+		<string>https://en.wikipedia.org/wiki/Paris</string>
+	</dict>
+	<dict>
+		<key>identifier</key>
+		<integer>5</integer>
+		<key>latitude</key>
+		<real>-33.865</real>
+		<key>locationName</key>
+		<string>Australia</string>
+		<key>longitude</key>
+		<real>151.2094</real>
+		<key>name</key>
+		<string>Sydney</string>
+		<key>placesList</key>
+		<string>Sydney Opera House</string>
+		<key>thumbnailName</key>
+		<string>sydney-thumb</string>
+		<key>userRating</key>
+		<integer>5</integer>
+		<key>weatherInfo</key>
+		<string>The rainy season is March-June, with hot summers and mild winters on the coast. Extremer temperatures exist inland.</string>
+		<key>whatToSee</key>
+		<string>Be sure to visit St. Mary&apos;s Cathedral, the Sydney Opera House, Wildlife Sydney and Fort Denison.</string>
+		<key>whyVisit</key>
+		<string>Sydney appeals to the outdoors lover in all of us, but also provides a rich array of arts &amp; music, aquatic adventures and wildlife immersion experiences.</string>
+		<key>wikipediaLink</key>
+		<string>https://en.wikipedia.org/wiki/Sydney</string>
+	</dict>
+	<dict>
+		<key>identifier</key>
+		<integer>6</integer>
+		<key>latitude</key>
+		<real>-22.9068</real>
+		<key>locationName</key>
+		<string>Brazil</string>
+		<key>longitude</key>
+		<real>-43.1729</real>
+		<key>name</key>
+		<string>Rio de Janeiro</string>
+		<key>placesList</key>
+		<string>Parque Nacional de la Tijuca</string>
+		<key>thumbnailName</key>
+		<string>rio-de-janeiro-thumb</string>
+		<key>userRating</key>
+		<integer>4</integer>
+		<key>weatherInfo</key>
+		<string>Summer runs December - February and can get very hot and rainy. Winters are mild and dry and run July-September.</string>
+		<key>whatToSee</key>
+		<string>Don&apos;t miss visiting one of the seven wonders of the world, Christ the Redeemer, the legendary Copacabana beach and Parque Nacional de la Tijuca!</string>
+		<key>whyVisit</key>
+		<string>Visting Rio during Carnival will be something you&apos;ll never forget! If you relish beautiful beaches, rich culture and stunning mountain views, Rio de Janeiro is for you!</string>
+		<key>wikipediaLink</key>
+		<string>https://en.wikipedia.org/wiki/Rio_de_Janeiro</string>
+	</dict>
+	<dict>
+		<key>identifier</key>
+		<integer>7</integer>
+		<key>latitude</key>
+		<real>40.7127</real>
+		<key>locationName</key>
+		<string>NY, USA</string>
+		<key>longitude</key>
+		<real>-74.0059</real>
+		<key>name</key>
+		<string>New York City</string>
+		<key>placesList</key>
+		<string>Radio City Music Hall</string>
+		<key>thumbnailName</key>
+		<string>new-york-city-thumb</string>
+		<key>userRating</key>
+		<integer>4</integer>
+		<key>weatherInfo</key>
+		<string>NYC has a humid subtropical climate with cold and damp winters and hot and sticky summers.</string>
+		<key>whatToSee</key>
+		<string>Must-see&apos;s include Central Park, The American Museum of Natural History, The Statue of Liberty, Radio City Music Hall and Chinatown.</string>
+		<key>whyVisit</key>
+		<string>Famous for its diversity of arts, finance, cuisine, fashion and entertainment, NYC will keep you hopping from dusk to dawn!</string>
+		<key>wikipediaLink</key>
+		<string>https://en.wikipedia.org/wiki/New_York_City</string>
+	</dict>
+	<dict>
+		<key>identifier</key>
+		<integer>8</integer>
+		<key>latitude</key>
+		<real>39.9167</real>
+		<key>locationName</key>
+		<string>China</string>
+		<key>longitude</key>
+		<real>116.3833</real>
+		<key>name</key>
+		<string>Beijing</string>
+		<key>placesList</key>
+		<string>Tiananmen Square</string>
+		<key>thumbnailName</key>
+		<string>beijing-thumb</string>
+		<key>userRating</key>
+		<integer>5</integer>
+		<key>weatherInfo</key>
+		<string>With four distinct seasons, Beijing has cold and wet winters, breezy cool springs, hot summers and chilly pleasant autumns.</string>
+		<key>whatToSee</key>
+		<string>Plan a day to explore the Great Wall of China, Tiananmen Square, the Mogao Caves, Shanghai Tower, The Temple of Heaven and Old Summer Palace.</string>
+		<key>whyVisit</key>
+		<string>With a written history going back 3,500 years, China is known for its breathtaking beauty, its diverse culture and its wide variety of landscapes and waterways.</string>
+		<key>wikipediaLink</key>
+		<string>https://en.wikipedia.org/wiki/Beijing</string>
+	</dict>
+	<dict>
+		<key>identifier</key>
+		<integer>11</integer>
+		<key>latitude</key>
+		<real>41.0136</real>
+		<key>locationName</key>
+		<string>Turkey</string>
+		<key>longitude</key>
+		<real>28.955</real>
+		<key>name</key>
+		<string>Istanbul</string>
+		<key>placesList</key>
+		<string>Basilica Cistern</string>
+		<key>thumbnailName</key>
+		<string>istanbul-thumb</string>
+		<key>userRating</key>
+		<integer>4</integer>
+		<key>weatherInfo</key>
+		<string>Summers are warm and humid, winters are cold and wet with rare snow, and spring and autumn are mild and ideal for travel.</string>
+		<key>whatToSee</key>
+		<string>Some places you must visit include the Topkapi Palace, the Grand Bazaar, the Basilica Cistern and the Walls of Constantinople.</string>
+		<key>whyVisit</key>
+		<string>The home of early Romans, Christians and Egyptians, Istanbul, Turkey is a richly layered adventure into the archaic roots of ancient religion and culture.</string>
+		<key>wikipediaLink</key>
+		<string>https://en.wikipedia.org/wiki/Istanbul</string>
+	</dict>
+</array>
+</plist>

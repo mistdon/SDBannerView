@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>高德地图iOS SDK 3D地图&amp;搜索服务参考手册 V3.3.1: MAMapView.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">高德地图iOS SDK 3D地图&amp;搜索服务参考手册 V3.3.1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_m_a_map_view_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">MAMapView.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>用于定义地图视图类。  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#import &lt;UIKit/UIKit.h&gt;</code><br/>
+<code>#import &quot;<a class="el" href="_m_a_overlay_8h_source.html">MAOverlay.h</a>&quot;</code><br/>
+<code>#import &quot;<a class="el" href="_m_a_overlay_renderer_8h_source.html">MAOverlayRenderer.h</a>&quot;</code><br/>
+<code>#import &quot;<a class="el" href="_m_a_overlay_view_8h_source.html">MAOverlayView.h</a>&quot;</code><br/>
+<code>#import &quot;<a class="el" href="_m_a_annotation_view_8h_source.html">MAAnnotationView.h</a>&quot;</code><br/>
+<code>#import &quot;<a class="el" href="_m_a_annotation_8h_source.html">MAAnnotation.h</a>&quot;</code><br/>
+<code>#import &quot;<a class="el" href="_m_a_map_status_8h_source.html">MAMapStatus.h</a>&quot;</code><br/>
+</div>
+<p><a href="_m_a_map_view_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_map_view.html">MAMapView</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">地图视图类（用于地图窗口显示和对地图进行相关的操作）。  <a href="interface_m_a_map_view.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">category &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="category_m_a_map_view_07_overlays_a_p_i_08.html">MAMapView(OverlaysAPI)</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">地图视图类（Overlay相关的操作）。  <a href="category_m_a_map_view_07_overlays_a_p_i_08.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">category &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="category_m_a_map_view_07_snapshot_08.html">MAMapView(Snapshot)</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">地图视图类（截图相关操作）。  <a href="category_m_a_map_view_07_snapshot_08.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">category &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="category_m_a_map_view_07_offline_08.html">MAMapView(Offline)</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">地图视图类（离线数据相关操作）。  <a href="category_m_a_map_view_07_offline_08.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">category &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="category_m_a_map_view_07_open_g_l_e_s_08.html">MAMapView(OpenGLES)</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">地图视图类（绘制相关操作）。  <a href="category_m_a_map_view_07_open_g_l_e_s_08.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">category &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="category_m_a_map_view_07_location_option_08.html">MAMapView(LocationOption)</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">定位相关参数的类别。  <a href="category_m_a_map_view_07_location_option_08.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">protocol &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol_m_a_map_view_delegate-p.html">&lt;MAMapViewDelegate&gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> 协议类，通过该类来通知用户对应的事件。  <a href="protocol_m_a_map_view_delegate-p.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a36aa921ccbe4e215d3fd7420d96054e1"><td class="memItemLeft" align="right" valign="top">typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_map_view_8h.html#a36aa921ccbe4e215d3fd7420d96054e1">NS_ENUM</a> (NSInteger, MAMapType)</td></tr>
+<tr class="memdesc:a36aa921ccbe4e215d3fd7420d96054e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">地图数据类型。  <a href="#a36aa921ccbe4e215d3fd7420d96054e1">更多...</a><br/></td></tr>
+<tr class="separator:a36aa921ccbe4e215d3fd7420d96054e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad49b93a6b3424d47f7ab05cb3eada842"><td class="memItemLeft" align="right" valign="top">typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_map_view_8h.html#ad49b93a6b3424d47f7ab05cb3eada842">NS_ENUM</a> (NSInteger, MAUserTrackingMode)</td></tr>
+<tr class="memdesc:ad49b93a6b3424d47f7ab05cb3eada842"><td class="mdescLeft">&#160;</td><td class="mdescRight">定位用户位置的模式。  <a href="#ad49b93a6b3424d47f7ab05cb3eada842">更多...</a><br/></td></tr>
+<tr class="separator:ad49b93a6b3424d47f7ab05cb3eada842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abebc4f3109c28a0ef9f66dc2638999b4"><td class="memItemLeft" align="right" valign="top">typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_map_view_8h.html#abebc4f3109c28a0ef9f66dc2638999b4">NS_ENUM</a> (NSInteger, MAOverlayLevel)</td></tr>
+<tr class="memdesc:abebc4f3109c28a0ef9f66dc2638999b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制overlay的层级  <a href="#abebc4f3109c28a0ef9f66dc2638999b4">更多...</a><br/></td></tr>
+<tr class="separator:abebc4f3109c28a0ef9f66dc2638999b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a0c01ee06712649ea3c4bcdf2ead638bb"><td class="memItemLeft" align="right" valign="top">NSString *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_map_view_8h.html#a0c01ee06712649ea3c4bcdf2ead638bb">kMAMapLayerCenterMapPointKey</a></td></tr>
+<tr class="memdesc:a0c01ee06712649ea3c4bcdf2ead638bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">中心点(MAMapPoint)key, 封装成[NSValue valueWithMAMapPoint:].  <a href="#a0c01ee06712649ea3c4bcdf2ead638bb">更多...</a><br/></td></tr>
+<tr class="separator:a0c01ee06712649ea3c4bcdf2ead638bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d9b5b5ff97d7c73c23972eeecc4641"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64d9b5b5ff97d7c73c23972eeecc4641"></a>
+NSString *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_map_view_8h.html#a64d9b5b5ff97d7c73c23972eeecc4641">kMAMapLayerZoomLevelKey</a></td></tr>
+<tr class="memdesc:a64d9b5b5ff97d7c73c23972eeecc4641"><td class="mdescLeft">&#160;</td><td class="mdescRight">MAMapView的layer支持缩放级别CABasicAnimation，CAKeyframeAnimation的(MAMapPoint)key,封装成[NSValueWithMAMapPoint:]，范围[minZoomLevel, maxZoomLevel]，封装成NSNumber。 <br/></td></tr>
+<tr class="separator:a64d9b5b5ff97d7c73c23972eeecc4641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa567006464ff2fa8894be147a59f111d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa567006464ff2fa8894be147a59f111d"></a>
+NSString *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_map_view_8h.html#aa567006464ff2fa8894be147a59f111d">kMAMapLayerRotationDegreeKey</a></td></tr>
+<tr class="memdesc:aa567006464ff2fa8894be147a59f111d"><td class="mdescLeft">&#160;</td><td class="mdescRight">旋转角度key，范围[0, 360), 封装成[NSValue valueWithMAMapPoint:],范围[0,360)。 <br/></td></tr>
+<tr class="separator:aa567006464ff2fa8894be147a59f111d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20aeeacc268bfa6fdf0331f41de91f66"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20aeeacc268bfa6fdf0331f41de91f66"></a>
+NSString *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_a_map_view_8h.html#a20aeeacc268bfa6fdf0331f41de91f66">kMAMapLayerCameraDegreeKey</a></td></tr>
+<tr class="memdesc:a20aeeacc268bfa6fdf0331f41de91f66"><td class="mdescLeft">&#160;</td><td class="mdescRight">摄像机俯视角度，范围[0, 45], 封装成[NSValue valueWithMAMapPoint:],范围[0,45]。 <br/></td></tr>
+<tr class="separator:a20aeeacc268bfa6fdf0331f41de91f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>用于定义地图视图类。 </p>
+</div><h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a36aa921ccbe4e215d3fd7420d96054e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef NS_ENUM </td>
+          <td>(</td>
+          <td class="paramtype">NSInteger&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MAMapType&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>地图数据类型。 </p>
+<p>标准地图。</p>
+<p>卫星影像图。</p>
+<p>夜景地图。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad49b93a6b3424d47f7ab05cb3eada842"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef NS_ENUM </td>
+          <td>(</td>
+          <td class="paramtype">NSInteger&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MAUserTrackingMode&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定位用户位置的模式。 </p>
+<p>跟随用户的位置。</p>
+<p>跟随用户的位置和角度。</p>
+
+</div>
+</div>
+<a class="anchor" id="abebc4f3109c28a0ef9f66dc2638999b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef NS_ENUM </td>
+          <td>(</td>
+          <td class="paramtype">NSInteger&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MAOverlayLevel&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绘制overlay的层级 </p>
+<p>在地图底图标注和兴趣点图标之下绘制overlay</p>
+<p>在地图底图标注和兴趣点图标之上绘制overlay</p>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="a0c01ee06712649ea3c4bcdf2ead638bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NSString* const kMAMapLayerCenterMapPointKey</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>中心点(MAMapPoint)key, 封装成[NSValue valueWithMAMapPoint:]. </p>
+<p><a class="el" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> 的layer 支持中心点, 缩放级别, 旋转角度, 摄像机俯视角度. 这四个地图状态属性的CABasicAnimation, CAKeyframeAnimation.</p>
+<hr/>
+<p> 说明</p>
+<p>CAMediaTimingFunction 支持的类型如下: 1&gt; kCAMediaTimingFunctionLinear (default) 2&gt; kCAMediaTimingFunctionEaseIn 3&gt; kCAMediaTimingFunctionEaseOut 4&gt; kCAMediaTimingFunctionEaseInEaseOut</p>
+<p>CAAnimation 支持的变量如下: 1&gt; duration 2&gt; timingFunction 3&gt; delegate</p>
+<p>CAPropertyAnimation 支持的变量如下: 1&gt; keyPath</p>
+<p>CABasicAnimation 支持的变量如下: 1&gt; fromValue 2&gt; toValue</p>
+<p>CAKeyframeAnimation 支持的变量如下: 1&gt; values 2&gt; keyTimes 3&gt; timingFunctions</p>
+<hr/>
+<p> Add CABasicAnimation Example:</p>
+<p>CLLocationCoordinate2D toCoordiante = CLLocationCoordinate2DMake(39.989870, 116.480940); CABasicAnimation *centerAnimation = [CABasicAnimation animationWithKeyPath:kMAMapLayerCenterMapPointKey]; centerAnimation.duration = 3.f; centerAnimation.toValue = [NSValue valueWithMAMapPoint:MAMapPointForCoordinate(toCoordiante)]; centerAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]; [mapView.layer addAnimation:centerAnimation forKey:kMAMapLayerCenterMapPointKey];</p>
+<p>Add CAKeyframeAnimation Example:</p>
+<p>CAKeyframeAnimation *zoomLevelAnimation = [CAKeyframeAnimation animationWithKeyPath:kMAMapLayerZoomLevelKey]; zoomLevelAnimation.duration = 3.f; zoomLevelAnimation.values = @[@(15), @(12), @(18)]; zoomLevelAnimation.keyTimes = @[@(0.f), @(0.4f), @(1.f)]; [mapView.layer addAnimation:zoomLevelAnimation forKey:kMAMapLayerZoomLevelKey];</p>
+<p>Remove animation Example: [mapView.layer removeAnimationForKey:kMAMapLayerZoomLevelKey]; </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+﻿&#169; 2016 高德软件有限公司 版权所有，保留所有权利。 

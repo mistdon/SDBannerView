@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fqc-aD-xg8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rate It!-->
+        <scene sceneID="VZw-mp-AF9">
+            <objects>
+                <viewController id="TOw-qF-HEf" customClass="RatingViewController" customModule="VacationSpots" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aL4-9s-59G"/>
+                        <viewControllerLayoutGuide type="bottom" id="dSN-eJ-lSH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dL3-Hf-6Vc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2ac-AT-rQv" userLabel="Rating Stack View">
+                                <rect key="frame" x="16" y="84" width="288" height="192"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How would you rate San Francisco?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Je-ep-h3o">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="BKn-LA-Cj6" userLabel="Buttons Stack View">
+                                        <rect key="frame" x="0.0" y="28" width="288" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Thg-qm-0oy">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="30"/>
+                                                <color key="backgroundColor" red="0.58881118880000005" green="1" blue="0.58881118880000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Boring"/>
+                                                <connections>
+                                                    <action selector="ratingButtonTapped:" destination="TOw-qF-HEf" eventType="touchUpInside" id="Ohp-Og-VEW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gou-Zf-zym">
+                                                <rect key="frame" x="60" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Meh"/>
+                                                <connections>
+                                                    <action selector="ratingButtonTapped:" destination="TOw-qF-HEf" eventType="touchUpInside" id="REF-zy-wXf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Exv-GD-FWr">
+                                                <rect key="frame" x="106" y="0.0" width="44" height="30"/>
+                                                <color key="backgroundColor" red="0.58881118880000005" green="1" blue="0.58881118880000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="It's Ok"/>
+                                                <connections>
+                                                    <action selector="ratingButtonTapped:" destination="TOw-qF-HEf" eventType="touchUpInside" id="41S-rU-UIb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwy-Hd-0xq">
+                                                <rect key="frame" x="165" y="0.0" width="41" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Like It"/>
+                                                <connections>
+                                                    <action selector="ratingButtonTapped:" destination="TOw-qF-HEf" eventType="touchUpInside" id="2DY-17-fkO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qs7-SX-uL7">
+                                                <rect key="frame" x="221" y="0.0" width="67" height="30"/>
+                                                <color key="backgroundColor" red="0.58881118880000005" green="1" blue="0.58881118880000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Fantastic!"/>
+                                                <connections>
+                                                    <action selector="ratingButtonTapped:" destination="TOw-qF-HEf" eventType="touchUpInside" id="7pY-3N-Lld"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yRl-M6-Pvv">
+                                        <rect key="frame" x="0.0" y="66" width="288" height="50"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rating_star" translatesAutoresizingMaskIntoConstraints="NO" id="21r-6R-Tqj">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="50"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="8wb-ww-Hpi"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6O-xH-KQq">
+                                        <rect key="frame" x="0.0" y="124" width="288" height="30"/>
+                                        <state key="normal" title="Submit Your Rating"/>
+                                        <connections>
+                                            <action selector="submitRatingTapped" destination="TOw-qF-HEf" eventType="touchUpInside" id="ETq-jm-bYT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGt-ru-JHQ">
+                                        <rect key="frame" x="0.0" y="162" width="288" height="30"/>
+                                        <state key="normal" title="Delete Your Rating">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="deleteRatingTapped" destination="TOw-qF-HEf" eventType="touchUpInside" id="KQI-z0-JcH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2ac-AT-rQv" firstAttribute="top" secondItem="aL4-9s-59G" secondAttribute="bottom" constant="20" id="5aY-cV-8dn"/>
+                            <constraint firstItem="2ac-AT-rQv" firstAttribute="leading" secondItem="dL3-Hf-6Vc" secondAttribute="leadingMargin" id="iTQ-hV-KMX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2ac-AT-rQv" secondAttribute="trailing" id="zpn-ZW-TFh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rate It!" id="JdF-ou-Fkv">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="MDm-oW-PgS">
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="TOw-qF-HEf" id="Q9L-3E-0G3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="deleteRatingButton" destination="dGt-ru-JHQ" id="7Na-4y-Dqe"/>
+                        <outlet property="questionLabel" destination="5Je-ep-h3o" id="B5C-ji-p1g"/>
+                        <outlet property="starsStackView" destination="yRl-M6-Pvv" id="wur-j5-aaZ"/>
+                        <outlet property="submitRatingButton" destination="D6O-xH-KQq" id="t3t-wL-4fu"/>
+                        <outletCollection property="ratingButtons" destination="lwy-Hd-0xq" collectionClass="NSMutableArray" id="cQY-Je-OLd"/>
+                        <outletCollection property="ratingButtons" destination="qs7-SX-uL7" collectionClass="NSMutableArray" id="m08-pf-uw7"/>
+                        <outletCollection property="ratingButtons" destination="Exv-GD-FWr" collectionClass="NSMutableArray" id="y5d-GF-DH9"/>
+                        <outletCollection property="ratingButtons" destination="gou-Zf-zym" collectionClass="NSMutableArray" id="MAR-gR-tI6"/>
+                        <outletCollection property="ratingButtons" destination="Thg-qm-0oy" collectionClass="NSMutableArray" id="cUp-Wm-KDg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mir-O4-2Fx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="424" y="541"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="i5W-Uv-Z98">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fqc-aD-xg8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="MMi-l2-Vz7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.30980392159999998" green="0.71764705880000002" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TOw-qF-HEf" kind="relationship" relationship="rootViewController" id="u3k-kN-b7G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jme-cc-9eC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="541"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rating_star" width="48" height="46"/>
+    </resources>
+</document>

@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>高德地图iOS SDK 2D地图&amp;搜索服务参考手册 V3.2.0: MAMapView.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">高德地图iOS SDK 2D地图&amp;搜索服务参考手册 V3.2.0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_m_a_map_view_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">MAMapView.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_m_a_map_view_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#import &lt;UIKit/UIKit.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_m_a_geometry_8h.html" title="用于定义数据类型。 ">MAGeometry.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_m_a_overlay_8h.html" title="用于定义地图覆盖物。 ">MAOverlay.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_m_a_overlay_renderer_8h.html" title="用于定义地图覆盖物渲染对象 MAOverlayRenderer 。 ">MAOverlayRenderer.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_m_a_annotation_view_8h.html" title="用于定义标注视图对象 MAAnnotationView 。 ">MAAnnotationView.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_m_a_overlay_view_8h.html" title="用于定义地图覆盖物视图对象 MAOverlayView 。 ">MAOverlayView.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="_m_a_map_view_8h.html#a4a593bf42db34a7c012bdd53fae0c6a4">   16</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="_a_map_nearby_upload_info_8h.html#af82fa7ff9fe1d29d9e7b575f358c9361" title="上传对象的坐标类型。 ">NS_ENUM</a>(NSInteger, MAMapLanguage)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    MAMapLanguageZhCN = 0,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;       </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    MAMapLanguageEn = 1,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="_m_a_map_view_8h.html#a36aa921ccbe4e215d3fd7420d96054e1">   32</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="_a_map_nearby_upload_info_8h.html#af82fa7ff9fe1d29d9e7b575f358c9361" title="上传对象的坐标类型。 ">NS_ENUM</a>(NSInteger, MAMapType)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    MAMapTypeStandard,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    MAMapTypeSatellite</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="_m_a_map_view_8h.html#ad49b93a6b3424d47f7ab05cb3eada842">   47</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="_a_map_nearby_upload_info_8h.html#af82fa7ff9fe1d29d9e7b575f358c9361" title="上传对象的坐标类型。 ">NS_ENUM</a>(NSInteger, MAUserTrackingMode)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;       MAUserTrackingModeNone              = 0,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;       </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;       MAUserTrackingModeFollow            = 1,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;       </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;       MAUserTrackingModeFollowWithHeading = 2 </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_m_a_map_view_delegate-p.html" title="MAMapView 协议类，通过该类来通知用户对应的事件。 ">MAMapViewDelegate</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">@class</span> <a class="code" href="interface_m_a_user_location.html" title="定位信息类。 ">MAUserLocation</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">@class</span> <a class="code" href="interface_m_a_annotation_view.html" title="标注 view。 ">MAAnnotationView</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">@class</span> <a class="code" href="interface_m_a_user_location_representation.html" title="精度圈样式信息。 ">MAUserLocationRepresentation</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html">   75</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> : UIView</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#pragma mark - Properties</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a0ab37fd2d32f09380b1e85e07149c4dd">   82</a></span>&#160;<span class="keyword">@property</span> (nonatomic, weak) id&lt;MAMapViewDelegate&gt; <a class="code" href="interface_m_a_map_view.html#a0ab37fd2d32f09380b1e85e07149c4dd" title="地图视图对象的委托。 ">delegate</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a3072688fe73387e75b45862c0ef87d0c">   88</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) MAMapType <a class="code" href="interface_m_a_map_view.html#a3072688fe73387e75b45862c0ef87d0c" title="地图类型。 ">mapType</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a3f44fb6e4dea0dff1d4dfa1b31e9dddc">   93</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) MAMapLanguage <a class="code" href="interface_m_a_map_view.html#a3f44fb6e4dea0dff1d4dfa1b31e9dddc" title="地图底图语言，默认为 MAMapLanguageZhCN。 ">language</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a50ae9b8594ba8eb99626f73f108bbeaa">   98</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign, getter = isShowTraffic) BOOL <a class="code" href="interface_m_a_map_view.html#a50ae9b8594ba8eb99626f73f108bbeaa" title="是否显示交通，默认为NO。 ">showTraffic</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#af59b341a581ac916599eaebd26bbb3f0">  103</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign, getter = isScrollEnabled) BOOL <a class="code" href="interface_m_a_map_view.html#af59b341a581ac916599eaebd26bbb3f0" title="是否支持平移，默认为 YES。 ">scrollEnabled</a>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a7b1f996f7dea8b8422ea60cc5428738d">  108</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign, getter = isZoomEnabled) BOOL <a class="code" href="interface_m_a_map_view.html#a7b1f996f7dea8b8422ea60cc5428738d" title="是否支持缩放，默认为 YES。 ">zoomEnabled</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a8ec6b814553a9415f7b735f74600575e">  113</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) BOOL <a class="code" href="interface_m_a_map_view.html#a8ec6b814553a9415f7b735f74600575e" title="标识当前地图中心位置是否在中国范围内。此属性不是精确判断，不能用于边界区域。 ">isAbroad</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#pragma mark - Logo</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#aaeda740c52a832b1b885faeb3289f432">  120</a></span>&#160;<span class="keyword">@property</span> (nonatomic) CGPoint <a class="code" href="interface_m_a_map_view.html#aaeda740c52a832b1b885faeb3289f432" title="logo 的位置，必须在地图视图范围（mapView.bounds）之内，否则会被忽略。 ">logoCenter</a>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a66308891fa81f40762d89faffe13e20d">  125</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) CGSize <a class="code" href="interface_m_a_map_view.html#a66308891fa81f40762d89faffe13e20d" title="logo 的宽高。 ">logoSize</a>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#pragma mark - Compass</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a313884eed34745971541b66547e37403">  132</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) BOOL <a class="code" href="interface_m_a_map_view.html#a313884eed34745971541b66547e37403" title="是否显示罗盘，默认为YES。 ">showsCompass</a>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a4f1afa974df64e38eeb0d02d679913b9">  137</a></span>&#160;<span class="keyword">@property</span> (nonatomic) CGPoint <a class="code" href="interface_m_a_map_view.html#a4f1afa974df64e38eeb0d02d679913b9" title="罗盘原点位置。 ">compassOrigin</a>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a75de400f85722096b9666133dbc36e63">  142</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) CGSize <a class="code" href="interface_m_a_map_view.html#a75de400f85722096b9666133dbc36e63" title="罗盘的宽高。 ">compassSize</a>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;- (void)setCompassImage:(UIImage *)image;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">#pragma mark - Scale</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a7ce964af9fa3faed087bd952a47806a0">  155</a></span>&#160;<span class="keyword">@property</span> (nonatomic) BOOL <a class="code" href="interface_m_a_map_view.html#a7ce964af9fa3faed087bd952a47806a0" title="是否显示比例尺，默认为YES。 ">showsScale</a>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a6563783a12c4de926e9044c80fe2d5df">  160</a></span>&#160;<span class="keyword">@property</span> (nonatomic) CGPoint <a class="code" href="interface_m_a_map_view.html#a6563783a12c4de926e9044c80fe2d5df" title="比例尺原点位置。 ">scaleOrigin</a>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#adc980b888a1618ef165d64ed71f43dbc">  165</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) CGSize <a class="code" href="interface_m_a_map_view.html#adc980b888a1618ef165d64ed71f43dbc" title="比例尺的最大宽高。 ">scaleSize</a>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a9b868d00732bd17c4bf890e44524bebb">  173</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) CGFloat <a class="code" href="interface_m_a_map_view.html#a9b868d00732bd17c4bf890e44524bebb" title="在当前缩放级别下，基于地图中心点，1 screen point 对应的距离（单位是米）。 ">metersPerPointForCurrentZoomLevel</a>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;- (CGFloat)metersPerPointForZoomLevel:(CGFloat)zoomLevel;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor">#pragma mark - Movement</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00189"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a0a010a84138540be7f7f49d330e4907e">  189</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) CLLocationCoordinate2D <a class="code" href="interface_m_a_map_view.html#a0a010a84138540be7f7f49d330e4907e" title="当前地图的中心点经纬度坐标，改变该值时，地图缩放级别不会发生变化。 ">centerCoordinate</a>;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;- (void)setCenterCoordinate:(CLLocationCoordinate2D)centerCoordinate animated:(BOOL)animated;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#ab9db51dfb9a57a9dac7ef756917b0495">  204</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) <a class="code" href="struct_m_a_coordinate_region.html" title="经纬度区域。 ">MACoordinateRegion</a> <a class="code" href="interface_m_a_map_view.html#ab9db51dfb9a57a9dac7ef756917b0495" title="当前地图的经纬度范围，设定的该范围可能会被调整为适合地图窗口显示的范围。 ">region</a>;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;- (void)setRegion:(<a class="code" href="struct_m_a_coordinate_region.html" title="经纬度区域。 ">MACoordinateRegion</a>)region animated:(BOOL)animated;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;- (<a class="code" href="struct_m_a_coordinate_region.html" title="经纬度区域。 ">MACoordinateRegion</a>)regionThatFits:(<a class="code" href="struct_m_a_coordinate_region.html" title="经纬度区域。 ">MACoordinateRegion</a>)region;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a33b238dcdea708849ed9be11cd961240">  229</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) <a class="code" href="struct_m_a_map_rect.html" title="地图投影矩形区域。 ">MAMapRect</a> <a class="code" href="interface_m_a_map_view.html#a33b238dcdea708849ed9be11cd961240" title="可见区域。 ">visibleMapRect</a>;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;- (void)setVisibleMapRect:(<a class="code" href="struct_m_a_map_rect.html" title="地图投影矩形区域。 ">MAMapRect</a>)mapRect animated:(BOOL)animated;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;- (void)setVisibleMapRect:(<a class="code" href="struct_m_a_map_rect.html" title="地图投影矩形区域。 ">MAMapRect</a>)mapRect edgePadding:(UIEdgeInsets)insets animated:(BOOL)animated;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;- (<a class="code" href="struct_m_a_map_rect.html" title="地图投影矩形区域。 ">MAMapRect</a>)mapRectThatFits:(<a class="code" href="struct_m_a_map_rect.html" title="地图投影矩形区域。 ">MAMapRect</a>)mapRect;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;- (<a class="code" href="struct_m_a_map_rect.html" title="地图投影矩形区域。 ">MAMapRect</a>)mapRectThatFits:(<a class="code" href="struct_m_a_map_rect.html" title="地图投影矩形区域。 ">MAMapRect</a>)mapRect edgePadding:(UIEdgeInsets)insets;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="preprocessor">#pragma mark - Zoom</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00273"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#ad616872bf58bae92a7414a2e4358f467">  273</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) <span class="keywordtype">double</span> zoomLevel;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00278"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a99c338273b118a52feab31e5ea982635">  278</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) <span class="keywordtype">double</span> <a class="code" href="interface_m_a_map_view.html#a99c338273b118a52feab31e5ea982635" title="最小缩放级别。 ">minZoomLevel</a>;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
+<div class="line"><a name="l00283"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a73088c94335ab1eb393d744919dc4ddf">  283</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) <span class="keywordtype">double</span> <a class="code" href="interface_m_a_map_view.html#a73088c94335ab1eb393d744919dc4ddf" title="最大缩放级别。 ">maxZoomLevel</a>;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;- (void)setZoomLevel:(<span class="keywordtype">double</span>)newZoomLevel animated:(BOOL)animated;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;- (void)setZoomLevel:(<span class="keywordtype">double</span>)newZoomLevel atPivot:(CGPoint)pivot animated:(BOOL)animated;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor">#pragma mark - Conversions</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;- (CGPoint)convertCoordinate:(CLLocationCoordinate2D)coordinate toPointToView:(UIView *)view;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;- (CLLocationCoordinate2D)convertPoint:(CGPoint)point toCoordinateFromView:(UIView *)view;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;- (CGRect)convertRegion:(<a class="code" href="struct_m_a_coordinate_region.html" title="经纬度区域。 ">MACoordinateRegion</a>)region toRectToView:(UIView *)view;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;- (<a class="code" href="struct_m_a_coordinate_region.html" title="经纬度区域。 ">MACoordinateRegion</a>)convertRect:(CGRect)rect toRegionFromView:(UIView *)view;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="preprocessor">#pragma mark - UserLocation</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00347"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a29abd209a0fa3c7c384bd49f7125de20">  347</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign, getter = isShowsUserLocation) BOOL <a class="code" href="interface_m_a_map_view.html#a29abd209a0fa3c7c384bd49f7125de20" title="是否显示用户位置 ">showsUserLocation</a>;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
+<div class="line"><a name="l00352"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#ad4b091fc74c739f0364ceb30c7f0b357">  352</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) <a class="code" href="interface_m_a_user_location.html" title="定位信息类。 ">MAUserLocation</a> *<a class="code" href="interface_m_a_map_view.html#ad4b091fc74c739f0364ceb30c7f0b357" title="当前的位置数据。 ">userLocation</a>;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00357"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a5ec6f96c702ee35ad5199d5604d243e8">  357</a></span>&#160;<span class="keyword">@property</span> (nonatomic) MAUserTrackingMode <a class="code" href="interface_m_a_map_view.html#a5ec6f96c702ee35ad5199d5604d243e8" title="定位用户位置的模式。 ">userTrackingMode</a>;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;- (void)setUserTrackingMode:(MAUserTrackingMode)mode animated:(BOOL)animated;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;</div>
+<div class="line"><a name="l00370"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#ab7829e4d640abdea70365974cdd36dfe">  370</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, getter=isUserLocationVisible) BOOL <a class="code" href="interface_m_a_map_view.html#ab7829e4d640abdea70365974cdd36dfe" title="当前位置在地图中是否可见。 ">userLocationVisible</a>;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;- (void)updateUserLocationRepresentation:(<a class="code" href="interface_m_a_user_location_representation.html" title="精度圈样式信息。 ">MAUserLocationRepresentation</a> *)representation;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="preprocessor">#pragma mark - Annotations</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00386"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a61714b48a6e24b32d445f5fd80be6485">  386</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) NSArray *<a class="code" href="interface_m_a_map_view.html#a61714b48a6e24b32d445f5fd80be6485" title="标注数组，数组中存放 MAAnnotation 对象。 ">annotations</a>;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;- (void)addAnnotation:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_m_a_annotation-p.html" title="该类为标注点的协议，提供了标注类的基本信息函数。 ">MAAnnotation</a>&gt;)annotation;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;- (void)addAnnotations:(NSArray *)annotations;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;- (void)removeAnnotation:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_m_a_annotation-p.html" title="该类为标注点的协议，提供了标注类的基本信息函数。 ">MAAnnotation</a>&gt;)annotation;</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;- (void)removeAnnotations:(NSArray *)annotations;</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;- (<a class="code" href="interface_m_a_annotation_view.html" title="标注 view。 ">MAAnnotationView</a> *)viewForAnnotation:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_m_a_annotation-p.html" title="该类为标注点的协议，提供了标注类的基本信息函数。 ">MAAnnotation</a>&gt;)annotation;</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;- (<a class="code" href="interface_m_a_annotation_view.html" title="标注 view。 ">MAAnnotationView</a> *)dequeueReusableAnnotationViewWithIdentifier:(NSString *)identifier;</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;</div>
+<div class="line"><a name="l00440"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a631e35d5fbd9525e798b68ab958612fb">  440</a></span>&#160;<span class="keyword">@property</span> (nonatomic, copy) NSArray *<a class="code" href="interface_m_a_map_view.html#a631e35d5fbd9525e798b68ab958612fb" title="处于选中状态的标注对象数组，数组中对象的数量为 0 或 1。 ">selectedAnnotations</a>;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;- (void)selectAnnotation:(<span class="keywordtype">id</span> &lt; <a class="code" href="protocol_m_a_annotation-p.html" title="该类为标注点的协议，提供了标注类的基本信息函数。 ">MAAnnotation</a> &gt;)annotation animated:(BOOL)animated;</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;- (void)deselectAnnotation:(<span class="keywordtype">id</span> &lt; <a class="code" href="protocol_m_a_annotation-p.html" title="该类为标注点的协议，提供了标注类的基本信息函数。 ">MAAnnotation</a> &gt;)annotation animated:(BOOL)animated;</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;</div>
+<div class="line"><a name="l00461"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a1573bf30e08c507f9ae3c9de9819b986">  461</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) CGRect <a class="code" href="interface_m_a_map_view.html#a1573bf30e08c507f9ae3c9de9819b986" title="annotation 可见区域。 ">annotationVisibleRect</a>;</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;- (NSSet *)annotationsInMapRect:(<a class="code" href="struct_m_a_map_rect.html" title="地图投影矩形区域。 ">MAMapRect</a>)mapRect;</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;- (void)showAnnotations:(NSArray *)annotations animated:(BOOL)animated;</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;- (void)showAnnotations:(NSArray *)annotations edgePadding:(UIEdgeInsets)insets animated:(BOOL)animated;</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;<span class="preprocessor">#pragma mark - Overlays</span></div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;</div>
+<div class="line"><a name="l00496"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a658b9367e0ce3a141b6566138a0cd0be">  496</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) NSArray *<a class="code" href="interface_m_a_map_view.html#a658b9367e0ce3a141b6566138a0cd0be" title="Overlay 数组。 ">overlays</a>;</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;- (<a class="code" href="interface_m_a_overlay_renderer.html" title="该类是地图覆盖物 Renderer 的基类，提供绘制 Overlay 的接口但并无实际的实现。 ">MAOverlayRenderer</a> *)rendererForOverlay:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_m_a_overlay-p.html" title="该类是地图覆盖物的基类，所有地图的覆盖物需要继承自此类。 ">MAOverlay</a>&gt;)overlay;</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;- (<a class="code" href="interface_m_a_overlay_view.html" title="该类是地图覆盖物 view 的基类， 提供绘制 Overlay 的接口但并无实际的实现。 ">MAOverlayView</a> *)viewForOverlay:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_m_a_overlay-p.html" title="该类是地图覆盖物的基类，所有地图的覆盖物需要继承自此类。 ">MAOverlay</a>&gt;)overlay __attribute__ ((deprecated(&quot;use - (<a class="code" href="interface_m_a_overlay_renderer.html" title="该类是地图覆盖物 Renderer 的基类，提供绘制 Overlay 的接口但并无实际的实现。 ">MAOverlayRenderer</a> *)rendererForOverlay:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_m_a_overlay-p.html" title="该类是地图覆盖物的基类，所有地图的覆盖物需要继承自此类。 ">MAOverlay</a>&gt;)overlay instead&quot;)));</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;- (void)addOverlay:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_m_a_overlay-p.html" title="该类是地图覆盖物的基类，所有地图的覆盖物需要继承自此类。 ">MAOverlay</a>&gt;)overlay;</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;- (void)addOverlays:(NSArray *)overlays;</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;- (void)removeOverlay:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_m_a_overlay-p.html" title="该类是地图覆盖物的基类，所有地图的覆盖物需要继承自此类。 ">MAOverlay</a>&gt;)overlay;</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;- (void)removeOverlays:(NSArray *)overlays;</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;- (void)insertOverlay:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_m_a_overlay-p.html" title="该类是地图覆盖物的基类，所有地图的覆盖物需要继承自此类。 ">MAOverlay</a>&gt;)overlay atIndex:(NSUInteger)index;</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;- (void)exchangeOverlayAtIndex:(NSUInteger)index1 withOverlayAtIndex:(NSUInteger)index2;</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;- (void)insertOverlay:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_m_a_overlay-p.html" title="该类是地图覆盖物的基类，所有地图的覆盖物需要继承自此类。 ">MAOverlay</a>&gt;)overlay aboveOverlay:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_m_a_overlay-p.html" title="该类是地图覆盖物的基类，所有地图的覆盖物需要继承自此类。 ">MAOverlay</a>&gt;)sibling;</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;- (void)insertOverlay:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_m_a_overlay-p.html" title="该类是地图覆盖物的基类，所有地图的覆盖物需要继承自此类。 ">MAOverlay</a>&gt;)overlay belowOverlay:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_m_a_overlay-p.html" title="该类是地图覆盖物的基类，所有地图的覆盖物需要继承自此类。 ">MAOverlay</a>&gt;)sibling;</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;<span class="preprocessor">#pragma mark - Cache</span></div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;- (void)<a class="code" href="interface_m_a_map_view.html#ae1469543f7f4971401db9102fc5e1767" title="清除所有磁盘上缓存的地图数据。 ">clearDisk</a>;</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;<span class="preprocessor">#pragma mark - Snapshots</span></div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00594"></a><span class="lineno"><a class="code" href="category_m_a_map_view_07_snapshot_08.html">  594</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="category_m_a_map_view_07_snapshot_08.html" title="地图视图类（截图相关操作）。 ">MAMapView (Snapshot)</a></div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;- (UIImage *)takeSnapshotInRect:(CGRect)rect;</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;- (void)takeSnapshotInRect:(CGRect)rect withCompletionBlock:(<span class="keywordtype">void</span> (^)(UIImage *resultImage, CGRect rect))block;</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;<span class="preprocessor">#pragma mark - LocationOption</span></div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00624"></a><span class="lineno"><a class="code" href="category_m_a_map_view_07_location_option_08.html">  624</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="category_m_a_map_view_07_location_option_08.html" title="定位相关参数的类别。 ">MAMapView (LocationOption)</a></div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;</div>
+<div class="line"><a name="l00629"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#aa82691ebaadbef2bccde63caf64cf7da">  629</a></span>&#160;<span class="keyword">@property</span>(nonatomic) CLLocationDistance <a class="code" href="category_m_a_map_view_07_location_option_08.html#aa82691ebaadbef2bccde63caf64cf7da" title="设定定位的最小更新距离。默认是 kCLDistanceFilterNone，有任何移动会有提示。 ">distanceFilter</a>;</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;</div>
+<div class="line"><a name="l00634"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a1702c8271362b33dc834efca06e6742a">  634</a></span>&#160;<span class="keyword">@property</span>(nonatomic) CLLocationAccuracy <a class="code" href="category_m_a_map_view_07_location_option_08.html#a1702c8271362b33dc834efca06e6742a" title="设定定位精度。默认为 kCLLocationAccuracyBest。 ">desiredAccuracy</a>;</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;</div>
+<div class="line"><a name="l00639"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#ab2513137778b7351e569884a379ca2f1">  639</a></span>&#160;<span class="keyword">@property</span>(nonatomic) CLLocationDegrees <a class="code" href="category_m_a_map_view_07_location_option_08.html#ab2513137778b7351e569884a379ca2f1" title="设定最小更新角度。默认为1度，设定为 kCLHeadingFilterNone 会提示任何角度改变。 ">headingFilter</a>;</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;</div>
+<div class="line"><a name="l00644"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#addbbebc78596188078c6821c606eecfb">  644</a></span>&#160;<span class="keyword">@property</span>(nonatomic) BOOL <a class="code" href="category_m_a_map_view_07_location_option_08.html#addbbebc78596188078c6821c606eecfb" title="指定定位是否会被系统自动暂停。默认为YES。只在iOS 6.0之后起作用。 ">pausesLocationUpdatesAutomatically</a>;</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;</div>
+<div class="line"><a name="l00652"></a><span class="lineno"><a class="code" href="interface_m_a_map_view.html#a8c9a430c77774e313d3dabe8756feebc">  652</a></span>&#160;<span class="keyword">@property</span> (nonatomic) BOOL <a class="code" href="category_m_a_map_view_07_location_option_08.html#a8c9a430c77774e313d3dabe8756feebc" title="是否允许后台定位。默认为 NO，只在iOS 9.0之后起作用。 ">allowsBackgroundLocationUpdates</a>;</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;<span class="preprocessor">#pragma mark - MAMapViewDelegate</span></div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00660"></a><span class="lineno"><a class="code" href="protocol_m_a_map_view_delegate-p.html">  660</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_m_a_map_view_delegate-p.html" title="MAMapView 协议类，通过该类来通知用户对应的事件。 ">MAMapViewDelegate</a>&lt;NSObject&gt;</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;<span class="keyword">@optional</span></div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;- (void)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView regionWillChangeAnimated:(BOOL)animated;</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;- (void)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView regionDidChangeAnimated:(BOOL)animated;</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;- (void)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView mapWillMoveByUser:(BOOL)wasUserAction;</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;- (void)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView mapDidMoveByUser:(BOOL)wasUserAction;</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;- (void)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView mapWillZoomByUser:(BOOL)wasUserAction;</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;- (void)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView mapDidZoomByUser:(BOOL)wasUserAction;</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;- (void)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView didSingleTappedAtCoordinate:(CLLocationCoordinate2D)coordinate;</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;- (void)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView didLongPressedAtCoordinate:(CLLocationCoordinate2D)coordinate;</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;- (<a class="code" href="interface_m_a_annotation_view.html" title="标注 view。 ">MAAnnotationView</a>*)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView viewForAnnotation:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_m_a_annotation-p.html" title="该类为标注点的协议，提供了标注类的基本信息函数。 ">MAAnnotation</a>&gt;)annotation;</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;- (void)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView didAddAnnotationViews:(NSArray *)views;</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;- (void)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView didSelectAnnotationView:(<a class="code" href="interface_m_a_annotation_view.html" title="标注 view。 ">MAAnnotationView</a> *)view;</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;- (void)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView didDeselectAnnotationView:(<a class="code" href="interface_m_a_annotation_view.html" title="标注 view。 ">MAAnnotationView</a> *)view;</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;- (void)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView annotationView:(<a class="code" href="interface_m_a_annotation_view.html" title="标注 view。 ">MAAnnotationView</a> *)view calloutAccessoryControlTapped:(UIControl *)control;</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;- (void)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView didAnnotationViewCalloutTapped:(<a class="code" href="interface_m_a_annotation_view.html" title="标注 view。 ">MAAnnotationView</a> *)view;</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;- (void)mapViewWillStartLocatingUser:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView;</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;- (void)mapViewDidStopLocatingUser:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView;</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;- (void)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView didUpdateUserLocation:(<a class="code" href="interface_m_a_user_location.html" title="定位信息类。 ">MAUserLocation</a> *)userLocation; </div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;- (void)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView didUpdateUserLocation:(<a class="code" href="interface_m_a_user_location.html" title="定位信息类。 ">MAUserLocation</a> *)userLocation updatingLocation:(BOOL)updatingLocation;</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;- (void)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView didFailToLocateUserWithError:(NSError *)error;</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;- (void)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView didChangeUserTrackingMode:(MAUserTrackingMode)mode animated:(BOOL)animated;</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;- (void)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView annotationView:(<a class="code" href="interface_m_a_annotation_view.html" title="标注 view。 ">MAAnnotationView</a> *)view didChangeDragState:(MAAnnotationViewDragState)newState fromOldState:(MAAnnotationViewDragState)oldState ;</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;</div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;- (<a class="code" href="interface_m_a_overlay_renderer.html" title="该类是地图覆盖物 Renderer 的基类，提供绘制 Overlay 的接口但并无实际的实现。 ">MAOverlayRenderer</a> *)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView rendererForOverlay:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_m_a_overlay-p.html" title="该类是地图覆盖物的基类，所有地图的覆盖物需要继承自此类。 ">MAOverlay</a>&gt;)overlay;</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;- (void)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView didAddOverlayRenderers:(NSArray *)renderers;</div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;<span class="preprocessor">#pragma mark - Deprecated</span></div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;- (<a class="code" href="interface_m_a_overlay_view.html" title="该类是地图覆盖物 view 的基类， 提供绘制 Overlay 的接口但并无实际的实现。 ">MAOverlayView</a> *)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView viewForOverlay:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_m_a_overlay-p.html" title="该类是地图覆盖物的基类，所有地图的覆盖物需要继承自此类。 ">MAOverlay</a>&gt;)overlay __attribute__ ((deprecated(&quot;use - (<a class="code" href="interface_m_a_overlay_renderer.html" title="该类是地图覆盖物 Renderer 的基类，提供绘制 Overlay 的接口但并无实际的实现。 ">MAOverlayRenderer</a> *)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView rendererForOverlay:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_m_a_overlay-p.html" title="该类是地图覆盖物的基类，所有地图的覆盖物需要继承自此类。 ">MAOverlay</a>&gt;)overlay instead&quot;)));</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;- (void)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView didUpdateUserLocation:(<a class="code" href="interface_m_a_user_location.html" title="定位信息类。 ">MAUserLocation</a> *)userLocation __attribute__ ((deprecated(&quot;use -(<span class="keywordtype">void</span>)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView didUpdateUserLocation:(<a class="code" href="interface_m_a_user_location.html" title="定位信息类。 ">MAUserLocation</a> *)userLocation updatingLocation:(BOOL)updatingLocation instead&quot;)));</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;- (void)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView didAddOverlayViews:(NSArray *)overlayViews __attribute__ ((deprecated(&quot;use - (<span class="keywordtype">void</span>)mapView:(<a class="code" href="interface_m_a_map_view.html" title="地图视图类（用于地图窗口显示和对地图进行相关的操作）。 ">MAMapView</a> *)mapView didAddOverlayRenderers:(NSArray *)renderers instead&quot;)));</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;<span class="keyword">@end</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+﻿&#169; 2016 高德软件有限公司 版权所有，保留所有权利。 

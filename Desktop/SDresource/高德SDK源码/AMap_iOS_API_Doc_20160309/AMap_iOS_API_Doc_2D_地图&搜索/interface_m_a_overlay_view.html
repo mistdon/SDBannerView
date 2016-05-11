@@ -1,0 +1,1242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>高德地图iOS SDK 3D地图&amp;搜索服务参考手册 V3.3.1: MAOverlayView类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">高德地图iOS SDK 3D地图&amp;搜索服务参考手册 V3.3.1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('interface_m_a_overlay_view.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Instance Methods</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="class_m_a_overlay_view-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">MAOverlayView类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>该类是地图覆盖物View的基类，提供绘制overlay的接口但并无实际的实现。  
+ <a href="interface_m_a_overlay_view.html#details">更多...</a></p>
+
+<p><code>#import &lt;<a class="el" href="_m_a_overlay_view_8h_source.html">MAOverlayView.h</a>&gt;</code></p>
+<div class="dynheader">
+类 MAOverlayView 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_m_a_overlay_view.png" usemap="#MAOverlayView_map" alt=""/>
+  <map id="MAOverlayView_map" name="MAOverlayView_map">
+<area href="interface_m_a_ground_overlay_view.html" title="该类是将 MAGroundOverlay 中的覆盖图片显示在地图上的 view。 " alt="MAGroundOverlayView" shape="rect" coords="0,112,148,136"/>
+<area href="interface_m_a_overlay_path_view.html" title="该类提供使用 CGPathRef 来绘制 Overlay，默认的操作是将 fill attributes，stroke 属性设置到 CAShapeLayer 中。 ..." alt="MAOverlayPathView" shape="rect" coords="158,112,306,136"/>
+<area href="interface_m_a_tile_overlay_view.html" title="此类是将 MAOverlayView 中的覆盖 tiles 显示在地图上的 view。 " alt="MATileOverlayView" shape="rect" coords="316,112,464,136"/>
+<area href="interface_m_a_circle_view.html" title="该类是 MACircle 的显示圆 view，可以通过 MAOverlayPathView 修改其 fill 和 stroke 属性。 " alt="MACircleView" shape="rect" coords="0,168,148,192"/>
+<area href="interface_m_a_polygon_view.html" title="此类是 MAPolygon 的显示多边形 view，可以通过 MAOverlayPathView 修改其 fill 和 stroke 属性。 " alt="MAPolygonView" shape="rect" coords="158,168,306,192"/>
+<area href="interface_m_a_polyline_view.html" title="此类是 MAPolyline 的显示多段线 view，可以通过 MAOverlayPathView 修改其 fill 和 stroke 属性。 " alt="MAPolylineView" shape="rect" coords="316,168,464,192"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Instance Methods</h2></td></tr>
+<tr class="memitem:a474ca3295e96f72003798aae7889650a"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_view.html#a474ca3295e96f72003798aae7889650a">initWithOverlay:</a></td></tr>
+<tr class="memdesc:a474ca3295e96f72003798aae7889650a"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化并返回一个 Overlay view。  <a href="#a474ca3295e96f72003798aae7889650a">更多...</a><br/></td></tr>
+<tr class="separator:a474ca3295e96f72003798aae7889650a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84412c9066ceb6d0d62a8be62e74833c"><td class="memItemLeft" align="right" valign="top">(CGPoint)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_view.html#a84412c9066ceb6d0d62a8be62e74833c">pointForMapPoint:</a></td></tr>
+<tr class="memdesc:a84412c9066ceb6d0d62a8be62e74833c"><td class="mdescLeft">&#160;</td><td class="mdescRight">将 <a class="el" href="struct_m_a_map_point.html" title="地图投影点，用平面直角坐标表示。 ">MAMapPoint</a> 转化为相对于 receiver 的本地坐标。  <a href="#a84412c9066ceb6d0d62a8be62e74833c">更多...</a><br/></td></tr>
+<tr class="separator:a84412c9066ceb6d0d62a8be62e74833c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc445798826f8607a9d2d4e87406022a"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="struct_m_a_map_point.html">MAMapPoint</a>)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_view.html#afc445798826f8607a9d2d4e87406022a">mapPointForPoint:</a></td></tr>
+<tr class="memdesc:afc445798826f8607a9d2d4e87406022a"><td class="mdescLeft">&#160;</td><td class="mdescRight">将相对于 receiver 的本地坐标转化为 <a class="el" href="struct_m_a_map_point.html" title="地图投影点，用平面直角坐标表示。 ">MAMapPoint</a> 。  <a href="#afc445798826f8607a9d2d4e87406022a">更多...</a><br/></td></tr>
+<tr class="separator:afc445798826f8607a9d2d4e87406022a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af30d3dc8093c7910daad0a24d865fdc8"><td class="memItemLeft" align="right" valign="top">(CGRect)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_view.html#af30d3dc8093c7910daad0a24d865fdc8">rectForMapRect:</a></td></tr>
+<tr class="memdesc:af30d3dc8093c7910daad0a24d865fdc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">将 <a class="el" href="struct_m_a_map_rect.html" title="地图投影矩形区域。 ">MAMapRect</a> 转化为相对于 receiver 的本地 rect。  <a href="#af30d3dc8093c7910daad0a24d865fdc8">更多...</a><br/></td></tr>
+<tr class="separator:af30d3dc8093c7910daad0a24d865fdc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4116373694e9c1574020d8cdfe3e32dd"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_view.html#a4116373694e9c1574020d8cdfe3e32dd">mapRectForRect:</a></td></tr>
+<tr class="memdesc:a4116373694e9c1574020d8cdfe3e32dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">将相对于 receiver 的本地 rect 转化为 <a class="el" href="struct_m_a_map_rect.html" title="地图投影矩形区域。 ">MAMapRect</a> 。  <a href="#a4116373694e9c1574020d8cdfe3e32dd">更多...</a><br/></td></tr>
+<tr class="separator:a4116373694e9c1574020d8cdfe3e32dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a512b38e102c5d89391e09884183e672a"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_view.html#a512b38e102c5d89391e09884183e672a">drawMapRect:zoomScale:inContext:</a></td></tr>
+<tr class="memdesc:a512b38e102c5d89391e09884183e672a"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制 Overlay view 的内容。  <a href="#a512b38e102c5d89391e09884183e672a">更多...</a><br/></td></tr>
+<tr class="separator:a512b38e102c5d89391e09884183e672a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abac34b259535546bf9dad1b135421d42"><td class="memItemLeft" align="right" valign="top">(CGPoint)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_view.html#abac34b259535546bf9dad1b135421d42">glPointForMapPoint:</a></td></tr>
+<tr class="memdesc:abac34b259535546bf9dad1b135421d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">将 <a class="el" href="struct_m_a_map_point.html" title="地图投影点，用平面直角坐标表示。 ">MAMapPoint</a> 转换为 Opengles 可以直接使用的坐标。  <a href="#abac34b259535546bf9dad1b135421d42">更多...</a><br/></td></tr>
+<tr class="separator:abac34b259535546bf9dad1b135421d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e8a8c456fe631fd4cf97d34adf271db"><td class="memItemLeft" align="right" valign="top">(CGPoint *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_view.html#a6e8a8c456fe631fd4cf97d34adf271db">glPointsForMapPoints:count:</a></td></tr>
+<tr class="memdesc:a6e8a8c456fe631fd4cf97d34adf271db"><td class="mdescLeft">&#160;</td><td class="mdescRight">批量将 <a class="el" href="struct_m_a_map_point.html" title="地图投影点，用平面直角坐标表示。 ">MAMapPoint</a> 转换为 Opengles 可以直接使用的坐标。  <a href="#a6e8a8c456fe631fd4cf97d34adf271db">更多...</a><br/></td></tr>
+<tr class="separator:a6e8a8c456fe631fd4cf97d34adf271db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25f43ea9a6209550760abdebcb451cef"><td class="memItemLeft" align="right" valign="top">(CGFloat)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_view.html#a25f43ea9a6209550760abdebcb451cef">glWidthForWindowWidth:</a></td></tr>
+<tr class="memdesc:a25f43ea9a6209550760abdebcb451cef"><td class="mdescLeft">&#160;</td><td class="mdescRight">屏幕尺寸转换为 OpenGLES 尺寸。  <a href="#a25f43ea9a6209550760abdebcb451cef">更多...</a><br/></td></tr>
+<tr class="separator:a25f43ea9a6209550760abdebcb451cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18effcd1490818d43cd137d5142cd071"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18effcd1490818d43cd137d5142cd071"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_view.html#a18effcd1490818d43cd137d5142cd071">referenceDidChange</a></td></tr>
+<tr class="memdesc:a18effcd1490818d43cd137d5142cd071"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenGLES 坐标系发生改变，重新计算缓存的 OpenGLES 坐标。 <br/></td></tr>
+<tr class="separator:a18effcd1490818d43cd137d5142cd071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab469e6b197ae0685120433c505f0e362"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_view.html#ab469e6b197ae0685120433c505f0e362">renderLinesWithPoints:pointCount:strokeColor:lineWidth:looped:</a></td></tr>
+<tr class="memdesc:ab469e6b197ae0685120433c505f0e362"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用 OpenGLES 绘制线。  <a href="#ab469e6b197ae0685120433c505f0e362">更多...</a><br/></td></tr>
+<tr class="separator:ab469e6b197ae0685120433c505f0e362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addef0d185fa454de7f8a9de2128b1b7a"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_view.html#addef0d185fa454de7f8a9de2128b1b7a">renderLinesWithPoints:pointCount:strokeColor:lineWidth:looped:LineJoinType:LineCapType:lineDash:</a></td></tr>
+<tr class="memdesc:addef0d185fa454de7f8a9de2128b1b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用 OpenGLES 绘制线。  <a href="#addef0d185fa454de7f8a9de2128b1b7a">更多...</a><br/></td></tr>
+<tr class="separator:addef0d185fa454de7f8a9de2128b1b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6877543cd65aaa5a6a0c437ca4fbb8c"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_view.html#ab6877543cd65aaa5a6a0c437ca4fbb8c">renderTexturedLinesWithPoints:pointCount:lineWidth:textureID:looped:</a></td></tr>
+<tr class="memdesc:ab6877543cd65aaa5a6a0c437ca4fbb8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用OpenGLES 按指定纹理绘制线。  <a href="#ab6877543cd65aaa5a6a0c437ca4fbb8c">更多...</a><br/></td></tr>
+<tr class="separator:ab6877543cd65aaa5a6a0c437ca4fbb8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a357e8b09f407049020f7f20b2fe6639c"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_view.html#a357e8b09f407049020f7f20b2fe6639c">renderTexturedLinesWithPoints:pointCount:lineWidth:textureIDs:drawStyleIndexes:looped:</a></td></tr>
+<tr class="memdesc:a357e8b09f407049020f7f20b2fe6639c"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用OpenGLES 绘制多纹理线  <a href="#a357e8b09f407049020f7f20b2fe6639c">更多...</a><br/></td></tr>
+<tr class="separator:a357e8b09f407049020f7f20b2fe6639c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a570e95c066468ba2bf8968300a94308c"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_view.html#a570e95c066468ba2bf8968300a94308c">renderLinesWithPoints:pointCount:strokeColors:drawStyleIndexes:isGradient:lineWidth:looped:LineJoinType:LineCapType:lineDash:</a></td></tr>
+<tr class="memdesc:a570e95c066468ba2bf8968300a94308c"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用OpenGLES 绘制多段颜色线  <a href="#a570e95c066468ba2bf8968300a94308c">更多...</a><br/></td></tr>
+<tr class="separator:a570e95c066468ba2bf8968300a94308c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd57ae384f1005a50a1889d07e07f35d"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_view.html#afd57ae384f1005a50a1889d07e07f35d">renderRegionWithPoints:pointCount:fillColor:usingTriangleFan:</a></td></tr>
+<tr class="memdesc:afd57ae384f1005a50a1889d07e07f35d"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用OpenGLES 绘制区域  <a href="#afd57ae384f1005a50a1889d07e07f35d">更多...</a><br/></td></tr>
+<tr class="separator:afd57ae384f1005a50a1889d07e07f35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aece17dd7f5827fa91f436e044d186d20"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_view.html#aece17dd7f5827fa91f436e044d186d20">renderStrokedRegionWithPoints:pointCount:fillColor:strokeColor:strokeLineWidth:strokeLineJoinType:strokeLineDash:usingTriangleFan:</a></td></tr>
+<tr class="separator:aece17dd7f5827fa91f436e044d186d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a988091b0088c77c6b6b9c1cf8ba1c0a1"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_view.html#a988091b0088c77c6b6b9c1cf8ba1c0a1">renderTextureStrokedRegionWithPoints:pointCount:fillColor:strokeTineWidth:strokeTextureID:usingTriangleFan:</a></td></tr>
+<tr class="memdesc:a988091b0088c77c6b6b9c1cf8ba1c0a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用OpenGLES 绘制区域(带纹理轮廓线)  <a href="#a988091b0088c77c6b6b9c1cf8ba1c0a1">更多...</a><br/></td></tr>
+<tr class="separator:a988091b0088c77c6b6b9c1cf8ba1c0a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8aebee2d40c1f7b1a78f3089c6259f5"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_view.html#ab8aebee2d40c1f7b1a78f3089c6259f5">renderIconWithTextureID:points:</a></td></tr>
+<tr class="memdesc:ab8aebee2d40c1f7b1a78f3089c6259f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用 OpenGLES 绘制图片。  <a href="#ab8aebee2d40c1f7b1a78f3089c6259f5">更多...</a><br/></td></tr>
+<tr class="separator:ab8aebee2d40c1f7b1a78f3089c6259f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a057e8970f74f7fe59ba8147ff13471e9"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_view.html#a057e8970f74f7fe59ba8147ff13471e9">renderIconWithTextureID:points:modulateColor:</a></td></tr>
+<tr class="memdesc:a057e8970f74f7fe59ba8147ff13471e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用OpenGLES 绘制图片  <a href="#a057e8970f74f7fe59ba8147ff13471e9">更多...</a><br/></td></tr>
+<tr class="separator:a057e8970f74f7fe59ba8147ff13471e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a757aea5bb7fa9264396f3547ea37acff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a757aea5bb7fa9264396f3547ea37acff"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_view.html#a757aea5bb7fa9264396f3547ea37acff">glRender</a></td></tr>
+<tr class="memdesc:a757aea5bb7fa9264396f3547ea37acff"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制函数（子类需要重载来实现）。 <br/></td></tr>
+<tr class="separator:a757aea5bb7fa9264396f3547ea37acff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01fbe82b994ee4e38361fb1e6dab73a5"><td class="memItemLeft" align="right" valign="top">(GLuint)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_view.html#a01fbe82b994ee4e38361fb1e6dab73a5">loadStrokeTextureImage:</a></td></tr>
+<tr class="memdesc:a01fbe82b994ee4e38361fb1e6dab73a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载纹理图片，纹理ID存储在成员 strokeTextureID 中。  <a href="#a01fbe82b994ee4e38361fb1e6dab73a5">更多...</a><br/></td></tr>
+<tr class="separator:a01fbe82b994ee4e38361fb1e6dab73a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdf959e6bafad4ba70cde535f981eef7"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_view.html#abdf959e6bafad4ba70cde535f981eef7">renderLinesWithPoints:pointCount:strokeColor:lineWidth:looped:lineDash:renderLinesWithPoints:pointCount:strokeColor:lineWidth:looped:LineJoinType:LineCapType:lineDash:</a></td></tr>
+<tr class="memdesc:abdf959e6bafad4ba70cde535f981eef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用OpenGLES 绘制线  <a href="#abdf959e6bafad4ba70cde535f981eef7">更多...</a><br/></td></tr>
+<tr class="separator:abdf959e6bafad4ba70cde535f981eef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a898c49d33b336971b825177944007548"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_m_a_overlay_view.html#a898c49d33b336971b825177944007548">renderRegionWithPoints:pointCount:fillColor:strokeLineWidth:usingTriangleFan:renderRegionWithPoints:pointCount:fillColor:usingTriangleFan:</a></td></tr>
+<tr class="memdesc:a898c49d33b336971b825177944007548"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用OpenGLES 绘制区域  <a href="#a898c49d33b336971b825177944007548">更多...</a><br/></td></tr>
+<tr class="separator:a898c49d33b336971b825177944007548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a73f7454dbe97902f0bedee78171a6fa4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73f7454dbe97902f0bedee78171a6fa4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>instead</b></td></tr>
+<tr class="separator:a73f7454dbe97902f0bedee78171a6fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:aa2d324d3771d9209ce8b9d73053b6e12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2d324d3771d9209ce8b9d73053b6e12"></a>
+id&lt; <a class="el" href="protocol_m_a_overlay-p.html">MAOverlay</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_overlay_view.html#aa2d324d3771d9209ce8b9d73053b6e12">overlay</a></td></tr>
+<tr class="memdesc:aa2d324d3771d9209ce8b9d73053b6e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">关联的 Overlay 对象。 <br/></td></tr>
+<tr class="separator:aa2d324d3771d9209ce8b9d73053b6e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bd74c903a9570be1f90d6c836a3cab6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2bd74c903a9570be1f90d6c836a3cab6"></a>
+CGPoint *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_overlay_view.html#a2bd74c903a9570be1f90d6c836a3cab6">glPoints</a></td></tr>
+<tr class="memdesc:a2bd74c903a9570be1f90d6c836a3cab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">缓存的 OpenGLES 坐标。 <br/></td></tr>
+<tr class="separator:a2bd74c903a9570be1f90d6c836a3cab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f37b4068d429e5067f6b96dfc3c7e9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f37b4068d429e5067f6b96dfc3c7e9f"></a>
+NSUInteger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_overlay_view.html#a7f37b4068d429e5067f6b96dfc3c7e9f">glPointCount</a></td></tr>
+<tr class="memdesc:a7f37b4068d429e5067f6b96dfc3c7e9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">缓存的 OpenGLES 坐标个数。 <br/></td></tr>
+<tr class="separator:a7f37b4068d429e5067f6b96dfc3c7e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedd58c02c82937eb25cdfdc8397cad01"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedd58c02c82937eb25cdfdc8397cad01"></a>
+GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_m_a_overlay_view.html#aedd58c02c82937eb25cdfdc8397cad01">strokeTextureID</a></td></tr>
+<tr class="memdesc:aedd58c02c82937eb25cdfdc8397cad01"><td class="mdescLeft">&#160;</td><td class="mdescRight">笔触纹理id。 <br/></td></tr>
+<tr class="separator:aedd58c02c82937eb25cdfdc8397cad01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>该类是地图覆盖物View的基类，提供绘制overlay的接口但并无实际的实现。 </p>
+</div><h2 class="groupheader">Method Documentation</h2>
+<a class="anchor" id="a512b38e102c5d89391e09884183e672a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) drawMapRect: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>)&#160;</td>
+          <td class="paramname"><em>mapRect</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">zoomScale:</td>
+          <td></td>
+          <td class="paramtype">(CGFloat)&#160;</td>
+          <td class="paramname"><em>zoomScale</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">inContext:</td>
+          <td></td>
+          <td class="paramtype">(CGContextRef)&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绘制 Overlay view 的内容。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mapRect</td><td>需要绘制的 <a class="el" href="struct_m_a_map_rect.html" title="地图投影矩形区域。 ">MAMapRect</a> 范围。 </td></tr>
+    <tr><td class="paramname">zoomScale</td><td>当前的缩放比例值。 </td></tr>
+    <tr><td class="paramname">context</td><td>绘制操作的 graphics context。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="abac34b259535546bf9dad1b135421d42"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGPoint) glPointForMapPoint: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="struct_m_a_map_point.html">MAMapPoint</a>)&#160;</td>
+          <td class="paramname"><em>mapPoint</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将 <a class="el" href="struct_m_a_map_point.html" title="地图投影点，用平面直角坐标表示。 ">MAMapPoint</a> 转换为 Opengles 可以直接使用的坐标。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mapPoint</td><td><a class="el" href="struct_m_a_map_point.html" title="地图投影点，用平面直角坐标表示。 ">MAMapPoint</a> 坐标。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>opengles 直接支持的坐标。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6e8a8c456fe631fd4cf97d34adf271db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGPoint *) glPointsForMapPoints: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="struct_m_a_map_point.html">MAMapPoint</a> *)&#160;</td>
+          <td class="paramname"><em>mapPoints</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">count:</td>
+          <td></td>
+          <td class="paramtype">(NSUInteger)&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>批量将 <a class="el" href="struct_m_a_map_point.html" title="地图投影点，用平面直角坐标表示。 ">MAMapPoint</a> 转换为 Opengles 可以直接使用的坐标。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mapPoints</td><td><a class="el" href="struct_m_a_map_point.html" title="地图投影点，用平面直角坐标表示。 ">MAMapPoint</a> 坐标数据指针。 </td></tr>
+    <tr><td class="paramname">count</td><td>个数。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>opengles 直接支持的坐标数据指针（需要调用者手动释放）。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a25f43ea9a6209550760abdebcb451cef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGFloat) glWidthForWindowWidth: </td>
+          <td></td>
+          <td class="paramtype">(CGFloat)&#160;</td>
+          <td class="paramname"><em>windowWidth</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>屏幕尺寸转换为 OpenGLES 尺寸。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">windowWidth</td><td>屏幕尺寸，UIView 坐标。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a474ca3295e96f72003798aae7889650a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithOverlay: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_m_a_overlay-p.html">MAOverlay</a> &gt;)&#160;</td>
+          <td class="paramname"><em>overlay</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化并返回一个 Overlay view。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">overlay</td><td>关联的 Overlay 对象。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>初始化成功则返回 Overlay view，否则返回 nil。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a01fbe82b994ee4e38361fb1e6dab73a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (GLuint) loadStrokeTextureImage: </td>
+          <td></td>
+          <td class="paramtype">(UIImage *)&#160;</td>
+          <td class="paramname"><em>textureImage</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加载纹理图片，纹理ID存储在成员 strokeTextureID 中。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">textureImage</td><td>纹理图片（需满足：长宽相等，且宽度值为2的次幂）。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>openGL纹理ID。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afc445798826f8607a9d2d4e87406022a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="struct_m_a_map_point.html">MAMapPoint</a>) mapPointForPoint: </td>
+          <td></td>
+          <td class="paramtype">(CGPoint)&#160;</td>
+          <td class="paramname"><em>point</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将相对于 receiver 的本地坐标转化为 <a class="el" href="struct_m_a_map_point.html" title="地图投影点，用平面直角坐标表示。 ">MAMapPoint</a> 。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>要转化的相对于 receiver 的本地坐标。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>转换后的 <a class="el" href="struct_m_a_map_point.html" title="地图投影点，用平面直角坐标表示。 ">MAMapPoint</a> 。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4116373694e9c1574020d8cdfe3e32dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>) mapRectForRect: </td>
+          <td></td>
+          <td class="paramtype">(CGRect)&#160;</td>
+          <td class="paramname"><em>rect</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将相对于 receiver 的本地 rect 转化为 <a class="el" href="struct_m_a_map_rect.html" title="地图投影矩形区域。 ">MAMapRect</a> 。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>要转化的相对于 receiver 的本地 rect。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>转换后的 <a class="el" href="struct_m_a_map_rect.html" title="地图投影矩形区域。 ">MAMapRect</a> 。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a84412c9066ceb6d0d62a8be62e74833c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGPoint) pointForMapPoint: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="struct_m_a_map_point.html">MAMapPoint</a>)&#160;</td>
+          <td class="paramname"><em>mapPoint</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将 <a class="el" href="struct_m_a_map_point.html" title="地图投影点，用平面直角坐标表示。 ">MAMapPoint</a> 转化为相对于 receiver 的本地坐标。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mapPoint</td><td>要转化的 MAMapPoint。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>相对于 receiver 的本地坐标。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af30d3dc8093c7910daad0a24d865fdc8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGRect) rectForMapRect: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="struct_m_a_map_rect.html">MAMapRect</a>)&#160;</td>
+          <td class="paramname"><em>mapRect</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将 <a class="el" href="struct_m_a_map_rect.html" title="地图投影矩形区域。 ">MAMapRect</a> 转化为相对于 receiver 的本地 rect。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mapRect</td><td>要转化的 <a class="el" href="struct_m_a_map_rect.html" title="地图投影矩形区域。 ">MAMapRect</a> 。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>相对于 receiver 的本地 rect。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab8aebee2d40c1f7b1a78f3089c6259f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) renderIconWithTextureID: </td>
+          <td></td>
+          <td class="paramtype">(GLuint)&#160;</td>
+          <td class="paramname"><em>textureID</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">points:</td>
+          <td></td>
+          <td class="paramtype">(CGPoint *)&#160;</td>
+          <td class="paramname"><em>points</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用 OpenGLES 绘制图片。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">textureID</td><td>OpenGLES 纹理 ID。 </td></tr>
+    <tr><td class="paramname">points</td><td>OpenGLES 坐标系点指针，纹理矩形的四个顶点坐标，其第一个坐标为图片左上角，依次顺时针传入其他顶点 ，参考 <a class="el" href="interface_m_a_overlay_view.html#abac34b259535546bf9dad1b135421d42" title="将 MAMapPoint 转换为 Opengles 可以直接使用的坐标。 ">glPointForMapPoint:</a> 和 <a class="el" href="interface_m_a_overlay_view.html#a6e8a8c456fe631fd4cf97d34adf271db" title="批量将 MAMapPoint 转换为 Opengles 可以直接使用的坐标。 ">glPointsForMapPoints:count:</a> 方法。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a057e8970f74f7fe59ba8147ff13471e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) renderIconWithTextureID: </td>
+          <td></td>
+          <td class="paramtype">(GLuint)&#160;</td>
+          <td class="paramname"><em>textureID</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">points:</td>
+          <td></td>
+          <td class="paramtype">(CGPoint *)&#160;</td>
+          <td class="paramname"><em>points</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">modulateColor:</td>
+          <td></td>
+          <td class="paramtype">(UIColor *)&#160;</td>
+          <td class="paramname"><em>modulateColor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用OpenGLES 绘制图片 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">textureID</td><td>OpenGLES 纹理ID。 </td></tr>
+    <tr><td class="paramname">points</td><td>OpenGLES坐标系点指针，纹理矩形的四个顶点坐标,其第一个坐标为图片左上角，依次顺时针传入其他顶点，参考 <a class="el" href="interface_m_a_overlay_view.html#abac34b259535546bf9dad1b135421d42" title="将 MAMapPoint 转换为 Opengles 可以直接使用的坐标。 ">glPointForMapPoint:</a> 和 <a class="el" href="interface_m_a_overlay_view.html#a6e8a8c456fe631fd4cf97d34adf271db" title="批量将 MAMapPoint 转换为 Opengles 可以直接使用的坐标。 ">glPointsForMapPoints:count:</a> 方法。 </td></tr>
+    <tr><td class="paramname">modulateColor</td><td>调节颜色值，最终颜色 = 纹理色 * modulateColor。如只需要调节alpha的话就设置为[red=1, green=1, blue=1, alpha=0.5]. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab469e6b197ae0685120433c505f0e362"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) renderLinesWithPoints: </td>
+          <td></td>
+          <td class="paramtype">(CGPoint *)&#160;</td>
+          <td class="paramname"><em>points</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">pointCount:</td>
+          <td></td>
+          <td class="paramtype">(NSUInteger)&#160;</td>
+          <td class="paramname"><em>pointCount</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">strokeColor:</td>
+          <td></td>
+          <td class="paramtype">(UIColor *)&#160;</td>
+          <td class="paramname"><em>strokeColor</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">lineWidth:</td>
+          <td></td>
+          <td class="paramtype">(CGFloat)&#160;</td>
+          <td class="paramname"><em>lineWidth</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">looped:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>looped</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用 OpenGLES 绘制线。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>绘制所需的 OpenGLES 坐标点指针，参考 <a class="el" href="interface_m_a_overlay_view.html#abac34b259535546bf9dad1b135421d42" title="将 MAMapPoint 转换为 Opengles 可以直接使用的坐标。 ">glPointForMapPoint:</a> 和 <a class="el" href="interface_m_a_overlay_view.html#a6e8a8c456fe631fd4cf97d34adf271db" title="批量将 MAMapPoint 转换为 Opengles 可以直接使用的坐标。 ">glPointsForMapPoints:count:</a> 方法。 </td></tr>
+    <tr><td class="paramname">pointCount</td><td>坐标点的个数。 </td></tr>
+    <tr><td class="paramname">strokeColor</td><td>边线颜色。 </td></tr>
+    <tr><td class="paramname">lineWidth</td><td>线宽。 </td></tr>
+    <tr><td class="paramname">looped</td><td>是否闭合，如：polyline设置成 N0，polygon设置为 YES。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="abdf959e6bafad4ba70cde535f981eef7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) renderLinesWithPoints: </td>
+          <td></td>
+          <td class="paramtype">(CGPoint *)&#160;</td>
+          <td class="paramname"><em>points</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">pointCount:</td>
+          <td></td>
+          <td class="paramtype">(NSUInteger)&#160;</td>
+          <td class="paramname"><em>pointCount</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">strokeColor:</td>
+          <td></td>
+          <td class="paramtype">(UIColor *)&#160;</td>
+          <td class="paramname"><em>strokeColor</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">lineWidth:</td>
+          <td></td>
+          <td class="paramtype">(CGFloat)&#160;</td>
+          <td class="paramname"><em>lineWidth</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">looped:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>looped</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用OpenGLES 绘制线 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>OpenGLES坐标系点指针, 参考- (CGPoint)<a class="el" href="interface_m_a_overlay_view.html#abac34b259535546bf9dad1b135421d42" title="将 MAMapPoint 转换为 Opengles 可以直接使用的坐标。 ">glPointForMapPoint:</a>mapPoint, - (CGPoint *)glPointsForMapPoints:(MAMapPoint *)mapPoints count:(NSUInteger)count </td></tr>
+    <tr><td class="paramname">pointCount</td><td>点个数 </td></tr>
+    <tr><td class="paramname">strokeColor</td><td>线颜色 </td></tr>
+    <tr><td class="paramname">lineWidth</td><td>OpenGLES支持线宽尺寸, 参考 - (CGFloat)<a class="el" href="interface_m_a_overlay_view.html#a25f43ea9a6209550760abdebcb451cef" title="屏幕尺寸转换为 OpenGLES 尺寸。 ">glWidthForWindowWidth:</a>windowWidth </td></tr>
+    <tr><td class="paramname">looped</td><td>是否闭合, 如polyline会设置NO, polygon会设置YES. </td></tr>
+    <tr><td class="paramname">lineDash</td><td>是否是虚线. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Provided by category <a class="el" href="category_m_a_overlay_view_07_deprecated_08.html#abdf959e6bafad4ba70cde535f981eef7">MAOverlayView(Deprecated)</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="addef0d185fa454de7f8a9de2128b1b7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) renderLinesWithPoints: </td>
+          <td></td>
+          <td class="paramtype">(CGPoint *)&#160;</td>
+          <td class="paramname"><em>points</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">pointCount:</td>
+          <td></td>
+          <td class="paramtype">(NSUInteger)&#160;</td>
+          <td class="paramname"><em>pointCount</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">strokeColor:</td>
+          <td></td>
+          <td class="paramtype">(UIColor *)&#160;</td>
+          <td class="paramname"><em>strokeColor</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">lineWidth:</td>
+          <td></td>
+          <td class="paramtype">(CGFloat)&#160;</td>
+          <td class="paramname"><em>lineWidth</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">looped:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>looped</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">LineJoinType:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_m_a_line_draw_type_8h.html#a905eedcbb3a877f9c93efa32facf10fd">MALineJoinType</a>)&#160;</td>
+          <td class="paramname"><em>lineJoinType</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">LineCapType:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_m_a_line_draw_type_8h.html#a6bd23e332bdc0ed6ba06af59d79377d4">MALineCapType</a>)&#160;</td>
+          <td class="paramname"><em>lineCapType</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">lineDash:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>lineDash</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用 OpenGLES 绘制线。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>OpenGLES坐标系点指针，参考 <a class="el" href="interface_m_a_overlay_view.html#abac34b259535546bf9dad1b135421d42" title="将 MAMapPoint 转换为 Opengles 可以直接使用的坐标。 ">glPointForMapPoint:</a> 和 <a class="el" href="interface_m_a_overlay_view.html#a6e8a8c456fe631fd4cf97d34adf271db" title="批量将 MAMapPoint 转换为 Opengles 可以直接使用的坐标。 ">glPointsForMapPoints:count:</a> 方法。 </td></tr>
+    <tr><td class="paramname">pointCount</td><td>点个数。 </td></tr>
+    <tr><td class="paramname">strokeColor</td><td>线颜色。 </td></tr>
+    <tr><td class="paramname">lineWidth</td><td>OpenGLES支持线宽尺寸， 参考 <a class="el" href="interface_m_a_overlay_view.html#a25f43ea9a6209550760abdebcb451cef" title="屏幕尺寸转换为 OpenGLES 尺寸。 ">glWidthForWindowWidth:</a> 方法。 </td></tr>
+    <tr><td class="paramname">looped</td><td>是否闭合，如：polyline设置成 N0，polygon设置为 YES。 </td></tr>
+    <tr><td class="paramname">lineJoinType</td><td>线连接点样式。 </td></tr>
+    <tr><td class="paramname">lineCapType</td><td>线端点样式。 </td></tr>
+    <tr><td class="paramname">lineDash</td><td>是否是虚线。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a570e95c066468ba2bf8968300a94308c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) renderLinesWithPoints: </td>
+          <td></td>
+          <td class="paramtype">(CGPoint *)&#160;</td>
+          <td class="paramname"><em>points</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">pointCount:</td>
+          <td></td>
+          <td class="paramtype">(NSUInteger)&#160;</td>
+          <td class="paramname"><em>pointCount</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">strokeColors:</td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>strokeColors</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">drawStyleIndexes:</td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>drawStyleIndexes</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">isGradient:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>isGradient</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">lineWidth:</td>
+          <td></td>
+          <td class="paramtype">(CGFloat)&#160;</td>
+          <td class="paramname"><em>lineWidth</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">looped:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>looped</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">LineJoinType:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_m_a_line_draw_type_8h.html#a905eedcbb3a877f9c93efa32facf10fd">MALineJoinType</a>)&#160;</td>
+          <td class="paramname"><em>lineJoinType</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">LineCapType:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_m_a_line_draw_type_8h.html#a6bd23e332bdc0ed6ba06af59d79377d4">MALineCapType</a>)&#160;</td>
+          <td class="paramname"><em>lineCapType</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">lineDash:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>lineDash</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用OpenGLES 绘制多段颜色线 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>OpenGLES坐标系点指针, 参考- (CGPoint)<a class="el" href="interface_m_a_overlay_view.html#abac34b259535546bf9dad1b135421d42" title="将 MAMapPoint 转换为 Opengles 可以直接使用的坐标。 ">glPointForMapPoint:</a>mapPoint, - (CGPoint *)glPointsForMapPoints:(MAMapPoint *)mapPoints count:(NSUInteger)count </td></tr>
+    <tr><td class="paramname">pointCount</td><td>点个数 </td></tr>
+    <tr><td class="paramname">strokeColors</td><td>各段指定的颜色 </td></tr>
+    <tr><td class="paramname">drawStyleIndexes</td><td>颜色索引数组，成员为NSNumber,且为非负数，负数按0处理 </td></tr>
+    <tr><td class="paramname">isGradient</td><td>颜色是否渐变 </td></tr>
+    <tr><td class="paramname">lineWidth</td><td>线OpenGLES支持线宽尺寸, 参考 - (CGFloat)<a class="el" href="interface_m_a_overlay_view.html#a25f43ea9a6209550760abdebcb451cef" title="屏幕尺寸转换为 OpenGLES 尺寸。 ">glWidthForWindowWidth:</a>windowWidth </td></tr>
+    <tr><td class="paramname">looped</td><td>是否闭合, 如polyline会设置NO, polygon会设置YES. </td></tr>
+    <tr><td class="paramname">lineJoinType</td><td>线连接点样式 </td></tr>
+    <tr><td class="paramname">lineCapType</td><td>线端点样式 </td></tr>
+    <tr><td class="paramname">lineDash</td><td>是否虚线 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a898c49d33b336971b825177944007548"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) renderRegionWithPoints: </td>
+          <td></td>
+          <td class="paramtype">(CGPoint *)&#160;</td>
+          <td class="paramname"><em>points</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">pointCount:</td>
+          <td></td>
+          <td class="paramtype">(NSUInteger)&#160;</td>
+          <td class="paramname"><em>pointCount</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">fillColor:</td>
+          <td></td>
+          <td class="paramtype">(UIColor *)&#160;</td>
+          <td class="paramname"><em>fillColor</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">strokeLineWidth:</td>
+          <td></td>
+          <td class="paramtype">(CGFloat)&#160;</td>
+          <td class="paramname"><em>strokeLineWidth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用OpenGLES 绘制区域 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>OpenGLES坐标系点指针, 参考- (CGPoint)<a class="el" href="interface_m_a_overlay_view.html#abac34b259535546bf9dad1b135421d42" title="将 MAMapPoint 转换为 Opengles 可以直接使用的坐标。 ">glPointForMapPoint:</a>mapPoint, - (CGPoint *)glPointsForMapPoints:(MAMapPoint *)mapPoints count:(NSUInteger)count </td></tr>
+    <tr><td class="paramname">pointCount</td><td>点个数 </td></tr>
+    <tr><td class="paramname">fillColor</td><td>填充颜色 </td></tr>
+    <tr><td class="paramname">strokeLineWidth</td><td>边缘宽度 </td></tr>
+    <tr><td class="paramname">usingTriangleFan</td><td>YES对应GL_TRIANGLE_FAN, NO对应GL_TRIANGLES </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Provided by category <a class="el" href="category_m_a_overlay_view_07_deprecated_08.html#a898c49d33b336971b825177944007548">MAOverlayView(Deprecated)</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afd57ae384f1005a50a1889d07e07f35d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) renderRegionWithPoints: </td>
+          <td></td>
+          <td class="paramtype">(CGPoint *)&#160;</td>
+          <td class="paramname"><em>points</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">pointCount:</td>
+          <td></td>
+          <td class="paramtype">(NSUInteger)&#160;</td>
+          <td class="paramname"><em>pointCount</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">fillColor:</td>
+          <td></td>
+          <td class="paramtype">(UIColor *)&#160;</td>
+          <td class="paramname"><em>fillColor</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">usingTriangleFan:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>usingTriangleFan</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用OpenGLES 绘制区域 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>OpenGLES坐标系点指针, 参考- (CGPoint)<a class="el" href="interface_m_a_overlay_view.html#abac34b259535546bf9dad1b135421d42" title="将 MAMapPoint 转换为 Opengles 可以直接使用的坐标。 ">glPointForMapPoint:</a>mapPoint, - (CGPoint *)glPointsForMapPoints:(MAMapPoint *)mapPoints count:(NSUInteger)count </td></tr>
+    <tr><td class="paramname">pointCount</td><td>点个数 </td></tr>
+    <tr><td class="paramname">fillColor</td><td>填充颜色 </td></tr>
+    <tr><td class="paramname">usingTriangleFan</td><td>若必为凸多边形输入YES，可能为凹多边形输入NO </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aece17dd7f5827fa91f436e044d186d20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) renderStrokedRegionWithPoints: </td>
+          <td></td>
+          <td class="paramtype">(CGPoint *)&#160;</td>
+          <td class="paramname"><em>points</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">pointCount:</td>
+          <td></td>
+          <td class="paramtype">(NSUInteger)&#160;</td>
+          <td class="paramname"><em>pointCount</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">fillColor:</td>
+          <td></td>
+          <td class="paramtype">(UIColor *)&#160;</td>
+          <td class="paramname"><em>fillColor</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">strokeColor:</td>
+          <td></td>
+          <td class="paramtype">(UIColor *)&#160;</td>
+          <td class="paramname"><em>strokeColor</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">strokeLineWidth:</td>
+          <td></td>
+          <td class="paramtype">(CGFloat)&#160;</td>
+          <td class="paramname"><em>strokeLineWidth</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">strokeLineJoinType:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_m_a_line_draw_type_8h.html#a905eedcbb3a877f9c93efa32facf10fd">MALineJoinType</a>)&#160;</td>
+          <td class="paramname"><em>strokeLineJoinType</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">strokeLineDash:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>strokeLineDash</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">usingTriangleFan:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>usingTriangleFan</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>使用OpenGLES 绘制区域(带轮廓线) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>OpenGLES坐标系点指针, 参考- (CGPoint)<a class="el" href="interface_m_a_overlay_view.html#abac34b259535546bf9dad1b135421d42" title="将 MAMapPoint 转换为 Opengles 可以直接使用的坐标。 ">glPointForMapPoint:</a>mapPoint, - (CGPoint *)glPointsForMapPoints:(MAMapPoint *)mapPoints count:(NSUInteger)count </td></tr>
+    <tr><td class="paramname">pointCount</td><td>点个数 </td></tr>
+    <tr><td class="paramname">fillColor</td><td>填充颜色 </td></tr>
+    <tr><td class="paramname">strokeColor</td><td>轮廓线颜色 </td></tr>
+    <tr><td class="paramname">strokeLineWidth</td><td>轮廓线宽。OpenGLES支持线宽尺寸, 参考 - (CGFloat)<a class="el" href="interface_m_a_overlay_view.html#a25f43ea9a6209550760abdebcb451cef" title="屏幕尺寸转换为 OpenGLES 尺寸。 ">glWidthForWindowWidth:</a>windowWidth </td></tr>
+    <tr><td class="paramname">strokeLineJoinType</td><td>轮廓线连接点样式 </td></tr>
+    <tr><td class="paramname">strokeLineDash</td><td>轮廓线是否是虚线 </td></tr>
+    <tr><td class="paramname">usingTriangleFan</td><td>若必为凸多边形输入YES，可能为凹多边形输入NO</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>注：strokeLineWidth为0 或 strokeColor为nil 时不绘制轮廓线。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab6877543cd65aaa5a6a0c437ca4fbb8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) renderTexturedLinesWithPoints: </td>
+          <td></td>
+          <td class="paramtype">(CGPoint *)&#160;</td>
+          <td class="paramname"><em>points</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">pointCount:</td>
+          <td></td>
+          <td class="paramtype">(NSUInteger)&#160;</td>
+          <td class="paramname"><em>pointCount</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">lineWidth:</td>
+          <td></td>
+          <td class="paramtype">(CGFloat)&#160;</td>
+          <td class="paramname"><em>lineWidth</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">textureID:</td>
+          <td></td>
+          <td class="paramtype">(GLuint)&#160;</td>
+          <td class="paramname"><em>textureID</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">looped:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>looped</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用OpenGLES 按指定纹理绘制线。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>OpenGLES坐标系点指针，参考 <a class="el" href="interface_m_a_overlay_view.html#abac34b259535546bf9dad1b135421d42" title="将 MAMapPoint 转换为 Opengles 可以直接使用的坐标。 ">glPointForMapPoint:</a> 和 <a class="el" href="interface_m_a_overlay_view.html#a6e8a8c456fe631fd4cf97d34adf271db" title="批量将 MAMapPoint 转换为 Opengles 可以直接使用的坐标。 ">glPointsForMapPoints:count:</a> 方法。 </td></tr>
+    <tr><td class="paramname">pointCount</td><td>点个数。 </td></tr>
+    <tr><td class="paramname">lineWidth</td><td>线OpenGLES支持线宽尺寸，参考 <a class="el" href="interface_m_a_overlay_view.html#a25f43ea9a6209550760abdebcb451cef" title="屏幕尺寸转换为 OpenGLES 尺寸。 ">glWidthForWindowWidth:</a> 方法。 </td></tr>
+    <tr><td class="paramname">textureID</td><td>指定的纹理，使用 <a class="el" href="interface_m_a_overlay_view.html#a01fbe82b994ee4e38361fb1e6dab73a5" title="加载纹理图片，纹理ID存储在成员 strokeTextureID 中。 ">loadStrokeTextureImage:</a> 方法加载。 </td></tr>
+    <tr><td class="paramname">looped</td><td>是否闭合，如 polyline会设置NO, polygon会设置YES。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a357e8b09f407049020f7f20b2fe6639c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) renderTexturedLinesWithPoints: </td>
+          <td></td>
+          <td class="paramtype">(CGPoint *)&#160;</td>
+          <td class="paramname"><em>points</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">pointCount:</td>
+          <td></td>
+          <td class="paramtype">(NSUInteger)&#160;</td>
+          <td class="paramname"><em>pointCount</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">lineWidth:</td>
+          <td></td>
+          <td class="paramtype">(CGFloat)&#160;</td>
+          <td class="paramname"><em>lineWidth</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">textureIDs:</td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>textureIDs</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">drawStyleIndexes:</td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>drawStyleIndexes</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">looped:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>looped</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用OpenGLES 绘制多纹理线 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>OpenGLES坐标系点指针, 参考- (CGPoint)<a class="el" href="interface_m_a_overlay_view.html#abac34b259535546bf9dad1b135421d42" title="将 MAMapPoint 转换为 Opengles 可以直接使用的坐标。 ">glPointForMapPoint:</a>mapPoint, - (CGPoint *)glPointsForMapPoints:(MAMapPoint *)mapPoints count:(NSUInteger)count </td></tr>
+    <tr><td class="paramname">pointCount</td><td>点个数 </td></tr>
+    <tr><td class="paramname">lineWidth</td><td>线OpenGLES支持线宽尺寸, 参考 - (CGFloat)<a class="el" href="interface_m_a_overlay_view.html#a25f43ea9a6209550760abdebcb451cef" title="屏幕尺寸转换为 OpenGLES 尺寸。 ">glWidthForWindowWidth:</a>windowWidth </td></tr>
+    <tr><td class="paramname">textureIDs</td><td>各段指定的纹理 使用- (BOOL)loadStrokeTextureImages:(NSArray *)textureImages;加载,在strokeTextureIDs属性中获取 </td></tr>
+    <tr><td class="paramname">drawStyleIndexes</td><td>纹理索引数组，成员为NSNumber,且为非负数，负数按0处理 </td></tr>
+    <tr><td class="paramname">looped</td><td>是否闭合, 如polyline会设置NO, polygon会设置YES. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a988091b0088c77c6b6b9c1cf8ba1c0a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) renderTextureStrokedRegionWithPoints: </td>
+          <td></td>
+          <td class="paramtype">(CGPoint *)&#160;</td>
+          <td class="paramname"><em>points</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">pointCount:</td>
+          <td></td>
+          <td class="paramtype">(NSUInteger)&#160;</td>
+          <td class="paramname"><em>pointCount</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">fillColor:</td>
+          <td></td>
+          <td class="paramtype">(UIColor *)&#160;</td>
+          <td class="paramname"><em>fillColor</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">strokeTineWidth:</td>
+          <td></td>
+          <td class="paramtype">(CGFloat)&#160;</td>
+          <td class="paramname"><em>strokeLineWidth</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">strokeTextureID:</td>
+          <td></td>
+          <td class="paramtype">(GLuint)&#160;</td>
+          <td class="paramname"><em>strokeTexture</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">usingTriangleFan:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>usingTriangleFan</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用OpenGLES 绘制区域(带纹理轮廓线) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>OpenGLES坐标系点指针, 参考- (CGPoint)<a class="el" href="interface_m_a_overlay_view.html#abac34b259535546bf9dad1b135421d42" title="将 MAMapPoint 转换为 Opengles 可以直接使用的坐标。 ">glPointForMapPoint:</a>mapPoint, - (CGPoint *)glPointsForMapPoints:(MAMapPoint *)mapPoints count:(NSUInteger)count </td></tr>
+    <tr><td class="paramname">pointCount</td><td>点个数 </td></tr>
+    <tr><td class="paramname">fillColor</td><td>填充颜色 </td></tr>
+    <tr><td class="paramname">strokeLineWidth</td><td>轮廓线宽。OpenGLES支持线宽尺寸, 参考 - (CGFloat)<a class="el" href="interface_m_a_overlay_view.html#a25f43ea9a6209550760abdebcb451cef" title="屏幕尺寸转换为 OpenGLES 尺寸。 ">glWidthForWindowWidth:</a>windowWidth </td></tr>
+    <tr><td class="paramname">strokeTexture</td><td>轮廓线纹理。使用- (void)<a class="el" href="interface_m_a_overlay_view.html#a01fbe82b994ee4e38361fb1e6dab73a5" title="加载纹理图片，纹理ID存储在成员 strokeTextureID 中。 ">loadStrokeTextureImage:</a>textureImage;加载 </td></tr>
+    <tr><td class="paramname">usingTriangleFan</td><td>若必为凸多边形输入YES，可能为凹多边形输入NO</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>strokeLineWidth为0 或 strokeTexture为0 时不绘制轮廓线。 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="_m_a_overlay_view_8h_source.html">MAOverlayView.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+﻿&#169; 2016 高德软件有限公司 版权所有，保留所有权利。 
