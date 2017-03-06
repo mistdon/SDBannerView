@@ -1,0 +1,16 @@
+PODS:
+  - SDBannerView (1.0.1)
+
+DEPENDENCIES:
+  - SDBannerView (from `../`)
+
+EXTERNAL SOURCES:
+  SDBannerView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SDBannerView: 8d33fe18fa0b1949857a06ada305cad3d0dd8a5f
+
+PODFILE CHECKSUM: 5e9f4785e235860c324eaa7602b2ffab8c5d6159
+
+COCOAPODS: 1.2.0

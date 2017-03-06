@@ -2,8 +2,8 @@
 //  AppDelegate.h
 //  SDBannerView
 //
-//  Created by shendong on 16/3/17.
-//  Copyright © 2016年 shendong. All rights reserved.
+//  Created by shendong on 2017/3/6.
+//  Copyright © 2017年 shendong. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

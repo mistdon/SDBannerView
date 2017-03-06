@@ -1,0 +1,22 @@
+{
+  "name": "SDBannerView",
+  "version": "1.0.1",
+  "summary": "Light banner view, support for changing datasource, image cache.",
+  "description": "\"Light banner view, support for changing datasource, image cache, support for CocoaPods and Carthage.",
+  "homepage": "https://github.com/momo13014/SDBannerView",
+  "license": "MIT",
+  "authors": {
+    "shendong": "shendong13014@gmail.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://github.com/momo13014/SDBannerView.git",
+    "tag": "1.0.1"
+  },
+  "source_files": [
+    "Classes/",
+    "Classes/Assets/*.png"
+  ]
+}
