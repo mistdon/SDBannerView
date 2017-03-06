@@ -49,8 +49,8 @@
 //    [self.bottomBannerView setPageType:PageControlTypeUpleft];
 //    [self.bottomBannerView setCurrentPageIndicatorTintColor:[UIColor yellowColor]];
     [self.bottomBannerView setPlaceholderImage:[UIImage imageNamed:@"downtown.jpg"]];
-//    [self.bottomBannerView setAutoScroll:NO];
-//    self.bottomBannerView.autoScrollTimeInterval = 1.0f;
+    [self.bottomBannerView setAutoScroll:NO];
+    self.bottomBannerView.autoScrollTimeInterval = 7.0f;
     [self.bottomBannerView setCurrentIndexDidTap:^(NSInteger index) {
         NSLog(@"bottom index = %ld",index);
     }];

@@ -51,25 +51,59 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p6E-3e-Ko3" customClass="SDBannerView">
-                                <rect key="frame" x="30" y="280" width="315" height="377"/>
+                                <rect key="frame" x="30" y="280" width="315" height="327"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tf5-k4-TLd">
+                                <rect key="frame" x="293" y="72" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="KKb-Bo-kWf" kind="show" id="ujA-wO-Ohv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="p6E-3e-Ko3" secondAttribute="trailing" constant="30" id="2jC-5b-ICS"/>
                             <constraint firstItem="p6E-3e-Ko3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="280" id="CZq-B5-bWI"/>
-                            <constraint firstAttribute="bottom" secondItem="p6E-3e-Ko3" secondAttribute="bottom" constant="10" id="L8L-YZ-3gU"/>
+                            <constraint firstAttribute="bottom" secondItem="p6E-3e-Ko3" secondAttribute="bottom" constant="60" id="L8L-YZ-3gU"/>
                             <constraint firstItem="p6E-3e-Ko3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="gHS-i0-Fu6"/>
                         </constraints>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="kzU-WO-s4d">
+                            <connections>
+                                <segue destination="KKb-Bo-kWf" kind="show" id="qQm-AY-Bug"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="bottomBannerView" destination="p6E-3e-Ko3" id="jYy-CZ-c4h"/>
+                        <outlet property="bottomBannerView" destination="p6E-3e-Ko3" id="8oL-Iq-wMA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1056.8" y="111.99400299850076"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AWn-RQ-qqc">
+            <objects>
+                <viewController id="KKb-Bo-kWf" customClass="SSViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HyL-8y-WMz"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lrl-0o-k8N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y3f-Oq-lrf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LXC-du-ITX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1742" y="112"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0bi-2d-724">
@@ -90,4 +124,7 @@
             <point key="canvasLocation" x="-278" y="112"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ujA-wO-Ohv"/>
+    </inferredMetricsTieBreakers>
 </document>
