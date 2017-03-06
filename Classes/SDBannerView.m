@@ -7,7 +7,6 @@
 //
 
 #import "SDBannerView.h"
-//static NSDictionary *cacheDict;
 
 @interface SDBannerView()<UIScrollViewDelegate>{
     CGFloat kWidth;
@@ -20,11 +19,10 @@
 @property (nonatomic, strong) UIImageView *leftImageView, *middleImageView, *rightImageView;
 @property (nonatomic, assign) NSUInteger currentIndex;
 @end
-static NSTimeInterval const KTimeInterval = 3.0f;
+static NSTimeInterval const KTimeInterval = 5.0f;
 @implementation SDBannerView{
     NSInteger _numbersOfImages;
     NSTimer *_timer;
-    CADisplayLink *_displayLink;
 }
 - (NSMutableArray *)datasources{
     if (_datasources == nil) {
@@ -38,7 +36,7 @@ static NSTimeInterval const KTimeInterval = 3.0f;
     }
     return _imageNamesArray;
 }
-/*
+
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
         [self configureDefaultValue];
@@ -51,54 +49,27 @@ static NSTimeInterval const KTimeInterval = 3.0f;
     }
     return self;
 }
- */
 //after loaded on the xib or storyboard, should reset size parameters to get the exact size.
 - (void)layoutSubviews{
     [super layoutSubviews];
-    NSLog(@"%s",__FUNCTION__);
-//    [self configureDefaultValue];
-//    [_scrollView setFrame:self.bounds];
-//    kWidth  = self.bounds.size.width;
-//    KHeight = self.bounds.size.height;
-//    [_scrollView setContentOffset:CGPointZero animated:YES];
-//
-//    [_leftImageView   setFrame:CGRectMake(0, 0, kWidth, KHeight)];
-//    [_middleImageView setFrame:CGRectMake(kWidth, 0, kWidth, KHeight)];
-//    [_rightImageView  setFrame:CGRectMake(kWidth * 2, 0, kWidth, KHeight)];
-    
-    
-    
-    [self configureDefaultValue];
+    kWidth               = self.bounds.size.width;
+    KHeight              = self.bounds.size.height;
     [self confirgueScrollView];
     [self confirgueImageView];
     [self confirguePageControl];
     [self setNumbersOfImage:self.imageNamesArray.count];
     
 }
-//- (void)willMoveToSuperview:(nullable UIView *)newSuperview{
-//    NSLog(@"%s",__FUNCTION__);
-//}
-//- (void)didMoveToSuperview{
-//    NSLog(@"%s",__FUNCTION__);
-//}
-//- (void)willMoveToWindow:(nullable UIWindow *)newWindow{
-//    NSLog(@"%s",__FUNCTION__);
-//}
-//- (void)didMoveToWindow{
-//    NSLog(@"%s",__FUNCTION__);
-//}
 - (void)configureDefaultValue{
-    kWidth               = self.bounds.size.width;
-    KHeight              = self.bounds.size.height;
     _currentIndex        = 0;
     _autoScroll          = YES;
     _showPage            = YES;
     _pageType            = PageControlTypeDownCenter;
-   
+    _autoScrollTimeInterval = KTimeInterval;
     self.backgroundColor = [UIColor clearColor];
 }
 - (void)confirgueScrollView{
-    CGFloat width = _numbersOfImages > 1 ? kWidth * 3 : kWidth;
+    CGFloat width = self.imageNamesArray.count > 1 ? kWidth * 3 : kWidth;
     UIScrollView *scroll = [[UIScrollView alloc] initWithFrame:self.bounds];
     [self addSubview:scroll];
     _scrollView                                = scroll;
@@ -124,20 +95,19 @@ static NSTimeInterval const KTimeInterval = 3.0f;
     _rightImageView  = rightTemp;
 }
 - (void)confirguePageControl{
+    if (!_showPage) return;
     UIPageControl *page                = [[UIPageControl alloc] init];
     _pageControl = page;
-    [self addSubview:_pageControl];
+    [self addSubview:page];
     page.pageIndicatorTintColor        = self.pageIndicatorTintColor ?: [UIColor lightGrayColor];
     page.currentPageIndicatorTintColor = self.currentPageIndicatorTintColor ?: [UIColor redColor];
     page.hidesForSinglePage            = YES;
-    page.numberOfPages                 = _numbersOfImages;
+    page.numberOfPages                 = self.imageNamesArray.count;
     page.currentPage                   = 0;
     [self setPageType:self.pageType];
 }
 #pragma mark -  settup confirguration
 - (void)setNumbersOfImage:(NSInteger)numbersofimage{
-//    [self confirgueImageView];
-//    [self confirguePageControl];
     _numbersOfImages = numbersofimage;
     if (_numbersOfImages > 1) {
         [self setupTimer];
@@ -152,11 +122,12 @@ static NSTimeInterval const KTimeInterval = 3.0f;
 }
 - (void)setAutoScroll:(BOOL)autoScroll{
     _autoScroll = autoScroll;
-    [self removeTimer];
+}
+- (void)setShowPage:(BOOL)showPage{
+    _showPage = showPage;
 }
 - (void)setAutoScrollTimeInterval:(NSTimeInterval)autoScrollTimeInterval{
     _autoScrollTimeInterval = autoScrollTimeInterval;
-    [self resetTimer];
 }
 - (void)setPlaceholderImage:(UIImage *)placeholderImage{
     _placeholderImage = placeholderImage;
@@ -241,16 +212,10 @@ static NSTimeInterval const KTimeInterval = 3.0f;
     [self removeTimer];
 }
 #pragma mark - timer
-- (void)resetTimer{
-    if (!self.isAutoScroll) return;
-    [self removeTimer];
-    [self setupTimer];
-    [_scrollView setContentOffset:CGPointZero animated:YES];
-}
 - (void)setupTimer {
-    if (!self.isAutoScroll) return;
+    if (!_autoScroll) return;
     if (_autoScrollTimeInterval < 0.5) _autoScrollTimeInterval = KTimeInterval;
-    _timer = [NSTimer timerWithTimeInterval:_autoScrollTimeInterval target:self selector:@selector(autoScroll) userInfo:nil repeats:YES];
+    _timer = [NSTimer timerWithTimeInterval:_autoScrollTimeInterval target:self selector:@selector(autoScrollToNext) userInfo:nil repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSDefaultRunLoopMode];
 }
 - (void)removeTimer{
@@ -258,8 +223,7 @@ static NSTimeInterval const KTimeInterval = 3.0f;
     [_timer invalidate];
     _timer = nil;
 }
-- (void)autoScroll{
-//    NSLog(@"%@,%lf",NSStringFromCGPoint(_scrollView.contentOffset), kWidth);
+- (void)autoScrollToNext{
     [_scrollView setContentOffset:CGPointMake(_scrollView.contentOffset.x + kWidth, 0) animated:YES];
 }
 - (void)removeFromSuperview {
@@ -314,7 +278,7 @@ static NSTimeInterval const KTimeInterval = 3.0f;
     return [UIImage imageNamed:@"SDBanner_placeholder"];
 }
 #pragma mark - URL cache
-- (void)cacheForUrl:(NSURLResponse *)urlResponse requestUrl:(NSURL *)url{
+- (void)cacheForUrl:(NSCachedURLResponse *)urlResponse requestUrl:(NSURL *)url{
     [[NSURLCache sharedURLCache] storeCachedResponse:urlResponse forRequest:[NSURLRequest requestWithURL:url]];
 }
 - (nullable NSData *)cacheDataForUrl:(NSURL *)url{
@@ -325,33 +289,14 @@ static NSTimeInterval const KTimeInterval = 3.0f;
     }
     return data;
 }
-//- (UIImage *)cachcedWithUrlString:(NSString *)urlString{
-//    UIImage *image = nil;
-//    if ([cacheDict valueForKey:urlString]) {
-//        UIImage *image  = (UIImage *)[cacheDict valueForKey:urlString];
-//    }
-//    return image;
-//}
-//- (void)storeImageWithUrl:(NSString *)url image:(UIImage *)img{
-//    [cacheDict setValue:img forKey:url];
-//}
 - (BOOL)isUurlString:(NSString *)str{
     return [str hasPrefix:@"http"];
 }
 #pragma mark - public methods
 - (void)setImages:(NSArray<__kindof NSString *> *)images{
-    NSLog(@"%s,%d,%lf",__func__, __LINE__,kWidth);
     [self.imageNamesArray removeAllObjects];
     [self.imageNamesArray addObjectsFromArray:images];
     [self requestImages:images];
-//    _numbersOfImages = images.count;
-//    [self setNumbersOfImage:images];
-//    _scrollView.contentSize = _numbersOfImages == 1 ? CGSizeZero: CGSizeMake(kWidth * 3, 0);
-//    [self changeImageLeft:_numbersOfImages-1 middle:0 right:1];
-//    [_scrollView setContentOffset:CGPointZero animated:YES];
-}
-
-- (void)dealloc{
-    NSLog(@"%s",__FUNCTION__);
+    _numbersOfImages = images.count;
 }
 @end

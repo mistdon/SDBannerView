@@ -30,9 +30,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly) NSUInteger currentIndex;
 
 //! whether or not auto scroll to next (if current position is the last, then turn to the first), default is YES.
-@property (nonatomic, assign, getter=isAutoScroll) BOOL autoScroll;
+@property (nonatomic, assign) BOOL autoScroll;
 
-//! auto scroll time interval, default value is 3.0.
+//! auto scroll time interval, default value is 5.0.
 @property (nonatomic, assign) NSTimeInterval autoScrollTimeInterval;
 
 //! whether or not show the page control, default is YES.

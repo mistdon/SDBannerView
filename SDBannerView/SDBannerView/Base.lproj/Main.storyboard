@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0QW-P0-YpT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12100" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0QW-P0-YpT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12072"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,18 +21,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9N-w4-iq1">
-                                <rect key="frame" x="102" y="309" width="170" height="48"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="temp" translatesAutoresizingMaskIntoConstraints="NO" id="mCU-jH-yOr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="mCU-jH-yOr" secondAttribute="bottom" id="HRP-XN-Zfb"/>
+                            <constraint firstAttribute="trailing" secondItem="mCU-jH-yOr" secondAttribute="trailing" id="Jf7-7m-AQ6"/>
+                            <constraint firstItem="mCU-jH-yOr" firstAttribute="top" secondItem="c6y-tH-hfD" secondAttribute="top" id="L2w-dH-8ID"/>
+                            <constraint firstItem="mCU-jH-yOr" firstAttribute="leading" secondItem="c6y-tH-hfD" secondAttribute="leading" id="n3Q-2k-Hu2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1X0-q8-AAu">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="2YS-n8-YFt">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="m9N-w4-iq1">
+                                <rect key="frame" x="189" y="-2" width="170" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next -&gt;"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Next -&gt;">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="0.15376810669999999" blue="0.053771402160000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="23" name="SimHei"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="NWk-Xq-d7V"/>
                                 </connections>
                             </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="1X0-q8-AAu"/>
+                            <color key="tintColor" red="1" green="0.15376810669999999" blue="0.053771402160000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JF5-5G-Uwh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,14 +76,6 @@
                                 <rect key="frame" x="30" y="280" width="315" height="327"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tf5-k4-TLd">
-                                <rect key="frame" x="293" y="72" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="KKb-Bo-kWf" kind="show" id="ujA-wO-Ohv"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -72,11 +86,7 @@
                         </constraints>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Item" id="kzU-WO-s4d">
-                            <connections>
-                                <segue destination="KKb-Bo-kWf" kind="show" id="qQm-AY-Bug"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem title="Item" id="kzU-WO-s4d"/>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -86,24 +96,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1056.8" y="111.99400299850076"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="AWn-RQ-qqc">
-            <objects>
-                <viewController id="KKb-Bo-kWf" customClass="SSViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="HyL-8y-WMz"/>
-                        <viewControllerLayoutGuide type="bottom" id="Lrl-0o-k8N"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Y3f-Oq-lrf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LXC-du-ITX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1742" y="112"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0bi-2d-724">
@@ -124,7 +116,7 @@
             <point key="canvasLocation" x="-278" y="112"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="ujA-wO-Ohv"/>
-    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="temp" width="700" height="1050"/>
+    </resources>
 </document>
