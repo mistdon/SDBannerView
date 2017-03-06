@@ -7,7 +7,6 @@
 
 'SDBannerView' is a simple, powerful banner view, support for data cached, by the way, you can load image from local or remote.
 
-![SDBannerView]()
 ![image](https://github.com/momo13014/SDBannerView/blob/master/ScreenShots/SDBannerViewsShot.gif)
 ##Installation
 
