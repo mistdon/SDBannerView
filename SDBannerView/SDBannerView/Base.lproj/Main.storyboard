@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--SDBannerView-->
         <scene sceneID="n9s-ug-Fwh">
             <objects>
                 <viewController id="K1t-Xz-PQr" sceneMemberID="viewController">
@@ -33,26 +33,12 @@
                             <constraint firstItem="mCU-jH-yOr" firstAttribute="leading" secondItem="c6y-tH-hfD" secondAttribute="leading" id="n3Q-2k-Hu2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="1X0-q8-AAu">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="2YS-n8-YFt">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="m9N-w4-iq1">
-                                <rect key="frame" x="189" y="-2" width="170" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Next -&gt;">
-                                            <attributes>
-                                                <color key="NSColor" red="1" green="0.15376810669999999" blue="0.053771402160000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="23" name="SimHei"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="NWk-Xq-d7V"/>
-                                </connections>
-                            </button>
+                    <navigationItem key="navigationItem" title="SDBannerView" id="1X0-q8-AAu">
+                        <barButtonItem key="rightBarButtonItem" title="Next -&gt;" style="done" id="f1p-0U-LGC">
                             <color key="tintColor" red="1" green="0.15376810669999999" blue="0.053771402160000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="DIs-rW-Kmd"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
