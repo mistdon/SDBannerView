@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "SDBannerView"
-  s.version      = "1.0.1"
+  s.version      = "1.1.0"
   s.summary      = "Light banner view, support for changing datasource, image cache."
   s.description  = <<-DESC
           "Light banner view, support for changing datasource, image cache, support for CocoaPods and Carthage.
