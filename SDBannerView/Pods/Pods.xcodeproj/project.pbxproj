@@ -7,15 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B87E6EB50B9A4B7E8A019B861C1F618 /* SDBanner_placeholder@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 639D5E38050AAE99165245572C05CA33 /* SDBanner_placeholder@2x.png */; };
-		1FB3967F312E9540D9AA2C3301A696E4 /* SDBanner_placeholder.png in Sources */ = {isa = PBXBuildFile; fileRef = 60C5905FACEEA823B078EF354A66230A /* SDBanner_placeholder.png */; };
 		200F49C05EED9829E4460C152BE0C479 /* Pods-SDBannerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 432601173327F8EA916521D09F23291C /* Pods-SDBannerView-dummy.m */; };
-		627BD93CCF41874A214FD2C4220FDA47 /* SDBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = A96D07DCC1A13EF33D78DFF5841428CD /* SDBannerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		92F1A5D40411DBC9714576799A0A8B4F /* SDBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1284A6A7CEBE23E3E971713551BAE351 /* SDBannerView.m */; };
+		268005EAA8EE58C3E260124C6A712EDB /* SDBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FFFA87B18B0D89CB62B333B1F65AE6 /* SDBannerView.m */; };
+		627BD93CCF41874A214FD2C4220FDA47 /* SDBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FF974F6933F2716B78985915AB7D8F5 /* SDBannerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B138BAA013617D00C002B343121D086B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		E3F8239FBC08B1C07BB0681EBB7AF2DC /* SDBannerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAF2AF2C7F31E9369CE5110F37EE381 /* SDBannerView-dummy.m */; };
 		E9ED9E3A4F6B8ECCEE4F1EE4B0EE9F90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		F119374ECC2A80DF356D1D159278FE7D /* SDBannerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B058F4FA6BC16C4FFB226B7E7EBDF0 /* SDBannerView-dummy.m */; };
-		FAD26B36A4F263891AF891EBAB18D114 /* SDBanner_placeholder@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = F4CE76FE621865BE29DD8FE4AEC6CDA9 /* SDBanner_placeholder@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,24 +27,22 @@
 
 /* Begin PBXFileReference section */
 		0E2C74FA7011A67DE6CA87099D2D156E /* Pods-SDBannerView-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SDBannerView-resources.sh"; sourceTree = "<group>"; };
-		1284A6A7CEBE23E3E971713551BAE351 /* SDBannerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SDBannerView.m; sourceTree = "<group>"; };
-		13DC251558233D3B35CC9B29F34BDBFA /* SDBannerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDBannerView-prefix.pch"; sourceTree = "<group>"; };
+		1546176AC564DA734E0E27AA337C99E6 /* SDBannerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDBannerView.xcconfig; sourceTree = "<group>"; };
 		1B823034CF7A23E6D90CD27A294FD289 /* libPods-SDBannerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SDBannerView.a"; path = "libPods-SDBannerView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2915841058501E06821418410E2B4C37 /* SDBannerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDBannerView.xcconfig; sourceTree = "<group>"; };
-		30B058F4FA6BC16C4FFB226B7E7EBDF0 /* SDBannerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDBannerView-dummy.m"; sourceTree = "<group>"; };
+		2FF974F6933F2716B78985915AB7D8F5 /* SDBannerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SDBannerView.h; sourceTree = "<group>"; };
+		3F29DE55639A405DCDE98908D18F47C9 /* SDBannerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDBannerView-prefix.pch"; sourceTree = "<group>"; };
 		432601173327F8EA916521D09F23291C /* Pods-SDBannerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SDBannerView-dummy.m"; sourceTree = "<group>"; };
+		45FFFA87B18B0D89CB62B333B1F65AE6 /* SDBannerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SDBannerView.m; sourceTree = "<group>"; };
 		4DD4BF6948CAD780F324471DA150F62E /* Pods-SDBannerView-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SDBannerView-acknowledgements.markdown"; sourceTree = "<group>"; };
-		60C5905FACEEA823B078EF354A66230A /* SDBanner_placeholder.png */ = {isa = PBXFileReference; includeInIndex = 1; path = SDBanner_placeholder.png; sourceTree = "<group>"; };
-		639D5E38050AAE99165245572C05CA33 /* SDBanner_placeholder@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; path = "SDBanner_placeholder@2x.png"; sourceTree = "<group>"; };
 		66B10C112A3C53B52C355B629C72E99F /* libSDBannerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSDBannerView.a; path = libSDBannerView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7218F8FF69DC1AC8D6D1975710251024 /* SDBannerView.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = SDBannerView.bundle; sourceTree = "<group>"; };
 		74DCDB456B6062B0059B13AA2697B46F /* Pods-SDBannerView-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SDBannerView-frameworks.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		978A076A6185AE2B145B31D951492609 /* Pods-SDBannerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDBannerView.debug.xcconfig"; sourceTree = "<group>"; };
-		A96D07DCC1A13EF33D78DFF5841428CD /* SDBannerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SDBannerView.h; sourceTree = "<group>"; };
 		AB542BC6169CEB4F62D0FB919F37743B /* Pods-SDBannerView-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SDBannerView-acknowledgements.plist"; sourceTree = "<group>"; };
 		ADAB3E9095747A0ED65AB3D93CD0E782 /* Pods-SDBannerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDBannerView.release.xcconfig"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		F4CE76FE621865BE29DD8FE4AEC6CDA9 /* SDBanner_placeholder@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; path = "SDBanner_placeholder@3x.png"; sourceTree = "<group>"; };
+		CEAF2AF2C7F31E9369CE5110F37EE381 /* SDBannerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDBannerView-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,47 +73,24 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3D38D4B7E794E8489CE918A54DBF44AD /* SDBannerView */ = {
+		102C5C08DB0A58947571EB3CA6E0E0DB /* SDBannerView */ = {
 			isa = PBXGroup;
 			children = (
-				41885C6D9B29C6DE49F13EFA890E92A8 /* Classes */,
-				5493C7ED45C799C1BE8C0556E3D837BF /* Support Files */,
+				822A4E0B4CD367004AC117A9C1431150 /* Classes */,
+				9DFF4ED235FDDD29CF0C9B3E5B114319 /* Resources */,
+				A983B25F1F7D9D2CCD720D24FC8EA087 /* Support Files */,
 			);
 			name = SDBannerView;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		41885C6D9B29C6DE49F13EFA890E92A8 /* Classes */ = {
+		4788E6F3E0E4DA4BC582104535D82C8F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A96D07DCC1A13EF33D78DFF5841428CD /* SDBannerView.h */,
-				1284A6A7CEBE23E3E971713551BAE351 /* SDBannerView.m */,
-				526846C8C91BDE4D1B271F635E6F15E8 /* Assets */,
+				7218F8FF69DC1AC8D6D1975710251024 /* SDBannerView.bundle */,
 			);
 			name = Classes;
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		526846C8C91BDE4D1B271F635E6F15E8 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				60C5905FACEEA823B078EF354A66230A /* SDBanner_placeholder.png */,
-				639D5E38050AAE99165245572C05CA33 /* SDBanner_placeholder@2x.png */,
-				F4CE76FE621865BE29DD8FE4AEC6CDA9 /* SDBanner_placeholder@3x.png */,
-			);
-			name = Assets;
-			path = Assets;
-			sourceTree = "<group>";
-		};
-		5493C7ED45C799C1BE8C0556E3D837BF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2915841058501E06821418410E2B4C37 /* SDBannerView.xcconfig */,
-				30B058F4FA6BC16C4FFB226B7E7EBDF0 /* SDBannerView-dummy.m */,
-				13DC251558233D3B35CC9B29F34BDBFA /* SDBannerView-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "SDBannerView/Pods/Target Support Files/SDBannerView";
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -133,19 +105,40 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				9CBFF02C39DB04CF83B8B621870995D2 /* Development Pods */,
+				FEA28F02D328B48A367577232F2DFAAC /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				B51EAE9FCF22C8F5F8273881B8956963 /* Products */,
 				020B49CA002F441FFAE4668C03D82A51 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		9CBFF02C39DB04CF83B8B621870995D2 /* Development Pods */ = {
+		822A4E0B4CD367004AC117A9C1431150 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				3D38D4B7E794E8489CE918A54DBF44AD /* SDBannerView */,
+				2FF974F6933F2716B78985915AB7D8F5 /* SDBannerView.h */,
+				45FFFA87B18B0D89CB62B333B1F65AE6 /* SDBannerView.m */,
 			);
-			name = "Development Pods";
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9DFF4ED235FDDD29CF0C9B3E5B114319 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4788E6F3E0E4DA4BC582104535D82C8F /* Classes */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A983B25F1F7D9D2CCD720D24FC8EA087 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1546176AC564DA734E0E27AA337C99E6 /* SDBannerView.xcconfig */,
+				CEAF2AF2C7F31E9369CE5110F37EE381 /* SDBannerView-dummy.m */,
+				3F29DE55639A405DCDE98908D18F47C9 /* SDBannerView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "SDBannerView/Pods/Target Support Files/SDBannerView";
 			sourceTree = "<group>";
 		};
 		B51EAE9FCF22C8F5F8273881B8956963 /* Products */ = {
@@ -180,6 +173,14 @@
 			path = "Target Support Files/Pods-SDBannerView";
 			sourceTree = "<group>";
 		};
+		FEA28F02D328B48A367577232F2DFAAC /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				102C5C08DB0A58947571EB3CA6E0E0DB /* SDBannerView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -198,7 +199,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA8F3190D38B5308FC81C49C3B13ECE4 /* Build configuration list for PBXNativeTarget "SDBannerView" */;
 			buildPhases = (
-				E059B5AFD450682B25BBACE38FDCDE1B /* Sources */,
+				D54DB9C3671FEF4778B712A6B7442B6B /* Sources */,
 				6E59379C73059563BAD4BA309F8D50DE /* Frameworks */,
 				20B370E28F5881D26C9DDF59E6392B4F /* Headers */,
 			);
@@ -264,15 +265,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E059B5AFD450682B25BBACE38FDCDE1B /* Sources */ = {
+		D54DB9C3671FEF4778B712A6B7442B6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FB3967F312E9540D9AA2C3301A696E4 /* SDBanner_placeholder.png in Sources */,
-				1B87E6EB50B9A4B7E8A019B861C1F618 /* SDBanner_placeholder@2x.png in Sources */,
-				FAD26B36A4F263891AF891EBAB18D114 /* SDBanner_placeholder@3x.png in Sources */,
-				F119374ECC2A80DF356D1D159278FE7D /* SDBannerView-dummy.m in Sources */,
-				92F1A5D40411DBC9714576799A0A8B4F /* SDBannerView.m in Sources */,
+				E3F8239FBC08B1C07BB0681EBB7AF2DC /* SDBannerView-dummy.m in Sources */,
+				268005EAA8EE58C3E260124C6A712EDB /* SDBannerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +288,7 @@
 /* Begin XCBuildConfiguration section */
 		09B74AFEF09C4371F8E73A9EDC59BAE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2915841058501E06821418410E2B4C37 /* SDBannerView.xcconfig */;
+			baseConfigurationReference = 1546176AC564DA734E0E27AA337C99E6 /* SDBannerView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -399,7 +397,7 @@
 		};
 		84465DE757E66CD1DE18C4C7F1C04B18 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2915841058501E06821418410E2B4C37 /* SDBannerView.xcconfig */;
+			baseConfigurationReference = 1546176AC564DA734E0E27AA337C99E6 /* SDBannerView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

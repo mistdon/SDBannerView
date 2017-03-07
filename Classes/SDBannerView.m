@@ -66,6 +66,7 @@ static NSTimeInterval const KTimeInterval = 5.0f;
     _showPage            = YES;
     _pageType            = PageControlTypeDownCenter;
     _autoScrollTimeInterval = KTimeInterval;
+    _placeholderImage    = [self bundlePlaceHolderImage];
     self.backgroundColor = [UIColor clearColor];
 }
 - (void)confirgueScrollView{
@@ -275,7 +276,10 @@ static NSTimeInterval const KTimeInterval = 5.0f;
     [task resume];
 }
 - (UIImage *)bundlePlaceHolderImage{
-    return [UIImage imageNamed:@"SDBanner_placeholder"];
+    NSBundle *bundle = [NSBundle bundleForClass:[SDBannerView class]];
+    NSURL *url = [bundle URLForResource:@"SDBannerView" withExtension:@"bundle"];
+    NSBundle *imageBundle = [NSBundle bundleWithURL:url];
+    return [UIImage imageWithContentsOfFile:[imageBundle pathForResource:@"SDBanner_placeholder" ofType:@"png"]];
 }
 #pragma mark - URL cache
 - (void)cacheForUrl:(NSCachedURLResponse *)urlResponse requestUrl:(NSURL *)url{

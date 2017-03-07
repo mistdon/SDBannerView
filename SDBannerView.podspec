@@ -20,8 +20,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/momo13014/SDBannerView.git", :tag => "#{s.version}" }
   
-  s.source_files = ['Classes/', 'Classes/Assets/*.png']
-  # s.resources    = ['Classes/Assets/*.png']
+  s.source_files = 'Classes/*.{h,m}'
+  s.resources    = 'Classes/SDBannerView.bundle'
 
   # s.public_header_files = 'Classes/*.h'
 

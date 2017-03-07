@@ -84,11 +84,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/SDBannerView.m"
-            timestampString = "510504091.497423"
+            timestampString = "510544538.689995"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "211"
-            endingLineNumber = "211"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
             landmarkName = "-scrollViewWillBeginDragging:"
             landmarkType = "7">
          </BreakpointContent>
